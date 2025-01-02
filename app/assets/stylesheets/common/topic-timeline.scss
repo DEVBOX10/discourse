@@ -7,7 +7,6 @@
   z-index: z("timeline");
 
   &.timeline-docked-bottom {
-
     .timeline-footer-controls {
       opacity: 0;
       pointer-events: none;
@@ -27,7 +26,6 @@
     }
 
     .topic-timeline {
-
       .timeline-footer-controls {
         display: flex;
         flex-wrap: wrap;

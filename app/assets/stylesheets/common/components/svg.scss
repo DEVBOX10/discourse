@@ -12,7 +12,6 @@
 }
 
 // Fixes Edge bug with SVG elements not triggering click event
-
 svg > use {
   pointer-events: none;
 }
@@ -24,7 +23,6 @@ svg > use {
 //    <svg class="... d-icon-icon2 fa-stack-2x ..." xmlns="http://www.w3.org/2000/svg"><use href="#icon2"></use></svg>
 // </span>
 // -------------------------
-
 .fa-stack {
   position: relative;
   width: 1em;

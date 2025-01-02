@@ -8,19 +8,16 @@
   height: calc($base-height - var(--composer-height, 0px));
 
   // mobile with keyboard opened
-
   html.keyboard-visible & {
     height: calc($base-height);
   }
 
   // ipad
-
   html.footer-nav-ipad & {
     height: calc($base-height - var(--composer-height, 0px));
   }
 
   // PWA/HUB without keyboard
-
   html.footer-nav-visible:not(.keyboard-visible) & {
     height: calc(
       $base-height - var(--composer-height, 0px) - var(--footer-nav-height, 0px)

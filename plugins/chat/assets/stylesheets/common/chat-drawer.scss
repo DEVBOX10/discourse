@@ -15,7 +15,6 @@ body.composer-open .chat-drawer-outlet-container {
 }
 
 html:not(.rtl) {
-
   .chat-drawer-resizer {
     cursor: nwse-resize;
     left: -5px;
@@ -23,7 +22,6 @@ html:not(.rtl) {
 }
 
 html.rtl {
-
   .chat-drawer-resizer {
     cursor: nesw-resize;
     right: -5px;
@@ -77,7 +75,6 @@ html.rtl {
   }
 
   &.is-expanded {
-
     .chat-drawer-container {
       height: 100%;
     }

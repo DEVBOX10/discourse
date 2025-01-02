@@ -9,7 +9,6 @@ details {
     margin-bottom: 0.5rem;
 
     &:not([open]) {
-
       &:hover,
       &:focus,
       &:focus-within {
@@ -26,7 +25,6 @@ details {
 }
 
 details.details__boxed {
-
   summary {
     font-weight: bold;
   }
@@ -43,7 +41,6 @@ summary {
 }
 
 summary {
-
   > p {
     margin-block: 0;
     padding-block: 1rem;
@@ -76,21 +73,18 @@ details.open > summary:first-of-type ~ * {
 }
 
 /* hide native indicator */
-
 summary::-webkit-details-marker {
   display: none;
 }
 
 .topic-body .cooked,
 .d-editor-preview {
-
   .elided {
     background-color: unset;
     padding: 0;
 
     &:not([open]) {
       //specificity needed to overrule non-elided
-
       &:hover,
       &:focus,
       &:focus-within {

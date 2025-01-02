@@ -2,13 +2,11 @@
 // global styles that apply to the Discourse application specifically
 // BEWARE: changing these styles implies they take effect anywhere they are seen
 // throughout the Discourse application
-
 :root {
   --d-max-width: 1110px;
 }
 
 // Base Elements
-
 body.widget-dragging {
   cursor: ns-resize;
 }
@@ -18,13 +16,11 @@ body.dragging {
 }
 
 // Common classes
-
 .boxed {
   height: 100%;
 }
 
 .form-vertical {
-
   .control-group {
     margin-bottom: 1.25em;
   }
@@ -40,14 +36,12 @@ pre {
 }
 
 // this removes the unwanted top margin on a paragraph under a heading
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-
   + p {
     margin-top: 0;
   }
@@ -98,7 +92,6 @@ select {
 }
 
 .input {
-
   &-xxlarge,
   &-xxlarge + .control-instructions {
     width: 530px;
@@ -119,7 +112,6 @@ select {
 }
 
 .form-horizontal {
-
   input[type="text"],
   input[type="password"],
   textarea {
@@ -151,7 +143,6 @@ select {
 
 // Media Queries
 @include breakpoint(mobile-extra-large) {
-
   body {
     min-width: 0;
   }
@@ -163,7 +154,6 @@ select {
 }
 
 body.has-sidebar-page {
-
   .wrap {
     // increase page max-width to accommodate sidebar width
     max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
@@ -181,9 +171,7 @@ body.has-sidebar-page {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   body.sidebar-animate {
-
     #main-outlet-wrapper {
       transition-property: grid-template-columns, max-width;
       transition-timing-function: var(--d-sidebar-animation-ease);

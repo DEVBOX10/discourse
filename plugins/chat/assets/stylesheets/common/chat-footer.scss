@@ -30,7 +30,6 @@
     color: var(--primary-medium);
 
     &.--active {
-
       .d-icon,
       .d-button-label {
         color: var(--d-nav-color--active);
@@ -39,10 +38,8 @@
 
     &:hover,
     &:focus {
-
       .discourse-no-touch &,
       .discourse-touch & {
-
         .d-icon,
         .d-button-label {
           color: var(--d-nav-color--active);

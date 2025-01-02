@@ -44,7 +44,6 @@
     // has no effect on most users but we need it for some cases. If this is
     // not added, "add edit reason" will overlap with the composer controls
     @include breakpoint(mobile-small) {
-
       .reply-details {
         flex-wrap: wrap;
       }
@@ -61,7 +60,6 @@
   }
 
   .toggle-minimize {
-
     .d-icon-chevron-down {
       vertical-align: text-top;
     }
@@ -131,7 +129,6 @@
     }
 
     .mobile-file-upload {
-
       &.hidden + .mobile-preview {
         // Hide preview button while file is uploading to make room for upload progress
         display: none;
@@ -144,7 +141,6 @@
   }
 
   &.show-preview {
-
     .submit-panel {
       padding-top: 10px;
       z-index: z("fullscreen") + 1;
@@ -178,21 +174,18 @@
   }
 
   &.hide-preview {
-
     .d-editor-preview-wrapper {
       display: none;
     }
   }
 
   .wmd-controls:not(.toolbar-visible) {
-
     .d-editor-button-bar {
       display: none;
     }
   }
 
   .d-editor-button-bar .btn {
-
     &.preview {
       margin: 0;
     }
@@ -208,7 +201,6 @@
   }
 
   .with-tags {
-
     .mini-tag-chooser,
     .category-chooser {
       z-index: z("base");
@@ -222,7 +214,6 @@
   }
 
   .without-tags {
-
     .category-input {
       margin-left: 6px;
     }

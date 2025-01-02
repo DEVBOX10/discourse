@@ -1,5 +1,4 @@
 //Styles for /admin/users
-
 .display-row.associations .value {
   width: 750px;
 
@@ -99,7 +98,6 @@
 
   &.username,
   &.name {
-
     .value {
       word-break: break-all;
     }
@@ -107,13 +105,11 @@
 }
 
 .admin-users {
-
   input {
     margin-bottom: 0;
   }
 
   .users-list {
-
     .username .d-icon {
       color: var(--primary-medium);
     }
@@ -121,9 +117,7 @@
 }
 
 .admin-users-list {
-
   .directory-table__cell {
-
     &.username {
       justify-content: start;
     }
@@ -143,10 +137,8 @@
     margin-top: 1em;
 
     &__column-header {
-
       &--username,
       &---email {
-
         .header-contents {
           text-align: left;
         }
@@ -200,9 +192,7 @@
 }
 
 // mobile styles
-
 .mobile-view .admin-users.admin-user {
-
   .display-row {
     flex-direction: column;
     align-items: flex-start;

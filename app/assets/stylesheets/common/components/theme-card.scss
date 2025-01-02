@@ -21,7 +21,6 @@
       updatingInfinite 3s ease-in-out 3s infinite;
 
     @keyframes updating {
-
       0% {
         box-shadow: 0 0 0 3px transparent;
         border: 1px solid var(--success);
@@ -39,7 +38,6 @@
     }
 
     @keyframes updatingInfinite {
-
       0% {
         box-shadow: 0 0 0 3px var(--success-low);
         border: 1px solid var(--success);
@@ -62,7 +60,6 @@
     margin-right: 0.45em;
 
     @keyframes rotate {
-
       0% {
         transform: rotate(0deg);
       }
@@ -183,7 +180,6 @@
 }
 
 .theme-card .admin-config-area-card {
-
   &__title {
     display: flex;
     align-items: center;

@@ -17,7 +17,6 @@
     outline: none;
 
     @include breakpoint(tablet, min-width) {
-
       .chat-browse-view__actions & {
         width: 210px;
       }

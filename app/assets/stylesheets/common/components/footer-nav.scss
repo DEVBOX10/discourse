@@ -9,7 +9,6 @@ $footer-nav-height: 49px;
 }
 
 html.footer-nav-visible {
-
   #main-outlet {
     padding-bottom: calc(var(--footer-nav-height) + 15px);
   }
@@ -69,14 +68,12 @@ html.footer-nav-visible {
 }
 
 @supports (padding: max(0px)) {
-
   .footer-nav.visible {
     padding-bottom: unquote("max(5px, env(safe-area-inset-bottom))");
   }
 }
 
 @supports (-webkit-backdrop-filter: blur(10px)) {
-
   html:not(.footer-nav-ipad) .footer-nav {
     background-color: rgba(var(--header_background-rgb), 0.7);
     backdrop-filter: blur(20px);

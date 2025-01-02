@@ -17,7 +17,6 @@
 
 // Pill nav
 // --------------------------------------------------
-
 .nav-pills {
   @extend %nav;
   display: flex;
@@ -67,7 +66,6 @@
 
 // Stacked nav
 // --------------------------------------------------
-
 .nav-stacked {
   @extend %nav;
   padding: 0;
@@ -125,7 +123,6 @@
 }
 
 .user-navigation .nav-pills > li {
-
   a,
   button {
     border-radius: 0;

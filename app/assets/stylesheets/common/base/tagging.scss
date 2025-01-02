@@ -124,7 +124,6 @@
 .discourse-tags,
 .list-tags,
 .search-category {
-
   .discourse-tag.simple:not(:last-child)::after {
     content: ",\00a0";
     margin-left: 1px;
@@ -132,7 +131,6 @@
 }
 
 .d-header .topic-header-extra {
-
   .discourse-tags {
     font-size: var(--font-down-1);
   }
@@ -148,7 +146,6 @@
 }
 
 .topic-list-item {
-
   .discourse-tags {
     font-weight: normal;
     font-size: var(--font-down-1);
@@ -170,7 +167,6 @@ header .discourse-tag {
 }
 
 #topic-title {
-
   .discourse-tags .discourse-tag.box {
     margin-right: 0.35em;
   }
@@ -194,7 +190,6 @@ header .discourse-tag {
 }
 
 .autocomplete.ac-category-or-tag {
-
   a {
     color: var(--primary-medium);
   }
@@ -305,7 +300,6 @@ header .discourse-tag {
   }
 
   @include breakpoint(tablet) {
-
     .select-kit.multi-select {
       width: 100%;
     }
@@ -331,7 +325,6 @@ header .discourse-tag {
   }
 
   .parent-tag-section {
-
     .tag-chooser {
       width: 210px;
     }
@@ -385,7 +378,6 @@ section.tag-info {
       }
 
       .discourse-no-touch & {
-
         &:hover {
           background: transparent;
         }
@@ -425,7 +417,6 @@ section.tag-info {
   }
 
   .add-synonyms {
-
     &__controls {
       display: flex;
       gap: 0.5em;
@@ -444,14 +435,12 @@ section.tag-info {
 }
 
 .tag-navigation {
-
   .mini-tag-chooser.tags-intersection-chooser {
     margin: 0 0.5em 0 0;
   }
 }
 
 body.tags-intersection {
-
   .category-breadcrumb {
     margin-right: auto;
   }

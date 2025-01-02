@@ -1,7 +1,5 @@
 .has-full-page-chat:not(.discourse-sidebar) {
-
   .full-page-chat {
-
     .channels-list {
       height: calc(100vh - var(--main-outlet-offset));
       border-right: 1px solid var(--primary-low);
@@ -40,7 +38,6 @@
           background-color: var(--primary-low);
 
           .chat-channel-title {
-
             .category-chat-name,
             .chat-name,
             .dm-usernames {
@@ -50,7 +47,6 @@
         }
 
         .chat-channel-metadata {
-
           &__date {
             display: none;
           }

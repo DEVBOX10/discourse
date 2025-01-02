@@ -135,7 +135,6 @@
 .header-dropdown-toggle,
 .drop-down,
 .panel-body {
-
   .flagged-posts,
   .reviewables {
     background: var(--danger);
@@ -187,7 +186,6 @@
   }
 
   .drop-down-mode & {
-
     .active .icon {
       position: relative;
       background-color: var(--secondary);
@@ -244,7 +242,6 @@
     right: -3px;
 
     &.with-icon {
-
       &.new-pms {
         background-color: var(--success);
       }
@@ -272,7 +269,6 @@
 }
 
 .header-sidebar-toggle {
-
   button {
     margin-right: 1em;
     box-sizing: content-box; // matches other header icons
@@ -284,7 +280,6 @@
 
     &:focus,
     .discourse-no-touch & {
-
       &:hover {
         background-color: var(--primary-low);
       }
@@ -301,7 +296,6 @@
 }
 
 // topic info in the header
-
 .extra-info-wrapper {
   flex: 1 0 0;
   display: flex;
@@ -357,7 +351,6 @@
   }
 
   .topic-statuses {
-
     .d-icon {
       color: var(--header_primary-medium);
     }
@@ -438,14 +431,12 @@ $mobile-avatar-height: 1.532em;
 
   .trigger-user-card,
   .trigger-group-card {
-
     &:not(:last-of-type) {
       margin-right: 5px;
     }
   }
 
   .trigger-user-card {
-
     .icon {
       height: $avatar-height;
 
@@ -496,7 +487,6 @@ $mobile-avatar-height: 1.532em;
 }
 
 .d-header-mode {
-
   .bootstrap-mode {
     color: var(--primary-medium);
     font-size: var(--font-down-1);

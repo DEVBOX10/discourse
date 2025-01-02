@@ -1,5 +1,4 @@
 // Modal wrappers
-
 .d-modal {
   pointer-events: none; // Allow clicks through wrappers so they hit the adjacent backdrop element
   display: flex;
@@ -50,7 +49,6 @@
 
   .d-modal__primary-action,
   .d-modal__dismiss-action {
-
     .btn {
       text-transform: capitalize;
     }
@@ -144,7 +142,6 @@
 }
 
 //legacy
-
 .input-hint-text {
   margin-left: 0.5em;
   color: var(--secondary-high);
@@ -178,7 +175,6 @@
 
 // fade in
 @keyframes fade {
-
   from {
     opacity: 0;
   }
@@ -193,7 +189,6 @@
 }
 
 .modal {
-
   .nav {
     padding: 10px 30px 10px 15px;
     background-color: var(--secondary);
@@ -215,7 +210,6 @@
 }
 
 .reply-where-modal {
-
   .dialog-content {
     width: 100%;
     min-width: unset;
@@ -251,7 +245,6 @@
       --text-color: var(--primary);
 
       .discourse-no-touch & {
-
         &:hover {
           --text-color: var(--secondary);
         }
@@ -305,7 +298,6 @@
 }
 
 .admin-delete-user-posts-progress-modal {
-
   .progress-bar {
     height: 15px;
     position: relative;
@@ -377,7 +369,6 @@
     }
 
     @media screen and (width <= 760px) {
-
       .incoming-email-html-part {
         width: calc(100% - 10px);
       }
@@ -391,9 +382,7 @@
 }
 
 .change-timestamp {
-
   #date-container {
-
     .pika-single {
       position: relative !important; // overriding another important
       display: inline-block;
@@ -416,7 +405,6 @@
 }
 
 .flag-modal-body {
-
   form {
     margin: 0;
   }
@@ -452,14 +440,12 @@
 }
 
 .ignore-duration-with-username-modal {
-
   .future-date-input {
     margin-top: 1em;
   }
 }
 
 .modal:not(.has-tabs) {
-
   .modal-tab {
     position: absolute;
     width: 95%;
@@ -467,9 +453,7 @@
 }
 
 .modal {
-
   &.has-tabs {
-
     .modal-tabs {
       display: inline-flex;
       flex-wrap: wrap;
@@ -526,7 +510,6 @@
 }
 
 .confirm-session {
-
   &__instructions {
     margin-bottom: 0.5em;
   }

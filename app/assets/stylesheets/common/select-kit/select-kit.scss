@@ -64,7 +64,6 @@
   }
 
   &.is-loading {
-
     .select-kit-collection {
       overflow: hidden;
     }
@@ -90,7 +89,6 @@
     }
 
     /* hide native indicator */
-
     &::-webkit-details-marker {
       display: none;
     }
@@ -189,7 +187,6 @@
     }
 
     &[data-popper-reference-hidden] {
-
       html:not(.ios-device) & {
         visibility: hidden;
         pointer-events: none;
@@ -357,7 +354,6 @@
   }
 
   @keyframes lineDrawToRight {
-
     0% {
       width: 0;
     }
@@ -368,7 +364,6 @@
   }
 
   &.is-loading {
-
     .select-kit-filter::after {
       content: "";
       position: absolute;

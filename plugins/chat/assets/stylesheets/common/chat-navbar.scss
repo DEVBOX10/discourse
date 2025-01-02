@@ -21,13 +21,11 @@
   container-type: inline-size;
 
   .is-collapsed & {
-
     &__title {
       margin-left: 0 !important;
     }
 
     &__toggle-drawer-button {
-
       &::after {
         @container (inline-size) {
           content: "";
@@ -100,7 +98,6 @@
   gap: 0.25rem;
 
   &.has-unreads {
-
     .d-icon-discourse-threads {
       color: var(--tertiary-med-or-tertiary);
     }

@@ -1,7 +1,6 @@
 // Overrides for WCAG color schemes only
 
 // Global
-
 ::placeholder {
   color: var(--primary-medium);
   opacity: 1;
@@ -12,9 +11,7 @@
 }
 
 html.discourse-no-touch {
-
   .btn-default {
-
     .d-icon {
       color: var(--primary-medium);
     }
@@ -22,7 +19,6 @@ html.discourse-no-touch {
     &:hover,
     &.btn-hover,
     &:focus {
-
       .d-icon {
         color: var(--secondary);
       }
@@ -36,7 +32,6 @@ html.discourse-no-touch {
   .btn-icon.ok,
   .btn-icon.cancel,
   .btn-danger:not(.btn-flat, .btn-transparent) {
-
     .d-icon {
       color: var(--secondary);
     }
@@ -54,26 +49,22 @@ html.discourse-no-touch {
 
 html {
   // html parent adds some additional specificity to override core styles
-
   .nav-pills > li > a:not(.active):hover {
     background: var(--tertiary-low);
     color: var(--primary);
   }
 
   // Composer
-
   #reply-control .reply-to .reply-details .d-icon {
     opacity: 1;
     color: var(--primary-low-mid);
   }
 
   .d-editor-button-bar {
-
     .btn-icon.btn-default .d-icon {
       color: var(--primary-low-mid);
 
       .discourse-no-touch & {
-
         &:hover {
           color: var(--secondary);
         }
@@ -81,7 +72,6 @@ html {
     }
 
     .btn-icon:not(.btn-flat, .btn-danger, .btn-primary):focus {
-
       .d-icon {
         color: currentcolor;
       }
@@ -89,7 +79,6 @@ html {
   }
 
   // Site header
-
   .menu-panel li a.widget-link:hover,
   .menu-panel li a.widget-link:focus,
   .menu-panel li.heading a.widget-link:hover,
@@ -104,7 +93,6 @@ html {
 
   .menu-panel .panel-body-bottom .btn:hover,
   .menu-panel .panel-body-bottom .btn:focus {
-
     .d-icon {
       color: var(--primary);
     }
@@ -124,7 +112,6 @@ html {
   }
 
   // Topic list
-
   table th {
     color: var(--primary-high);
   }
@@ -169,7 +156,6 @@ html {
   }
 
   // Posts
-
   .discourse-no-touch .topic-body .actions .fade-out {
     opacity: 1;
   }
@@ -183,7 +169,6 @@ html {
   }
 
   .timeline-container .topic-timeline {
-
     .timeline-scrollarea {
       border-color: var(--primary-low-mid);
     }
@@ -199,7 +184,6 @@ html {
   }
 
   blockquote {
-
     a,
     a:visited {
       color: var(--tertiary);
@@ -225,10 +209,8 @@ html {
   }
 
   // Post controls
-
   .topic-admin-menu,
   .timeline-controls {
-
     .btn .d-icon {
       // admin wrenches
       color: var(--primary-medium);
@@ -236,16 +218,13 @@ html {
   }
 
   nav.post-controls {
-
     .actions {
-
       button.create,
       button.create .d-icon {
         color: var(--primary-high-or-secondary-low);
       }
 
       button {
-
         &.d-hover,
         &:hover,
         &:focus,
@@ -270,16 +249,13 @@ html {
         }
 
         &.bookmark {
-
           &.bookmarked {
-
             .d-icon {
               color: var(--tertiary);
             }
 
             &.d-hover,
             &:hover {
-
               .d-icon {
                 color: var(--tertiary-medium);
               }
@@ -293,7 +269,6 @@ html {
       }
 
       .double-button:hover {
-
         button,
         .d-icon,
         button.has-like .d-icon {
@@ -318,7 +293,6 @@ html {
   }
 
   // Categories
-
   .list-cell,
   .table-heading,
   .category-list td,
@@ -347,7 +321,6 @@ html {
   }
 
   // User Preferences
-
   .user-menu.revamped .quick-access-panel li.unread,
   .user-menu.revamped .quick-access-panel li.pending {
     background-color: var(--tertiary-very-low);
@@ -373,7 +346,6 @@ html {
   }
 
   // Notifications
-
   .user-menu.revamped .tabs-list .btn .badge-notification {
     background-color: dark-light-choose($tertiary-high, $tertiary);
   }
@@ -387,9 +359,7 @@ html {
   }
 
   // Admin Settings
-
   .admin-controls {
-
     .nav-pills > li > a:not(.active):hover {
       background: var(--primary-medium);
       color: var(--secondary);
@@ -410,7 +380,6 @@ html {
   }
 
   // Dashboard
-
   .user-metrics .table-cell.user-basic .label,
   .user-metrics .table-cell.user-member .label,
   .user-metrics .table-cell.user-leader .label {
@@ -422,7 +391,6 @@ html {
   }
 
   // Search
-
   .search-container
     .search-filters
     details.search-advanced-additional-options
@@ -436,7 +404,6 @@ html {
   }
 
   // Review
-
   .reviewable-item .reviewable-meta-data .created-at a {
     color: var(--primary-medium);
   }
@@ -451,19 +418,16 @@ html {
 }
 
 // chat
-
 .no-touch
   .chat-messages-container
   .chat-message:hover
   .chat-message-react-btn:hover {
-
   .d-icon {
     color: var(--primary) !important;
   }
 }
 
 // sidebar
-
 .sidebar-wrapper
   .sidebar-sections
   .sidebar-section-link-suffix.icon.unread

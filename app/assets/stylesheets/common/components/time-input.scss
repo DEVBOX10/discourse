@@ -6,14 +6,12 @@
     min-width: auto;
 
     &:not(.has-selection) {
-
       .select-kit-selected-name .name {
         color: var(--primary-medium);
       }
     }
 
     .select-kit-header {
-
       .d-icon {
         padding-left: 0;
       }

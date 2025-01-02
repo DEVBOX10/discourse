@@ -14,7 +14,6 @@
 
 // Category badges
 // --------------------------------------------------
-
 .badge-category__wrapper {
   color: var(--primary-high);
   overflow: hidden;
@@ -48,7 +47,6 @@
     }
 
     &.--has-parent {
-
       &::before {
         background: linear-gradient(
           90deg,
@@ -72,7 +70,6 @@
 
 // Notification badge
 // --------------------------------------------------
-
 .badge-notification {
   @extend %badge;
   position: relative;
@@ -94,7 +91,6 @@
   }
 
   // Unread posts
-
   &.unread-posts {
     background-color: var(--tertiary-med-or-tertiary);
     color: var(--secondary);
@@ -118,7 +114,6 @@
 
 // Posts badge
 // --------------------------------------------------
-
 .badge-posts {
   font-weight: normal;
   font-size: var(--font-0);
@@ -131,7 +126,6 @@
 
 // Group badge
 // --------------------------------------------------
-
 .badge-group {
   @extend %badge;
   padding: 2px 5px;

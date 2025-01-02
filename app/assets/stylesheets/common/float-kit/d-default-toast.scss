@@ -42,28 +42,24 @@
     }
 
     .-success & {
-
       .d-icon {
         color: var(--success);
       }
     }
 
     .-error & {
-
       .d-icon {
         color: var(--danger);
       }
     }
 
     .-warning & {
-
       .d-icon {
         color: var(--highlight);
       }
     }
 
     .-info & {
-
       .d-icon {
         color: var(--tertiary);
       }

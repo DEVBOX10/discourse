@@ -1,5 +1,4 @@
 .inline-footnotes {
-
   a.expand-footnote {
     user-select: none;
     padding: 0 0.5em;
@@ -23,7 +22,6 @@
 
   // This is hack to work with lazy-loading, we will trick the browser
   // to believe the image is in the DOM and can be loaded
-
   .footnotes-list,
   .footnotes-sep {
     position: absolute;

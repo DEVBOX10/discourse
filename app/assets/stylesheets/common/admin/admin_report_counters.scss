@@ -1,5 +1,4 @@
 .admin-report {
-
   .admin-report-counters {
     display: grid;
     flex: 1 0 0px;
@@ -29,7 +28,6 @@
       }
 
       @media screen and (width <= 400px) {
-
         &.title .d-icon {
           display: none;
         }
@@ -42,7 +40,6 @@
 
       &.high-trending-up,
       &.trending-up {
-
         .d-icon {
           color: var(--success);
         }
@@ -50,7 +47,6 @@
 
       &.high-trending-down,
       &.trending-down {
-
         .d-icon {
           color: var(--danger);
         }
@@ -64,7 +60,6 @@
 }
 
 .rtl .counters-list {
-
   .cell {
     text-align: left;
 

@@ -8,7 +8,6 @@
   color: var(--primary);
 
   @media (hover: none) {
-
     &:hover,
     &:focus {
       background: transparent;
@@ -20,7 +19,6 @@
   }
 
   @media (hover: hover) {
-
     &:hover,
     &.active {
       background: var(--primary-very-low);
@@ -28,7 +26,6 @@
   }
 
   &.can-leave:hover {
-
     .toggle-channel-membership-button.-leave {
       display: block;
 
@@ -44,7 +41,6 @@
 
   &:hover,
   &.active {
-
     .chat-channel-name {
       color: var(--primary);
     }
@@ -80,7 +76,6 @@
   }
 
   .chat-channel {
-
     &__user-info,
     &__channel-info {
       white-space: nowrap;

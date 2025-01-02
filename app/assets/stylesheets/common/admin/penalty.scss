@@ -1,6 +1,5 @@
 .silence-user-modal,
 .suspend-user-modal {
-
   .penalty-duration,
   .penalty-suspend-forever,
   .suspend-reason-title,
@@ -23,7 +22,6 @@
   }
 
   .penalty-duration-controls {
-
     .future-date-input {
       align-items: end;
       display: flex;
@@ -59,7 +57,6 @@
   }
 
   .penalty-reason-controls {
-
     input,
     .combo-box {
       width: 100%;
@@ -68,7 +65,6 @@
   }
 
   .penalty-post-controls {
-
     .select-kit {
       width: 100%;
     }

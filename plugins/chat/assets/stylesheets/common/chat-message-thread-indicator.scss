@@ -24,14 +24,12 @@
   }
 
   &:hover {
-
     .chat-message-thread-indicator__replies-count {
       text-decoration: underline;
     }
   }
 
   .no-touch & {
-
     &:hover {
       box-shadow: var(--shadow-dropdown);
     }

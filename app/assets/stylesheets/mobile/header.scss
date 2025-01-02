@@ -1,7 +1,6 @@
 // --------------------------------------------------
 // Discourse header
 // --------------------------------------------------
-
 .d-header {
   height: 3.66em;
 
@@ -14,10 +13,8 @@
   }
 
   .extra-info-wrapper {
-
     .extra-info {
       // header title should not be centered if there's no tags / categories
-
       &:not(.two-rows) {
         min-height: 2.25em;
       }
@@ -45,9 +42,7 @@
   }
 
   // Hide header avatar + icons while topic title is visible in mobile header
-
   .extra-info-wrapper ~ .panel {
-
     .before-header-panel-outlet,
     .header-buttons,
     .d-header-icons {
@@ -56,7 +51,6 @@
   }
 
   // Fade in header avatar + icons if topic title is not visible in mobile header
-
   .panel .icons {
     animation: fadein 0.5s;
 
@@ -67,20 +61,17 @@
 
   // A rendering bug in safari causes header SVGs to jitter after animations.
   // translateZ() forces gpu rendering which fixes the issue.
-
   .d-header-icons {
     transform: translateZ(0);
   }
 }
 
 .d-header-icons {
-
   .d-icon {
     line-height: var(--line-height-medium);
   }
 
   .active .icon {
-
     &::after {
       margin-top: -1px;
     }

@@ -33,7 +33,6 @@
     font-size: var(--font-up-3);
 
     // spans can be in different orders depending of locale
-
     span + span {
       margin-left: 0.25em;
     }
@@ -179,7 +178,6 @@
 
     details.advanced-filters,
     details.search-advanced-additional-options {
-
       > summary {
         margin-top: 1em;
         color: var(--tertiary);
@@ -209,7 +207,6 @@
     }
 
     details.search-advanced-additional-options {
-
       > summary {
         font-size: var(--font-down-1);
       }
@@ -231,7 +228,6 @@
       }
 
       @include breakpoint(mobile-extra-large, min-width) {
-
         .search-advanced-options {
           column-count: 2;
           column-gap: 2em;
@@ -243,14 +239,12 @@
       }
 
       @include breakpoint(medium, min-width) {
-
         .search-advanced-options {
           column-gap: 5em;
         }
       }
 
       @include breakpoint(medium) {
-
         .choices,
         .select-kit.multi-select {
           // overriding inline width from JS
@@ -267,7 +261,6 @@
       }
 
       .count-group {
-
         input[type="number"] {
           width: 8em;
         }
@@ -287,7 +280,6 @@
 }
 
 .search-category {
-
   .badge-category__wrapper,
   .discourse-tags {
     margin-left: 0.5em;
@@ -401,7 +393,6 @@
   }
 
   .search-link {
-
     .topic-title {
       font-size: var(--font-up-1);
       line-height: var(--line-height-medium);
@@ -432,7 +423,6 @@
 }
 
 .search-results {
-
   .fps-user-item {
     display: flex;
     flex-direction: row;

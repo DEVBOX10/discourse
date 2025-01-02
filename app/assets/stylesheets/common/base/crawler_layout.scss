@@ -1,7 +1,6 @@
 // IMPORTANT: This stylesheet needs to work for super old browsers, including those
 // without support for `var()`. Therefore every color definition needs to define a simple
 // value first, as a fallback
-
 body.crawler,
 body > noscript {
   font-family: serif;
@@ -16,7 +15,6 @@ body > noscript {
   }
 
   &.browser-update {
-
     header {
       height: 50px;
       margin-bottom: 1em;
@@ -67,7 +65,6 @@ body > noscript {
   }
 
   // topic list
-
   div#main-outlet {
     padding: 10px;
 
@@ -149,7 +146,6 @@ body > noscript {
         word-break: break-word;
 
         &.posters {
-
           a:not(:last-of-type) {
             display: none;
           }
@@ -162,14 +158,12 @@ body > noscript {
 
       td,
       th {
-
         &.views {
           display: none;
         }
       }
 
       .link-top-line {
-
         a.title {
           padding: 0;
         }
@@ -212,9 +206,7 @@ body > noscript {
   }
 
   // topics
-
   div#main-outlet {
-
     div.post {
       word-break: break-word;
       overflow: auto;
@@ -280,14 +272,12 @@ body > noscript {
   }
 
   .tag-crawler {
-
     .tag-box {
       margin-bottom: 0.5em;
     }
   }
 
   #topic-title {
-
     > * {
       display: block;
     }
@@ -310,7 +300,6 @@ body > noscript {
   }
 
   .md-table {
-
     tr {
       border: 1px solid var(--primary-low);
     }
@@ -327,7 +316,6 @@ body > noscript {
   }
 
   // footer
-
   footer {
     margin-top: 2em;
   }
@@ -376,14 +364,12 @@ body > noscript {
 }
 
 @media print {
-
   .buorg {
     display: none !important;
   }
 }
 
 .user-crawler {
-
   .username {
     margin-left: 5px;
     display: inline-block;

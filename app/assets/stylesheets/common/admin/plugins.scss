@@ -1,16 +1,12 @@
 // Styles for /admin/plugins
-
 .admin-contents.admin-plugins {
-
   .controls {
-
     .settings-button {
       margin-left: auto;
     }
   }
 
   .d-admin-table.admin-plugins-list {
-
     .admin-plugins-list__version {
       width: 14%;
 
@@ -60,15 +56,12 @@
 }
 
 .admin-plugin-config-page {
-
   &__main-area {
-
     .admin-detail {
       padding-top: 15px;
     }
 
     &.-without-inner-sidebar {
-
       .admin-detail {
         border-left: 0;
         padding-left: 0;
@@ -118,7 +111,6 @@
 
       .has-sidebar-page & {
         @include breakpoint(large) {
-
           span {
             display: none;
           }
@@ -137,7 +129,6 @@
 }
 
 .admin-plugin-filtered-site-settings {
-
   &__filter {
     width: 100%;
   }

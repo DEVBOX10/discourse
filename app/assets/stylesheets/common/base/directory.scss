@@ -4,7 +4,6 @@
 }
 
 .directory {
-
   .directory-value-list-item:not(:empty)
     ~ .directory-value-list-item:not(:empty)::before {
     content: "| ";
@@ -13,7 +12,6 @@
   background: var(--d-content-background);
 
   &.users-directory {
-
     .directory-group-selector {
       vertical-align: top;
     }
@@ -45,9 +43,7 @@
 }
 
 .edit-user-directory-columns-modal {
-
   .edit-directory-columns-container {
-
     .edit-directory-column {
       display: flex;
       justify-content: space-between;
@@ -87,11 +83,8 @@
 }
 
 @container (min-width: 47em) {
-
   .users-directory {
-
     .directory-table {
-
       &__value {
         white-space: nowrap;
         font-size: var(--font-up-2);
@@ -123,9 +116,7 @@
   overflow-x: auto;
 
   .me {
-
     .directory-table__cell {
-
       &,
       &--user-field {
         background-color: var(--highlight-low-or-medium);
@@ -169,7 +160,6 @@
     }
 
     &:first-child {
-
       .header-contents {
         text-align: left;
       }
@@ -177,7 +167,6 @@
   }
 
   &__cell {
-
     &,
     &--user-field {
       padding: 0.75em 0.5em;
@@ -242,7 +231,6 @@
 // fallback to big horizontal scrolling table
 
 @container (max-width: 47em) {
-
   .directory-table {
     display: flex;
     flex-direction: column;
@@ -270,7 +258,6 @@
       }
 
       // flexible divider between the label and value
-
       &::after {
         flex: 1 1 0; // can grow or shrink, but should be 0 width if needed
         color: var(--primary-300);
@@ -300,7 +287,6 @@
     }
 
     &__row {
-
       &:first-child {
         border-top: 1px solid var(--primary-low);
       }
@@ -316,7 +302,6 @@
     }
 
     &__cell {
-
       &,
       &--user-field {
         padding: 0.25em;

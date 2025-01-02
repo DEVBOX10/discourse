@@ -8,7 +8,6 @@
     top: 2px;
 
     li {
-
       .btn {
         color: var(--primary);
         background-color: transparent;
@@ -34,9 +33,7 @@
   }
 
   .more-topics__lists {
-
     &:not(.single-list) {
-
       .more-topics__list-title {
         display: none;
       }
@@ -44,7 +41,6 @@
   }
 
   .more-topics__list {
-
     .topic-list-header::after {
       content: "";
       display: block;
@@ -55,7 +51,6 @@
       border-top: none;
 
       .topic-list-item {
-
         &:first-child td {
           padding-top: 0;
         }
@@ -68,7 +63,6 @@
   }
 
   // Target the .badge-category text, the bullet icon needs to maintain `display: block`
-
   .suggested-topics-message .badge-category__wrapper .badge-category {
     display: inline;
     vertical-align: baseline;

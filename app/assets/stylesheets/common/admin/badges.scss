@@ -1,8 +1,6 @@
 // Styles for admin/badges
-
 .admin-badges {
   // flex page layout
-
   .badges {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +25,6 @@
   }
 
   .content-list {
-
     .admin-badge-list {
       height: 70vh;
       overflow-y: scroll;
@@ -36,7 +33,6 @@
       border-bottom: 1px solid var(--primary-low);
 
       .admin-badge-list-item {
-
         &:first-child {
           border-top: none;
         }
@@ -89,7 +85,6 @@
     margin: 20px;
 
     .form-kit__field-question {
-
       .form-kit__control-radio-label {
         text-transform: capitalize;
       }
@@ -157,9 +152,7 @@
 }
 
 // badge-grouping modal
-
 .badge-groupings-modal {
-
   .badge-groupings {
     margin-bottom: 10px;
   }
@@ -177,7 +170,6 @@
     }
 
     .badge-grouping {
-
       .badge-grouping-name-input {
         margin: 0;
       }
@@ -186,9 +178,7 @@
 }
 
 // badge preview modal
-
 .badge-query-preview {
-
   .badge-query-plan {
     overflow-x: auto;
   }

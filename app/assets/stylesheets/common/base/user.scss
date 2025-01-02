@@ -1,6 +1,5 @@
 // Common styles for "/user" section
 // These styles are also used for "/groups" — test those pages if making significant changes
-
 .user-content-wrapper {
   // Grid layout
   width: 100%;
@@ -54,7 +53,6 @@
 }
 
 .user-content {
-
   .list-actions {
     display: flex;
     margin-bottom: 12px;
@@ -100,7 +98,6 @@
     margin-bottom: 0;
 
     &.has-background {
-
       .user-profile-image {
         background-size: cover;
         background-position: center center;
@@ -145,7 +142,6 @@
         color: var(--primary);
 
         &.groups {
-
           span:not(:last-of-type) {
             margin-right: 0.25em;
           }
@@ -210,7 +206,6 @@
     }
 
     .controls {
-
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -221,7 +216,6 @@
     }
 
     &.collapsed-info {
-
       .details {
         margin-top: 0;
         background: rgba(var(--secondary-rgb), 0.8);
@@ -256,7 +250,6 @@
       }
 
       .user-profile-avatar {
-
         .avatar-flair {
           bottom: 8px;
           right: 2px;
@@ -320,7 +313,6 @@
     margin-bottom: 10px;
 
     .controls {
-
       label:not(.checkbox-label) {
         width: auto;
         text-align: left;
@@ -337,7 +329,6 @@
   }
 
   .user-content {
-
     .admin-controls nav {
       margin: 0;
 
@@ -351,7 +342,6 @@
 .login-form,
 .user-field,
 .invites-show {
-
   .required {
     vertical-align: top;
     color: var(--danger);
@@ -373,7 +363,6 @@
   }
 
   .user-field-value-list-item:not(:last-of-type) {
-
     &::after {
       // create comma separated list
       content: ",";
@@ -382,7 +371,6 @@
 }
 
 .avatar-selector {
-
   .avatar-choice {
     display: grid;
     grid-template-columns: 2em 1fr auto;
@@ -464,7 +452,6 @@
 }
 
 .stats-section {
-
   ul {
     margin: 10px 0;
   }
@@ -519,7 +506,6 @@
     width: 100%;
 
     .name-line {
-
       span {
         width: auto;
       }
@@ -543,14 +529,12 @@
 .replies-section,
 .topics-section,
 .links-section {
-
   li {
     word-wrap: break-word;
   }
 }
 
 .links-section {
-
   .domain {
     font-size: var(--font-down-1);
     color: var(--primary-medium);
@@ -558,7 +542,6 @@
 }
 
 .top-categories-section {
-
   table {
     max-width: 95%;
 
@@ -579,21 +562,18 @@
 }
 
 .summary-user-list {
-
   li {
     height: 45px;
   }
 }
 
 .groups {
-
   .group-link {
     color: var(--tertiary);
   }
 }
 
 .user-preferences {
-
   .form-vertical {
     width: 500px;
     max-width: 100%;
@@ -616,7 +596,6 @@
   }
 
   .tracking-controls {
-
     label {
       align-items: center;
       display: inline-block;
@@ -681,7 +660,6 @@
   }
 
   .pref-associated-accounts table {
-
     td {
       padding: 8px;
     }
@@ -701,7 +679,6 @@
   }
 
   .control-subgroup {
-
     + .controls {
       clear: both;
       padding-top: 1em;
@@ -735,14 +712,12 @@
   }
 
   @media (prefers-color-scheme: dark) {
-
     .light-color-scheme {
       @include inactiveMode;
     }
   }
 
   @media (prefers-color-scheme: light) {
-
     .dark-color-scheme {
       @include inactiveMode;
     }
@@ -759,7 +734,6 @@
   }
 
   .pref-auth-tokens {
-
     .auth-token-icon {
       color: var(--primary-medium);
       font-size: 2.25em;
@@ -800,7 +774,6 @@
 
   .pref-passkeys,
   .pref-auth-tokens {
-
     .row {
       border-top: 1px solid var(--primary-low);
       padding: 0.5em 0;
@@ -813,7 +786,6 @@
   }
 
   .pref-passkeys {
-
     .row {
       display: flex;
       justify-content: space-between;
@@ -834,7 +806,6 @@
     }
 
     .passkey-options-dropdown {
-
       .btn,
       .btn:hover {
         background: transparent;
@@ -852,7 +823,6 @@
 }
 
 .paginated-topics-list {
-
   .user-content {
     width: 100%;
     margin-top: 0;
@@ -860,7 +830,6 @@
 }
 
 .second-factor {
-
   .second-factor-item {
     width: 100%;
     display: flex;
@@ -871,7 +840,6 @@
     align-items: center;
 
     .select-kit {
-
       .select-kit-header {
         background: transparent;
 
@@ -881,7 +849,6 @@
       }
 
       &.is-expanded {
-
         .select-kit-header .d-icon {
           color: var(--primary-high);
         }
@@ -1013,7 +980,6 @@
     }
 
     &:hover {
-
       .selectable-avatar__remove {
         visibility: visible;
       }
@@ -1037,15 +1003,12 @@
 }
 
 .user-invites-page {
-
   .invite-error {
     grid-column: 1 / span 2;
   }
 
   table.user-invite-list {
-
     .invite-type {
-
       .d-icon {
         color: var(--primary-medium);
       }
@@ -1076,19 +1039,16 @@
 }
 
 .notification-schedule {
-
   .instruction {
     margin-top: 12px;
     margin-bottom: 10px;
   }
 
   .notification-schedule-table {
-
     .notification-schedule-tbody {
       border-top-width: 1px;
 
       .day {
-
         .day-label {
           padding: 1em 1em 1em 0;
         }
@@ -1102,7 +1062,6 @@
 }
 
 // Due to special login animations, the order here needs to be changed
-
 .control-group[data-setting-name="user-user-fields"]
   .user-field.text
   .controls {

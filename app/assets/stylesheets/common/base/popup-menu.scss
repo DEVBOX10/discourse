@@ -1,6 +1,5 @@
 // LEGACY STYLES
 // some plugins rely on these (discourse-topic-voting is one)
-
 .popup-menu {
   background-color: var(--secondary);
   width: 14em;
@@ -48,7 +47,6 @@
     }
 
     &.popup-menu-btn-danger {
-
       .d-icon {
         color: var(--danger);
       }
@@ -59,7 +57,6 @@
 
       &:focus,
       &:hover {
-
         .d-icon,
         .d-button-label {
           color: var(--danger);

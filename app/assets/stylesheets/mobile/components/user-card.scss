@@ -3,7 +3,6 @@
 }
 
 // shared styles for user and group cards
-
 .user-card,
 .group-card {
   max-width: 95vw;
@@ -12,7 +11,6 @@
   box-sizing: border-box;
 
   // avatar - names - controls
-
   .first-row {
     flex-wrap: wrap;
 
@@ -69,10 +67,8 @@
 }
 
 // styles for user cards only
-
 .user-card {
   // badges
-
   .badge-section {
     display: flex;
     align-items: flex-start;
@@ -122,7 +118,6 @@
 }
 
 // mobile card cloak
-
 .card-cloak {
   position: fixed;
   top: 0;

@@ -4,9 +4,7 @@
 
 // Base list
 // --------------------------------------------------
-
 .topic-list-icons {
-
   .d-icon-thumbtack {
     color: var(--primary-med-or-secondary-med);
   }
@@ -180,9 +178,7 @@
 
 // Misc. stuff
 // --------------------------------------------------
-
 #list-area .top-lists {
-
   h2 {
     cursor: pointer;
     margin: 5px 0 10px;
@@ -194,7 +190,6 @@
 }
 
 #list-area {
-
   h2 {
     margin: 20px 0 10px;
   }
@@ -235,7 +230,6 @@
 
 .category-breadcrumb {
   // only target the top-level li, not dropdowns
-
   .select-kit {
     align-self: stretch;
     height: 100%;
@@ -252,16 +246,13 @@
 // These styles kick in a little earlier when the sidebar appears
 
 @include breakpoint(medium, $sidebar: true) {
-
   .topic-list {
     // suppress views column
-
     .views {
       display: none;
     }
 
     // reduce width for more title space
-
     .posts {
       width: 3em;
     }
@@ -272,9 +263,7 @@
     }
 
     // show only the first poster
-
     .topic-list-data.posters {
-
       a:first-child .avatar.latest:not(.single) {
         top: 0;
         left: 0;
@@ -296,9 +285,7 @@
 }
 
 @include breakpoint(medium) {
-
   .nav-pills {
-
     > li > a {
       font-size: var(--font-0);
       padding: 0.45em 0.67em;
@@ -306,7 +293,6 @@
   }
 
   .topic-list {
-
     .topic-list-data {
       font-size: var(--font-0);
     }

@@ -1,10 +1,8 @@
 .chat-form {
-
   &__section {
     margin-bottom: 0;
 
     &:last-of-type {
-
       .chat-form__section-content {
         background: none;
         padding-left: 0;
@@ -18,7 +16,6 @@
   }
 
   &__section-title {
-
     .chat-form__section:not(:first-of-type) & {
       margin-top: 1.5rem;
     }

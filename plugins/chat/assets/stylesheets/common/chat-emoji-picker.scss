@@ -85,7 +85,6 @@
     padding: 0.25rem;
 
     &:hover {
-
       .emoji {
         background: none;
       }
@@ -155,7 +154,6 @@
 
     &:not(.current):hover,
     &:not(.current):focus {
-
       .d-icon {
         visibility: visible;
         color: white;

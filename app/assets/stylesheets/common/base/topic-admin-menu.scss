@@ -1,7 +1,5 @@
 // Styles for the topic admin menu
-
 .topic-admin-popup-menu {
-
   ul {
     margin: 0;
     list-style: none;
@@ -33,14 +31,12 @@
 }
 
 .fk-d-menu {
-
   .topic-admin-popup-menu {
     width: 14em;
   }
 }
 
 // Styles for select posts mini menu
-
 .selected-posts {
   border: 1px solid var(--tertiary-medium);
   background-color: var(--tertiary-low);

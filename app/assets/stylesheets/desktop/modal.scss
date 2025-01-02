@@ -45,14 +45,12 @@ html.modal-open {
 }
 
 .modal {
-
   .category-chooser {
     width: 50%;
   }
 }
 
 .choose-topic-modal {
-
   #choosing-topic {
     // prevents content from moving when user selects different move options 525px
     // is the same width we set on category edit modal
@@ -97,7 +95,6 @@ html.modal-open {
 .create-invite-modal,
 .create-invite-bulk-modal,
 .share-topic-modal {
-
   .title {
     align-items: center;
     display: flex;

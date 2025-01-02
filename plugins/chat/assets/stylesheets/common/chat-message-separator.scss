@@ -48,9 +48,7 @@
     pointer-events: none;
 
     &.with-last-visit {
-
       & + .chat-message-separator__line-container {
-
         .chat-message-separator__line {
           border-color: var(--danger-medium);
         }
@@ -66,7 +64,6 @@
 
       &.is-pinned,
       &.is-force-pinned {
-
         .chat-message-separator__text {
           border: 1px solid var(--primary-200);
           border-radius: var(--d-border-radius);
@@ -105,7 +102,6 @@
       pointer-events: all;
 
       .no-touch & {
-
         &:hover {
           border: 1px solid var(--secondary-high);
           border-radius: var(--d-border-radius);
@@ -115,7 +111,6 @@
       }
 
       .touch & {
-
         &:active {
           border: 1px solid var(--secondary-high);
           border-radius: var(--d-border-radius);

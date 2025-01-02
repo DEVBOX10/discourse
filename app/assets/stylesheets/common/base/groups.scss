@@ -48,7 +48,6 @@
     color: var(--primary);
 
     .discourse-no-touch & {
-
       &:hover {
         box-shadow: var(--shadow-card);
         border-color: var(--primary-low-mid-or-secondary-high);
@@ -152,7 +151,6 @@
 }
 
 .groups-form {
-
   .control-group-inline {
     display: inline;
   }
@@ -179,9 +177,7 @@
 }
 
 .group-manage-logs-controls {
-
   button {
-
     .d-icon {
       // flip the icon order for the remove button
       order: 2;

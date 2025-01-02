@@ -1,11 +1,9 @@
 .select-kit {
-
   &.multi-select {
     width: 300px;
     background: var(--secondary);
 
     .select-kit-filter {
-
       & + .selected-content,
       & + .select-kit-collection {
         border-top: 1px solid var(--primary-low);
@@ -17,7 +15,6 @@
     }
 
     &.is-disabled {
-
       .multi-select-header {
         background: var(--primary-low);
         border-color: var(--primary-low-mid);

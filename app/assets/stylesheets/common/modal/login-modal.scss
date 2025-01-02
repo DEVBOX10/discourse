@@ -4,13 +4,11 @@
 
 .d-modal.login-modal,
 .d-modal.create-account {
-
   &.awaiting-approval {
     display: none;
   }
 
   .d-modal {
-
     &__container {
       position: relative;
       width: 100%;
@@ -171,7 +169,6 @@
     @media screen and (width <= 767px) {
       // important to maintain narrow desktop widths
       // for auth modals in Discourse Hub on iPad
-
       .d-modal__header {
         right: 0;
         top: 0;
@@ -210,26 +207,21 @@
 }
 
 .invites-show {
-
   #account-email-validation:not(:has(*)) {
     display: none;
   }
 }
 
 /* end shared styles */
-
 .d-modal.create-account,
 .d-modal.login-modal {
-
   &:not(:has(.login-right-side)) .d-modal__container {
     max-width: 500px;
   }
 }
 
 .d-modal.create-account {
-
   .d-modal {
-
     &__container {
       width: 100%;
     }
@@ -273,15 +265,12 @@
 }
 
 // Login Form Styles
-
 .login-modal,
 .create-account,
 .invites-show {
-
   #login-form,
   .login-form,
   .invite-form {
-
     .input-group {
       position: relative;
       display: flex;
@@ -363,7 +352,6 @@
 
       .user-field.dropdown,
       .user-field.multiselect {
-
         .more-info,
         .instructions {
           opacity: 1;
@@ -392,7 +380,6 @@
     }
 
     #second-factor {
-
       input {
         width: 100%;
         padding: 0.75em 0.5em;
@@ -409,13 +396,9 @@
 
     // user fields input groups will
     // be styled differently
-
     .user-fields .input-group {
-
       .user-field {
-
         &.text {
-
           &.value-entered label.alt-placeholder.control-label,
           input:focus + label.alt-placeholder.control-label {
             top: -8px;

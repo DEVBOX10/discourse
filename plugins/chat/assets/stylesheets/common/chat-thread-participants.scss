@@ -1,5 +1,4 @@
 .chat-thread-participants {
-
   &__other-count {
     font-size: var(--font-down-2);
     color: var(--primary-high);
@@ -27,15 +26,12 @@
 }
 
 @container (max-width: 400px) {
-
   .chat-thread-participants {
-
     &__avatar-group {
       flex-direction: row;
       justify-content: flex-start;
 
       .chat-user-avatar {
-
         &:not(:last-child) {
           margin-right: -10px;
         }

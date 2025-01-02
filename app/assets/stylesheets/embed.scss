@@ -178,7 +178,6 @@ footer {
 
 // we apparently use bottom margins on paras in the embed CSS, leading to weirdness
 // which we will now clean up
-
 aside.onebox {
   margin-bottom: 20px;
 
@@ -189,7 +188,6 @@ aside.onebox {
 
 // images large enough for the lightbox wrapper don't have bottom margins
 // either, unless we add one now
-
 div.lightbox-wrapper {
   margin-bottom: 20px;
 }
@@ -270,7 +268,6 @@ div.lightbox-wrapper {
       }
 
       .topic-column.featured-image-column {
-
         .topic-featured-image img {
           max-width: 200px;
           max-height: 100px;

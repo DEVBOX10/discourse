@@ -1,7 +1,6 @@
 .panel-body-contents {
   // 2em padding very useful for iOS Safari's overlayed bottom nav
   // padding-bottom: calc(env(safe-area-inset-bottom) + 2em);
-
   .user-menu.revamped & {
     height: 100%;
 
@@ -12,7 +11,6 @@
 }
 
 .tabs-list .btn {
-
   .user-menu.revamped & {
     padding: 1.2em 1.4em;
   }
@@ -24,7 +22,6 @@
   box-sizing: border-box;
 
   .panel-body-contents {
-
     .sidebar-hamburger-dropdown {
       display: flex;
       flex-direction: column;
@@ -34,7 +31,6 @@
   }
 
   .sidebar-row {
-
     &.sidebar-section-message-wrapper {
       padding-top: 0;
       padding-bottom: 0.25em;
@@ -50,7 +46,6 @@
   }
 
   .sidebar-footer-container {
-
     &::before {
       background: linear-gradient(
         to bottom,
@@ -72,7 +67,6 @@
   }
 
   .sidebar-section-header-wrapper {
-
     .d-icon-globe {
       color: var(--primary-medium);
       font-size: var(--font-down-1);

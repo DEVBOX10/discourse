@@ -1,7 +1,5 @@
 // Styles for admin/api
-
 .d-admin-table.web-hooks {
-
   .d-admin-row__overview.payload-url {
     word-wrap: break-word;
     max-width: 20vw;
@@ -25,7 +23,6 @@
 }
 
 // Api keys
-
 .d-admin-table.api-keys {
   margin-bottom: 0.25em;
 
@@ -39,16 +36,13 @@
 }
 
 .admin-api-keys {
-
   h2 {
     margin-bottom: 10px;
   }
 
   .api-key-new {
-
     .form-element,
     .form-element-desc {
-
       &.input-area {
         width: 100%;
 
@@ -72,7 +66,6 @@
       }
 
       &.label-area {
-
         label {
           margin: 0.5em 1em 0 0;
         }
@@ -85,10 +78,8 @@
   }
 
   .api-key-show {
-
     .form-element,
     .form-element-desc {
-
       &.input-area {
         width: 75%;
 
@@ -124,7 +115,6 @@
       padding: 0.5em 0;
 
       &.input-area {
-
         input[type="checkbox"] {
           margin-top: 0.5em;
         }
@@ -135,7 +125,6 @@
       }
 
       &.label-area {
-
         label {
           text-align: left;
           font-weight: bold;
@@ -191,9 +180,7 @@
 }
 
 // Webhook
-
 .web-hook-container {
-
   .tip.good:empty {
     display: none;
   }
@@ -268,7 +255,6 @@
 }
 
 .web-hook-events {
-
   .heading-container {
     width: 100%;
     background-color: var(--primary-low);
@@ -341,7 +327,6 @@
 }
 
 .web-hook-events-listing {
-
   .alert {
     margin: 0;
   }

@@ -1,8 +1,6 @@
 .admin-reports,
 .dashboard-next {
-
   &.admin-contents {
-
     nav {
       position: relative;
       width: calc(100% + 10px);
@@ -14,7 +12,6 @@
 }
 
 .dashboard-next {
-
   .nav {
     display: flex;
     margin: 0 0 2em 0;
@@ -25,7 +22,6 @@
     overflow-x: auto;
 
     // Fade-out for horizontal scroll nav
-
     &::before {
       content: "";
       position: absolute;
@@ -53,7 +49,6 @@
     }
 
     .navigation-link {
-
       .emoji {
         margin-right: 0.5em;
       }
@@ -99,7 +94,6 @@
     }
 
     @include breakpoint(medium) {
-
       .section-column:last-child,
       .section-column:first-child {
         margin: 0;
@@ -108,7 +102,6 @@
   }
 
   .section {
-
     .section-title {
       display: flex;
       align-items: center;
@@ -160,7 +153,6 @@
     }
 
     @include breakpoint(medium) {
-
       .admin-report {
         grid-column: span 12;
       }
@@ -245,7 +237,6 @@
 
   .top-referred-topics,
   .trending-search {
-
     th:first-of-type {
       text-align: left;
     }
@@ -323,7 +314,6 @@
   }
 
   .admin-report:not(:last-child) {
-
     .main {
       border-bottom: 0;
     }
@@ -416,7 +406,6 @@
     }
 
     &.user-newuser {
-
       .label {
         color: var(--primary-high);
       }
@@ -450,9 +439,7 @@
 }
 
 .rtl .dashboard-next {
-
   .section-column {
-
     &:last-child {
       margin-right: 1em;
       margin-left: 0;
@@ -469,7 +456,6 @@
   }
 
   .table-cell {
-
     .label {
       border-radius: 0 9px 9px 0;
 
@@ -497,7 +483,6 @@
 
 .dashboard-moderation,
 .dashboard-security {
-
   .section-body {
     margin-bottom: 2em;
   }
@@ -527,7 +512,6 @@
 }
 
 .dashboard-moderation {
-
   .admin-dashboard-moderation-top {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -653,7 +637,6 @@
 }
 
 .update-nag {
-
   .d-icon {
     font-size: var(--font-up-3);
   }
@@ -665,13 +648,11 @@
 }
 
 .dashboard-new-features {
-
   &.ordered-first {
     order: -1;
   }
 
   &:not(.ordered-first) {
-
     .new-features-dismiss {
       display: none;
     }
@@ -691,7 +672,6 @@
 
 .whats-new,
 .dashboard {
-
   .admin-config-area-card__title {
     font-size: var(--font-up-1);
     margin-bottom: 1em;

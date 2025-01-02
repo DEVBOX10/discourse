@@ -16,7 +16,6 @@
   }
 
   .sidebar-section-link-prefix {
-
     .prefix-image {
       border: 1px solid transparent;
     }
@@ -49,7 +48,6 @@
       font-weight: bold;
 
       .sidebar-section-link-prefix {
-
         &.icon {
           color: var(--d-sidebar-highlight-color);
         }
@@ -68,7 +66,6 @@
       }
 
       &.active {
-
         .sidebar-section-link-prefix.icon .d-icon {
           color: var(--primary-high);
         }
@@ -91,7 +88,6 @@
       font-size: var(--font-down-4);
 
       &.icon {
-
         &.urgent svg {
           color: var(--success);
         }
@@ -136,7 +132,6 @@
   .sidebar-section-link[data-link-name="group-messages-new"],
   .sidebar-section-link[data-link-name="group-messages-unread"],
   .sidebar-section-link[data-link-name="group-messages-archive"] {
-
     .sidebar-section-link-content-text {
       margin-left: calc(
         var(--d-sidebar-section-link-prefix-margin-right) +
@@ -146,7 +141,6 @@
   }
 
   .sidebar-section-link-review {
-
     .sidebar-section-link-content-badge {
       color: var(--danger);
     }
@@ -162,7 +156,6 @@
     margin-right: var(--d-sidebar-section-link-prefix-margin-right);
 
     &.image {
-
       img {
         border-radius: 100%;
         aspect-ratio: auto 20 / 20;
@@ -229,7 +222,6 @@
 
       &:focus,
       .discourse-no-touch & {
-
         &:hover {
           color: var(--d-sidebar-highlight-color);
         }
@@ -241,7 +233,6 @@
     }
 
     &:hover {
-
       .sidebar-section-hover-button {
         background: var(--d-sidebar-highlight-background);
       }
@@ -249,7 +240,6 @@
   }
 
   &:hover {
-
     .sidebar-section-hover-button {
       display: block;
     }

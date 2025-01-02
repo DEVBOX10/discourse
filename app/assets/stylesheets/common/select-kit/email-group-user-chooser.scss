@@ -1,11 +1,9 @@
 .select-kit.email-group-user-chooser {
-
   &.full-width-wrap {
     width: unset;
   }
 
   .select-kit-row.email-group-user-chooser-row {
-
     .identifier {
       color: var(--primary);
       white-space: nowrap;
@@ -28,7 +26,6 @@
   }
 
   .select-kit-header {
-
     .x-more-item {
       background: var(--primary-low);
       padding: 0.25em;

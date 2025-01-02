@@ -132,7 +132,6 @@
   }
 
   tbody {
-
     .category {
       border-left: 6px solid var(--category-badge-color, var(--primary-low));
 
@@ -186,14 +185,12 @@
   }
 
   .discourse-tags {
-
     .discourse-tag {
       font-size: var(--font-down-1);
     }
   }
 
   .subcategories-with-subcategories {
-
     .category-description {
       display: none;
     }

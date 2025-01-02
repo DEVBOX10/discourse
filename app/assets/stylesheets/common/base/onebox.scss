@@ -1,5 +1,4 @@
 a.loading-onebox {
-
   &::before {
     content: "";
     display: inline-flex;
@@ -30,7 +29,6 @@ a.loading-onebox {
     height: 20px;
 
     .info {
-
       a {
         color: black;
         text-decoration: none;
@@ -78,11 +76,8 @@ a.loading-onebox {
 }
 
 // RottenTomatoes Onebox
-
 .onebox-result {
-
   .onebox-result-body {
-
     img.verdict {
       float: none;
       margin-right: 7px;
@@ -183,7 +178,6 @@ aside.onebox {
     // this allows us to load all onebox images without jiggle
     // see: http://cssmojo.com/aspect-ratio-using-custom-properties-and-calc/
     @supports (--custom: property) {
-
       .aspect-image {
         max-height: 170px;
 
@@ -204,7 +198,6 @@ aside.onebox {
       }
 
       // full size images for instagram, twitter, etc.
-
       .aspect-image-full-size {
         margin: 0.5em 0;
         max-height: 100%;
@@ -239,13 +232,11 @@ aside.onebox {
     }
 
     // tighten bottom margin on last para
-
     p:last-child {
       margin-bottom: 4px;
     }
 
     // twitter fixes
-
     .tweet-images {
       display: block;
       clear: both;
@@ -259,7 +250,6 @@ aside.onebox {
 
       @include breakpoint(mobile-extra-large) {
         // Prevent twitter embeds from being taller than the mobile viewport
-
         iframe {
           max-height: 70vh;
         }
@@ -267,7 +257,6 @@ aside.onebox {
     }
 
     &.user-onebox {
-
       .fa {
         margin-right: 5px;
       }
@@ -291,7 +280,6 @@ aside.onebox {
     }
 
     // instagram + reddit fixes
-
     .instagram-images,
     .scale-images {
       clear: both;
@@ -312,7 +300,6 @@ aside.onebox {
     }
 
     .video-icon {
-
       &::before {
         opacity: 0.8;
 
@@ -351,7 +338,6 @@ aside.onebox {
 }
 
 // Google Calendar Placeholder
-
 .gdocs-onebox-splash {
   background-color: var(--primary-low-mid);
   color: var(--primary);
@@ -379,7 +365,6 @@ aside.onebox .onebox-body .onebox-avatar {
 }
 
 blockquote {
-
   aside.onebox {
     @include post-aside;
   }
@@ -390,7 +375,6 @@ pre.onebox {
 }
 
 // -- Onebox Github Code Blob --
-
 pre.onebox code ol.lines li::before {
   position: absolute;
   display: inline-block;
@@ -457,11 +441,9 @@ pre.onebox code {
 }
 
 // Onebox - Github - PR, Commit & Issue
-
 .onebox.githubpullrequest,
 .onebox.githubcommit,
 .onebox.githubissue {
-
   .onebox-body {
     display: grid;
     grid-template-areas:
@@ -593,7 +575,6 @@ pre.onebox code {
 }
 
 .onebox.githubactions {
-
   h4 {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -637,7 +618,6 @@ pre.onebox code {
 }
 
 //Onebox - Github - Pull request
-
 .onebox-body .github-commit-status {
   background: #f5f5f5;
   border-radius: 5px;
@@ -673,18 +653,14 @@ pre.onebox code {
 }
 
 //Onebox - Twitter - Status
-
 aside.onebox.twitterstatus .onebox-body {
-
   h4 {
     margin-bottom: 0;
   }
 }
 
 // thumbnail, oddly, ONLY applies to twitter avatar
-
 .onebox.twitterstatus {
-
   .thumbnail,
   .thumbnail.onebox-avatar {
     width: 36px;
@@ -762,10 +738,8 @@ aside.onebox.twitterstatus .onebox-body {
 }
 
 // Onebox - Imgur/Flickr - Album
-
 .onebox.imgur-album,
 .onebox.flickr-album {
-
   .outer-box {
     position: absolute;
     z-index: z("base");
@@ -796,9 +770,7 @@ aside.onebox.twitterstatus .onebox-body {
 }
 
 // resize stackexchange onebox image
-
 aside.onebox.stackexchange .onebox-body {
-
   img:not(.onebox-avatar) {
     max-height: 60%;
     max-width: 10%;
@@ -819,9 +791,7 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 // pdf onebox
-
 .onebox.pdf .onebox-body {
-
   .pdf-onebox-logo {
     width: 60px;
     height: 50px;
@@ -836,11 +806,9 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 // allowlistedgeneric twitter labels
-
 .onebox.allowlistedgeneric,
 .onebox.whitelistedgeneric,
 .onebox.discoursetopic {
-
   .label1,
   .label2 {
     color: var(--primary-med-or-secondary-med);
@@ -856,7 +824,6 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox {
-
   .site-icon {
     width: 16px;
     height: 16px;
@@ -871,7 +838,6 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox.discoursetopic {
-
   h3 {
     width: 100%;
     margin-bottom: 0.2rem !important;
@@ -891,14 +857,12 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox.gfycat p {
-
   span.label1 a {
     white-space: nowrap;
   }
 }
 
 .onebox.instagram {
-
   div.instagram-description {
     color: var(--primary-med-or-secondary-med);
     padding-top: 10px;
@@ -906,7 +870,6 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox.reddit {
-
   div.aspect-image-full-size {
     position: relative;
   }
@@ -917,7 +880,6 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox.githubfolder {
-
   .thumbnail {
     width: 60px;
     height: 60px;
@@ -934,20 +896,17 @@ aside.onebox.xkcd .onebox-body img {
 }
 
 .onebox.githubcommit {
-
   pre.message {
     padding: 0;
   }
 }
 
 // mobile specific style
-
 .mobile-view article.onebox-body {
   border-top: none;
 }
 
 // Google Photos Album
-
 .onebox.google-photos-album {
   @extend .imgur-album;
 }
@@ -964,7 +923,6 @@ aside.onebox.mixcloud-preview {
   }
 
   .onebox-body {
-
     a[href],
     a[href]:visited,
     a[href]:hover {
@@ -1003,7 +961,6 @@ aside.onebox.mixcloud-preview {
 @supports (aspect-ratio: 1) {
   // Not supported on iOS < 15. For those devices, we just
   // use the fixed width/height attributes on the iframe
-
   .youtube-onebox {
     width: 100%;
     height: auto;
@@ -1012,7 +969,6 @@ aside.onebox.mixcloud-preview {
 }
 
 // Force oneboxed videos to 16:9 aspect ratio
-
 .onebox.video-onebox,
 .video-container {
   position: relative;
@@ -1065,7 +1021,6 @@ aside.onebox.mixcloud-preview {
   }
 
   @include hover {
-
     .video-placeholder-overlay .d-icon-play {
       transform: scale(1.2);
     }
@@ -1080,7 +1035,6 @@ iframe.loom-onebox {
 }
 
 @supports not (aspect-ratio: auto) {
-
   iframe.vimeo-onebox,
   iframe.loom-onebox {
     width: 690px;
@@ -1089,7 +1043,6 @@ iframe.loom-onebox {
 }
 
 .video-container {
-
   .notice {
     background-color: var(--highlight-bg);
     padding: 10px 20px;
@@ -1104,7 +1057,6 @@ iframe.loom-onebox {
 }
 
 @keyframes fadeIn {
-
   0% {
     opacity: 0;
   }
@@ -1131,7 +1083,6 @@ iframe.loom-onebox {
     align-items: center;
 
     &.image {
-
       &::before {
         opacity: 0.8;
         content: svg-uri(
@@ -1141,7 +1092,6 @@ iframe.loom-onebox {
     }
 
     &.video {
-
       &::before {
         opacity: 0.8;
         content: svg-uri(
@@ -1151,7 +1101,6 @@ iframe.loom-onebox {
     }
 
     &.audio {
-
       &::before {
         opacity: 0.4;
         content: svg-uri(
@@ -1161,7 +1110,6 @@ iframe.loom-onebox {
     }
 
     &.map {
-
       &::before {
         opacity: 0.4;
         content: svg-uri(
@@ -1171,7 +1119,6 @@ iframe.loom-onebox {
     }
 
     &.generic {
-
       &::before {
         opacity: 0.4;
         content: svg-uri(
@@ -1189,7 +1136,6 @@ aside.onebox.preview-error .site-icon {
 }
 
 .onebox.threadsstatus .onebox-body {
-
   .thumbnail,
   .thumbnail.onebox-avatar {
     width: 36px;

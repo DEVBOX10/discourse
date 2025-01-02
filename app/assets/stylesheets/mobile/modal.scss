@@ -1,13 +1,11 @@
 // base styles for every modal popup used in Discourse
 
 // prevents bg scrolling when modal is open
-
 html:has(.d-modal) {
   overflow: hidden;
 }
 
 html.keyboard-visible.mobile-view {
-
   .d-modal {
     max-height: calc(var(--composer-vh, var(--1dvh)) * 100);
     height: calc(var(--composer-vh, var(--1dvh)) * 100);
@@ -21,7 +19,6 @@ html.keyboard-visible.mobile-view {
 }
 
 html:not(.keyboard-visible.mobile-view) {
-
   .d-modal__container {
     padding-bottom: env(safe-area-inset-bottom);
   }
@@ -48,7 +45,6 @@ html:not(.keyboard-visible.mobile-view) {
   }
 
   .ios-device & {
-
     &__footer {
       margin-top: auto;
     }
@@ -59,7 +55,6 @@ html:not(.keyboard-visible.mobile-view) {
   }
 
   // fixes modal placement on Android when keyboard is visible
-
   html.keyboard-visible:not(.ios-device) & {
     height: calc(100% - env(keyboard-inset-height));
 
@@ -72,9 +67,7 @@ html:not(.keyboard-visible.mobile-view) {
 }
 
 //legacy
-
 .modal {
-
   &.fade {
     transition: opacity 0.3s linear, top 0.3s ease-out;
     top: -25%;
@@ -90,7 +83,6 @@ html:not(.keyboard-visible.mobile-view) {
 }
 
 @media only screen and (device-width <= 568px) {
-
   .flag-modal-body .flag-message {
     height: 3em;
   }

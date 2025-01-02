@@ -1,12 +1,10 @@
 // Common styles for "user-stream-item" component
-
 .user-stream {
   // DEPRECATED:
   // The ".item" class should be removed because it's too generic.
   // Once ".item" has been removed, ".user-stream-item" can replace
   // ".user-stream" as the top-level selector on this file as all other
   // selectors below are its children
-
   .item,
   .user-stream-item {
     background: var(--d-content-background, var(--secondary));
@@ -104,7 +102,6 @@
     }
 
     &:not(.show-avatars) {
-
       li.notification {
         padding: 0.75em 0;
 

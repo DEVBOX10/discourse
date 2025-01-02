@@ -1,5 +1,4 @@
 @keyframes button-jump-up {
-
   0% {
     margin-bottom: -60px;
   }
@@ -50,7 +49,6 @@
   // timeline
   @media screen and (width >= 925px) {
     // at 925px viewport width and above the timeline is visible (see topic-navigation.js)
-
     .topic-navigation {
       grid-area: timeline;
       align-self: start;
@@ -187,7 +185,6 @@
 }
 
 #topic-title {
-
   .title-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -289,7 +286,6 @@
   background: var(--d-content-background);
 
   #topic-title {
-
     .edit-topic-title {
       position: relative;
       min-width: 0;
@@ -313,7 +309,6 @@
         margin-left: 0;
 
         @include breakpoint(mobile-large, min-width) {
-
           .selected-name {
             max-width: 500px;
           }
@@ -382,7 +377,6 @@
   }
 
   a.reply-new {
-
     .d-icon {
       background: var(--secondary);
       border-radius: 20px;
@@ -413,7 +407,6 @@ a.topic-featured-link {
 }
 
 .topic-area {
-
   .pending-posts {
     max-width: calc(
       var(--topic-body-width) + (var(--topic-body-width-padding) * 2) +
@@ -421,7 +414,6 @@ a.topic-featured-link {
     );
 
     .reviewable-item {
-
       .post-body {
         max-height: unset;
       }

@@ -1,9 +1,7 @@
 // Styles for admin/emails
 
 // Emails
-
 .email-list {
-
   .filters input {
     width: 100%;
   }
@@ -54,7 +52,6 @@
 }
 
 .incoming-emails {
-
   .control-group {
     margin: 8px 0;
   }
@@ -104,7 +101,6 @@
 }
 
 .email-preview-digest {
-
   .controls {
     margin: 1em 0.5em;
   }
@@ -117,7 +113,6 @@
 }
 
 .email-advanced-test {
-
   .admin-controls {
     display: block;
   }
@@ -130,11 +125,8 @@
 }
 
 .admin-email {
-
   .email-list {
-
     .sent-email-reply-key {
-
       .reply-key {
         word-break: break-word;
         white-space: nowrap;
@@ -157,11 +149,8 @@
 }
 
 //specific email admin modal styling
-
 .admin-incoming-email-modal {
-
   .incoming-emails {
-
     label {
       float: none;
       margin: 0;
@@ -169,7 +158,6 @@
     }
 
     .control-group {
-
       textarea {
         height: 200px;
       }

@@ -1,7 +1,5 @@
 // Styles for /admin/logs
-
 .log-details-modal {
-
   pre {
     white-space: pre-wrap;
     max-height: 250px;
@@ -13,7 +11,6 @@
   word-wrap: break-word;
 
   @media screen and (width >= 550px) and (width <= 767px) {
-
     table.staff-logs tr {
       display: grid;
       grid-template-rows: auto auto;
@@ -58,7 +55,6 @@
   }
 
   @include breakpoint(mobile-extra-large) {
-
     table.staff-logs tr {
       grid-template-columns: 1fr 1fr 0.5fr;
 
@@ -152,7 +148,6 @@
   margin: 0 0 1em 0;
 
   a.filter {
-
     .label {
       font-weight: bold;
     }
@@ -172,7 +167,6 @@
   flex-wrap: wrap;
 
   .screened-ip-address-form {
-
     .combobox {
       width: 140px;
     }
@@ -188,7 +182,6 @@
 }
 
 table.screened-ip-addresses {
-
   td.ip_address {
     min-width: 150px;
     word-wrap: break-word;
@@ -204,16 +197,13 @@ table.screened-ip-addresses {
 }
 
 @media screen and (width >= 550px) {
-
   table.screened-ip-addresses tr {
     grid-template-columns: repeat(5, 1fr) auto;
   }
 }
 
 @media screen and (width <= 549px) {
-
   table.screened-ip-addresses tr {
-
     td.actions {
       grid-row: 3;
       grid-column-start: -1;
@@ -244,9 +234,7 @@ table.screened-ip-addresses {
 // Screened URLs
 
 @include breakpoint(tablet) {
-
   .screened-urls {
-
     td.domain {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -256,9 +244,7 @@ table.screened-ip-addresses {
 }
 
 // Screened emails
-
 .screened-emails {
-
   td.ip_address {
     word-wrap: break-word;
 
@@ -268,7 +254,6 @@ table.screened-ip-addresses {
   }
 
   @include breakpoint(tablet) {
-
     td.email {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -288,7 +273,6 @@ table.screened-ip-addresses {
 }
 
 // Watched words
-
 .watched-word-box {
   display: inline-block;
   width: 250px;
@@ -297,7 +281,6 @@ table.screened-ip-addresses {
 }
 
 .watched-words-link {
-
   .watched-word-box {
     min-width: 100%;
   }
@@ -305,7 +288,6 @@ table.screened-ip-addresses {
 
 .watched-words-replace,
 .watched-words-tag {
-
   .watched-word-box {
     min-width: calc(50% - 5px);
   }
@@ -313,7 +295,6 @@ table.screened-ip-addresses {
 
 .watched-word-box,
 .watched-words-test-modal {
-
   .replacement {
     white-space: pre;
     background: var(--tertiary-low);
@@ -351,14 +332,12 @@ table.screened-ip-addresses {
 }
 
 .watched-word-form {
-
   .success-message {
     margin-left: 1em;
   }
 }
 
 .watched-words-detail {
-
   .watched-word-controls,
   .about,
   .watched-word-form {
@@ -381,7 +360,6 @@ table.screened-ip-addresses {
 }
 
 .watched-word-input {
-
   label {
     display: inline-block;
     min-width: 150px;
@@ -404,9 +382,7 @@ table.screened-ip-addresses {
 }
 
 // Search logs
-
 table.search-logs-list {
-
   td.term {
     width: 60%;
     word-wrap: break-word;
@@ -422,9 +398,7 @@ table.search-logs-list {
   }
 
   @media screen and (width >= 550px) {
-
     tr {
-
       td.term {
         grid-column-start: 1;
         grid-column: span 3;
@@ -433,9 +407,7 @@ table.search-logs-list {
   }
 
   @include breakpoint(mobile-extra-large) {
-
     tr {
-
       td.term {
         grid-column-start: 1;
         grid-column-end: 4;

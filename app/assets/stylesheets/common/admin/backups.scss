@@ -1,13 +1,10 @@
 // Styles for /admin/backups
-
 .admin-backups {
-
   .before-backup-list-outlet {
     margin-top: 1em;
   }
 
   .d-admin-table {
-
     .backup-size {
       text-align: right;
     }
@@ -24,7 +21,6 @@
 }
 
 .start-backup-modal {
-
   .alert {
     margin-bottom: 0;
   }

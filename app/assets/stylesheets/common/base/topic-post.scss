@@ -3,7 +3,6 @@
 }
 
 .button-count.has-pending {
-
   span {
     background-color: var(--danger);
     color: var(--secondary);
@@ -94,7 +93,6 @@
 }
 
 // global styles for the cooked HTML content in posts (and preview)
-
 .cooked,
 .d-editor-preview {
   word-wrap: break-word;
@@ -137,14 +135,12 @@
     // the anchor icon is a CSS pseudo element set above
     // so we can't change the color of the icon itself
     // but we can change the color of the anchor text
-
     &:has(a.anchor:focus-visible) {
       color: var(--tertiary);
     }
 
     // show when hovering where icon should be
     // show when hovering header
-
     .discourse-no-touch & a.anchor:hover,
     .discourse-no-touch &:hover a.anchor {
       opacity: 1;
@@ -198,7 +194,6 @@
   }
 
   // Prevents users from breaking posts with tag nesting
-
   big {
     font-size: 1.5rem;
   }
@@ -226,7 +221,6 @@
 
 .cooked,
 .d-editor-preview {
-
   video {
     max-width: 100%;
   }
@@ -252,15 +246,12 @@
 }
 
 // add staff color
-
 .moderator {
-
   .regular > .cooked {
     background-color: var(--highlight-bg);
   }
 
   .clearfix > .topic-meta-data > .names {
-
     span.user-title {
       color: var(--primary-high-or-secondary-low);
 
@@ -331,7 +322,6 @@ nav.post-controls {
     margin-left: auto;
 
     // Some buttons can be doubled up, like likes or flags
-
     .double-button {
       display: inline-flex;
       flex: 0 1 auto;
@@ -340,7 +330,6 @@ nav.post-controls {
 
       button {
         // It looks really confusing when one half a double button has an inner shadow on click.
-
         &:active {
           box-shadow: none;
         }
@@ -349,7 +338,6 @@ nav.post-controls {
         &.read-indicator,
         &.regular-likes {
           // Like count on posts
-
           .d-icon {
             color: var(--primary-low-mid);
             padding-left: 0.45em;
@@ -358,7 +346,6 @@ nav.post-controls {
 
         &.has-like {
           // Like button after I've liked
-
           .d-icon {
             color: var(--love);
           }
@@ -427,7 +414,6 @@ nav.post-controls {
       }
 
       // TODO (glimmer-post-menu): Go over the the d-hover style and remove the unnecessary ones when glimmer-post-menu replaces the widget version
-
       &.delete.d-hover,
       &.delete:hover,
       &.delete:active,
@@ -479,7 +465,6 @@ nav.post-controls {
 }
 
 .deleted {
-
   .regular > .cooked {
     background-color: var(--danger-low-mid);
   }
@@ -510,7 +495,6 @@ nav.post-controls {
     }
 
     .widget-button {
-
       &:hover {
         color: currentcolor;
         background: var(--danger-low);
@@ -541,7 +525,6 @@ nav.post-controls {
 }
 
 @keyframes heartBump {
-
   0% {
     transform: scale(1);
   }
@@ -556,7 +539,6 @@ nav.post-controls {
 }
 
 // .d-icon.heart-animation is the widget animation while .toggle-like.heart-animation is the glimmer-post-menu's
-
 .has-like .d-icon.heart-animation,
 .toggle-like.heart-animation .d-icon {
   @media (prefers-reduced-motion: no-preference) {
@@ -565,7 +547,6 @@ nav.post-controls {
 }
 
 @keyframes slideout {
-
   from {
     max-height: 60px;
   }
@@ -576,7 +557,6 @@ nav.post-controls {
 }
 
 // we use aside to hold expandable quotes (versus, say, static blockquotes)
-
 aside.quote {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -587,7 +567,6 @@ aside.quote {
     padding: 0.8em 0.8em 0 0.8em;
 
     // blockquote is underneath this and has top margin
-
     .avatar {
       margin-right: 0.5em;
     }
@@ -600,7 +579,6 @@ aside.quote {
   }
 
   // blockquote is docked within aside for content
-
   blockquote {
     margin-top: 0;
 
@@ -628,7 +606,6 @@ aside.quote {
 }
 
 .quote-controls {
-
   .quote-toggle {
     padding: 0;
   }
@@ -654,7 +631,6 @@ aside.quote {
 }
 
 .small-user-list {
-
   .small-user-list-content {
     display: flex;
     flex-wrap: wrap;
@@ -674,7 +650,6 @@ aside.quote {
 }
 
 .post-hidden {
-
   .topic-avatar,
   .cooked,
   .topic-meta-data,
@@ -749,9 +724,7 @@ aside.quote {
   }
 
   .btn-flat {
-
     &:hover {
-
       .d-icon {
         color: var(--tertiary);
       }
@@ -778,7 +751,6 @@ aside.quote {
     }
 
     &:hover {
-
       .quote-share-label {
         background: transparent;
         opacity: 0;
@@ -796,7 +768,6 @@ aside.quote {
       // this pseudo element creates a transition buffer zone
       // without it, the width change on hover can cause transition jitter
       // the width is roughly wide enough to cover long translations of "share"
-
       &::after {
         content: "";
         position: absolute;
@@ -830,7 +801,6 @@ aside.quote {
 .user-profile-avatar,
 .user-image,
 .latest-topic-list-item {
-
   .avatar-flair {
     display: flex;
     align-items: center;
@@ -886,7 +856,6 @@ aside.quote {
   // this is necessary for ANYTHING that extends past the right edge of
   // the post body, such as an image in a deeply nested list, image in
   // a deeply nested blockquote, and so on.. you get the idea.
-
   .cooked {
     overflow: hidden;
 
@@ -903,7 +872,6 @@ aside.quote {
 
 .small-action-desc,
 .topic-body {
-
   &:focus-visible {
     outline: none;
   }
@@ -920,7 +888,6 @@ aside.quote {
   &.via-email,
   &.whisper,
   &.post-locked {
-
     .d-icon {
       font-size: var(--font-0);
     }
@@ -940,7 +907,6 @@ aside.quote {
   }
 
   &.edits {
-
     .widget-button {
       display: flex;
       align-items: center;
@@ -957,9 +923,7 @@ aside.quote {
       }
 
       .discourse-no-touch & {
-
         &:hover {
-
           .d-button-label {
             color: var(--primary-high);
           }
@@ -1044,7 +1008,6 @@ kbd {
   // cf. http://what.thedailywtf.com/t/nested-elements/7927
   // 3 levels are needed to prevent highlighted words being hidden
   // cf. https://meta.discourse.org/t/word-disappears-when-searched-and-in-details-summary-kbd-b/25741
-
   * * * {
     display: none;
   }
@@ -1052,7 +1015,6 @@ kbd {
 
 // we assume blockquotes have their own margins, so all blockquotes
 // will remove margins from first (top) and last (bottom) child elements
-
 blockquote > *:first-child {
   margin-top: 0 !important;
 }
@@ -1084,9 +1046,7 @@ blockquote > *:last-child {
 .reviewable .post-body,
 .cooked table,
 .d-editor-preview table {
-
   thead {
-
     th {
       text-align: left;
       padding-bottom: 2px;
@@ -1109,7 +1069,6 @@ blockquote > *:last-child {
   }
 
   &.deleted {
-
     .topic-avatar,
     .small-action-desc {
       background-color: var(--danger-low-mid);
@@ -1190,7 +1149,6 @@ blockquote > *:last-child {
     }
 
     .discourse-no-touch & {
-
       &:hover,
       &:focus {
         background: var(--primary-200);
@@ -1203,7 +1161,6 @@ blockquote > *:last-child {
   }
 
   &.topic-post-visited {
-
     .topic-post-visited-line {
       text-align: center;
       border-bottom: 1px solid var(--danger-medium);
@@ -1227,13 +1184,11 @@ blockquote > *:last-child {
 }
 
 .whisper {
-
   .post-info.whisper {
     margin-left: 0.5em;
   }
 
   .topic-body {
-
     .cooked {
       font-style: italic;
       color: var(--primary-medium);
@@ -1263,16 +1218,13 @@ span.mention {
 }
 
 .suggested-topics {
-
   .topics {
     padding-bottom: 15px;
   }
 }
 
 .large-image-placeholder {
-
   > a {
-
     &.link {
       margin-right: 10px;
     }
@@ -1314,7 +1266,6 @@ span.mention {
 
 .broken-image,
 .blocked-hotlinked-placeholder {
-
   &:not(a) {
     color: var(--primary-low-mid-or-secondary-high);
   }
@@ -1335,7 +1286,6 @@ span.mention {
 }
 
 /* below standard tablet portrait ----------- */
-
 .reply-to-tab {
   display: flex;
   align-items: center;
@@ -1349,15 +1299,10 @@ span.mention {
 }
 
 // Select posts
-
 .topic-post {
-
   &.selected {
-
     article.boxed {
-
       .select-posts {
-
         button.select-post {
           background-color: var(--tertiary);
           color: var(--secondary);
@@ -1366,7 +1311,6 @@ span.mention {
       }
 
       .topic-body {
-
         .contents::after {
           display: none;
         }
@@ -1395,9 +1339,7 @@ span.mention {
 }
 
 @media all and (width <= 767px) {
-
   .reply-to-tab {
-
     span {
       display: none;
     }
@@ -1455,7 +1397,6 @@ span.mention {
       }
 
       @include breakpoint(mobile-extra-large) {
-
         &.btn-primary {
           margin-right: 100%;
         }
@@ -1602,7 +1543,6 @@ iframe {
 }
 
 .paused-animated-image {
-
   img.animated {
     // need to keep the image hidden but clickable
     // so the user can resume animation
@@ -1627,14 +1567,12 @@ iframe {
 }
 
 .fullscreen-code-modal {
-
   pre code {
     max-width: none;
   }
 }
 
 .fullscreen-table-modal {
-
   .d-modal__container {
     width: auto;
   }

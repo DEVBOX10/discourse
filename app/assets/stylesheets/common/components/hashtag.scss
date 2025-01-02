@@ -8,7 +8,6 @@ a.hashtag {
   }
 
   &:hover {
-
     span {
       text-decoration: underline;
     }
@@ -82,9 +81,7 @@ a.hashtag {
   }
 
   &__option {
-
     &:last-of-type {
-
       .hashtag-autocomplete__link {
         position: relative;
         z-index: 1;

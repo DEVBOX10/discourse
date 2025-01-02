@@ -42,14 +42,12 @@
   }
 
   /* For readability */
-
   a,
   a:visited {
     color: #08c !important;
   }
 
   /* bottom border to help separate posts */
-
   div.row {
     border-top: 1px solid #aaa;
   }
@@ -91,7 +89,6 @@
   }
 
   /* restyle div#topic-title */
-
   #topic-title {
     margin: 0;
     padding: 0;
@@ -112,7 +109,6 @@
   }
 
   /* localhost  - MOOT for production */
-
   .topic-category-outlet.show-topic-category-location,
   div.alert.alert-info.alert-emails-disabled,
   div.profiler-results.profiler-left.profiler-no-controls {

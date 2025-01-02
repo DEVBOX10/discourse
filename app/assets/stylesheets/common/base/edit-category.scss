@@ -58,14 +58,12 @@ div.edit-category {
   }
 
   .edit-category-tab-general {
-
     .category-chooser {
       width: unquote("min(340px, 90%)");
     }
   }
 
   .edit-category-tab-security {
-
     .permission-selector {
       margin-right: 0.25em;
     }
@@ -118,7 +116,6 @@ div.edit-category {
 
   .edit-category-tab-settings,
   .edit-category-tab-tags {
-
     > section {
       margin-bottom: 1.5em;
     }
@@ -138,14 +135,12 @@ div.edit-category {
   }
 
   .edit-category-tab-tags {
-
     #category-min-tags-from-group {
       width: $number-input-width;
       min-height: 36px;
     }
 
     .select-kit {
-
       &.tag-chooser {
         width: 250px;
 
@@ -179,7 +174,6 @@ div.edit-category {
   }
 
   .required-tag-groups {
-
     .required-tag-group-row {
       display: flex;
       gap: 0.5em;
@@ -196,7 +190,6 @@ div.edit-category {
   }
 
   .edit-category-tab-topic-template {
-
     .select-category-template__info {
       margin-block: 0.25rem;
       font-size: var(--font-down-1);

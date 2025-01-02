@@ -18,13 +18,11 @@
   }
 
   .link-to-message-btn {
-
     .d-icon {
       transition: all 0.25s ease-in-out;
     }
 
     &.copied {
-
       .d-icon {
         transform: scale(1.1);
         color: var(--tertiary);
@@ -45,7 +43,6 @@
     }
 
     &:focus {
-
       .d-icon {
         color: var(--primary);
       }
@@ -66,7 +63,6 @@
   }
 
   &.has-no-secondary-actions {
-
     .reply-btn {
       border-right: 1px solid var(--primary-300);
       border-top: 1px solid var(--primary-300);
@@ -75,7 +71,6 @@
   }
 
   .more-buttons.dropdown-select-box {
-
     .select-kit-header {
       background: none;
       border: 1px solid var(--primary-300);
@@ -110,7 +105,6 @@
         border-color: var(--primary-low-mid);
 
         .select-kit-header-wrapper {
-
           .d-icon {
             color: var(--primary);
           }
@@ -125,7 +119,6 @@
     }
 
     .select-kit-row {
-
       .texts .name {
         font-size: var(--font-0);
         font-weight: 500;

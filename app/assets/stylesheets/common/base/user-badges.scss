@@ -1,5 +1,4 @@
 /* Default badge styles. */
-
 .show-badge {
   background: var(--d-content-background);
 }
@@ -46,7 +45,6 @@
 }
 
 @media all and (width <= 750px) {
-
   .show-badge .user-badge-with-posts .badge-user a.post-link {
     width: auto;
   }
@@ -79,7 +77,6 @@
 }
 
 .show-badge .badge-user-info {
-
   .earned {
     font-size: var(--font-up-2);
     margin-bottom: 1em;
@@ -251,7 +248,6 @@
     }
 
     .badge-contents {
-
       h3 {
         font-size: var(--font-up-3);
       }
@@ -279,7 +275,6 @@
 }
 
 .badge-title {
-
   .user-content {
     padding: 0;
   }
@@ -306,7 +301,6 @@
   gap: 1em;
 
   .badge-grant-info {
-
     &.hidden {
       display: none;
     }

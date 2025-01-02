@@ -1,9 +1,7 @@
 // Shared styles
-
 .login-page,
 .signup-page,
 .invite-page {
-
   #main-outlet,
   #main-outlet-wrapper {
     padding: 0;
@@ -54,7 +52,6 @@
     padding: 1rem;
 
     .input-group {
-
       input {
         height: 2.5em;
         margin-bottom: 0.25em;
@@ -79,9 +76,7 @@
   #login-form,
   .login-form,
   .invite-form {
-
     .input-group {
-
       label.alt-placeholder,
       .user-field.text label.control-label {
         top: 11px;
@@ -159,7 +154,6 @@
 }
 
 .invites-show {
-
   .login-welcome-header {
     padding-inline: 0;
   }
@@ -170,13 +164,9 @@
 }
 
 // Login page
-
 .login-fullpage .login-body {
-
   .login-page-cta {
-
     &__buttons {
-
       .login-page-cta__login {
         width: 100%;
         margin-bottom: 0.5rem;
@@ -196,13 +186,9 @@
 }
 
 // Signup page
-
 .signup-fullpage .signup-body {
-
   .signup-page-cta {
-
     &__buttons {
-
       .signup-page-cta__signup {
         width: 100%;
         margin-bottom: 0.5rem;

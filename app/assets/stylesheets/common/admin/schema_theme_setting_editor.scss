@@ -1,5 +1,4 @@
 .schema-theme-setting-editor {
-
   .schema-theme-setting-editor__wrapper {
     --schema-space: 0.5em;
     display: grid;
@@ -94,7 +93,6 @@
           cursor: pointer;
 
           &.--active {
-
             > .schema-theme-setting-editor__tree-node-text {
               background-color: var(--tertiary);
               color: var(--secondary);
@@ -109,7 +107,6 @@
             border: 2px solid transparent;
 
             &:not(:has(ul)) {
-
               &:hover {
                 background: var(--primary-very-low);
               }
@@ -125,7 +122,6 @@
           }
 
           &.--heading {
-
             .d-icon {
               color: var(--primary-700);
             }

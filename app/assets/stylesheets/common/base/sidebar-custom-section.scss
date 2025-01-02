@@ -1,5 +1,4 @@
 .sidebar-custom-sections {
-
   .sidebar-section-wrapper {
     padding-bottom: 0;
   }
@@ -21,13 +20,11 @@
   }
 
   .sidebar-section-wrapper.disabled {
-
     a {
       pointer-events: none;
     }
 
     .sidebar-section-link-wrapper {
-
       .sidebar-section-link-prefix.icon,
       .sidebar-section-link {
         background: none;
@@ -47,9 +44,7 @@
 }
 
 .discourse-touch {
-
   .sidebar-custom-sections {
-
     a:hover {
       background: none !important;
     }

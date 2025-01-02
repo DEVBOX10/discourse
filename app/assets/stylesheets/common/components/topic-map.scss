@@ -18,7 +18,6 @@
 }
 
 body:not(.archetype-private_message) {
-
   .topic-map {
     display: flex;
     flex-direction: row;
@@ -103,7 +102,6 @@ body:not(.archetype-private_message) {
       gap: 0.75em;
 
       &.--single-stat {
-
         button {
           flex-direction: row;
           gap: 0.25em;
@@ -168,7 +166,6 @@ body:not(.archetype-private_message) {
     }
 
     &.hide-names .user {
-
       .username,
       .group-name {
         display: none;
@@ -226,7 +223,6 @@ body:not(.archetype-private_message) {
   }
 
   .add-remove-participant-btn {
-
     .d-icon {
       margin-left: 0.25em;
     }
@@ -264,9 +260,7 @@ body:not(.archetype-private_message) {
 }
 
 .mobile-view {
-
   .d-modal[class*="topic-map__"] {
-
     h3 {
       font-size: var(--font-up-2);
       padding-inline: 1rem;
@@ -283,13 +277,10 @@ body:not(.archetype-private_message) {
 }
 
 // DMenu popups
-
 .fk-d-menu,
 .fk-d-menu-modal {
   //shared
-
   &__inner-content {
-
     .topic-map__likes-content &,
     .topic-map__links-content &,
     .topic-map__users-content &,
@@ -303,7 +294,6 @@ body:not(.archetype-private_message) {
   &.topic-map__links-content,
   &.topic-map__users-content,
   &.topic-map__views-content {
-
     h3 {
       padding-inline: 1rem;
       padding-bottom: 0.5em;
@@ -318,7 +308,6 @@ body:not(.archetype-private_message) {
 
   &.topic-map__likes-content,
   &.topic-map__links-content {
-
     ul {
       margin: 0;
       padding: 0;
@@ -327,9 +316,7 @@ body:not(.archetype-private_message) {
   }
 
   //per type
-
   &.topic-map__likes-content {
-
     li > a {
       display: grid;
       grid-template-areas: "user likes" "post post";
@@ -338,7 +325,6 @@ body:not(.archetype-private_message) {
       padding: 0.75em 1rem;
 
       .discourse-no-touch & {
-
         &:hover {
           background: var(--d-hover);
         }
@@ -346,14 +332,12 @@ body:not(.archetype-private_message) {
     }
 
     li:not(:last-of-type) {
-
       a {
         border-bottom: 1px solid var(--primary-low);
       }
     }
 
     .like-section {
-
       &__user {
         grid-area: user;
         color: var(--primary-high);
@@ -390,7 +374,6 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__links-content {
-
     li {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -405,7 +388,6 @@ body:not(.archetype-private_message) {
       }
 
       .discourse-no-touch & {
-
         &:hover {
           background: var(--d-hover);
         }
@@ -440,7 +422,6 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__users-content {
-
     .topic-map__users-list {
       display: flex;
       flex-wrap: wrap;
@@ -486,7 +467,6 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__views-content {
-
     .topic-views {
       display: flex;
       flex-direction: column;

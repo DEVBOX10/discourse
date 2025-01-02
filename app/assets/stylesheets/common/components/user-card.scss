@@ -48,7 +48,6 @@
 }
 
 // shared styles for user and group cards
-
 .user-card,
 .group-card {
   min-width: 0;
@@ -86,9 +85,7 @@
   }
 
   // avatar - names - controls
-
   .first-row {
-
     .names {
       padding-left: 1.25em;
 
@@ -164,7 +161,6 @@
 
   .names__primary,
   .names__secondary {
-
     a {
       color: var(--primary);
     }
@@ -176,10 +172,8 @@
 }
 
 // styles for user cards only
-
 .user-card {
   // avatar - names - controls
-
   .first-row {
     display: flex;
 
@@ -204,13 +198,11 @@
   }
 
   // user bio - suspension reason
-
   .second-row {
     max-height: 150px;
     overflow: auto;
 
     .bio {
-
       a:not(.mention) {
         color: var(--tertiary);
       }
@@ -238,9 +230,7 @@
   }
 
   // featured topic
-
   .featured-topic {
-
     .desc {
       color: var(--primary-high);
     }
@@ -252,7 +242,6 @@
   }
 
   // location and website
-
   .location-and-website {
     display: flex;
     flex-wrap: wrap;
@@ -288,12 +277,10 @@
   }
 
   // custom user fields
-
   .public-user-fields {
     margin: 0;
 
     .user-field-value-list-item:not(:last-of-type) {
-
       &::after {
         // create comma separated list
         content: ",";
@@ -302,7 +289,6 @@
   }
 
   // badges
-
   .badge-section {
     line-height: 0;
 
@@ -352,10 +338,8 @@
 }
 
 // styles for group cards only
-
 .group-card {
   // avatar - names and controls
-
   .first-row {
     display: flex;
 
@@ -383,13 +367,11 @@
   }
 
   // group bio
-
   .second-row {
     max-height: 150px;
     overflow: auto;
 
     .bio {
-
       a:not(.mention) {
         color: var(--tertiary);
       }

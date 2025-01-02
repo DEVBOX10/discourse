@@ -1,7 +1,5 @@
 // Customize area
-
 .email-template {
-
   input {
     width: 100%;
   }
@@ -12,7 +10,6 @@
 }
 
 .create-theme-modal {
-
   div.input {
     margin-bottom: 12px;
 
@@ -28,7 +25,6 @@
 }
 
 .settings-editor {
-
   .ace-wrapper {
     position: relative;
     width: 100%;
@@ -46,14 +42,12 @@
 }
 
 .theme-settings-editor-dialog {
-
   .dialog-footer {
     display: none;
   }
 }
 
 .admin-customize.admin-customize-themes {
-
   .admin-container {
     padding: 0;
   }
@@ -65,7 +59,6 @@
   }
 
   .error-message {
-
     .fa {
       color: var(--danger);
     }
@@ -78,14 +71,12 @@
 }
 
 .admin-customize.admin-permalinks {
-
   .admin-container {
     padding: 0;
   }
 }
 
 .admin-customize {
-
   h1 {
     margin-bottom: 10px;
 
@@ -122,7 +113,6 @@
   }
 
   .color-schemes li {
-
     .d-icon {
       margin-right: 0.25em;
       color: var(--primary-medium);
@@ -164,7 +154,6 @@
     }
 
     .metadata {
-
       .authors,
       .version {
         display: block;
@@ -298,7 +287,6 @@
       }
 
       .discourse-no-touch & {
-
         &:focus,
         &:hover {
           color: var(--d-nav-color--hover);
@@ -466,7 +454,6 @@
       }
 
       &:not(.selected) {
-
         .broken-indicator {
           color: var(--danger);
         }
@@ -554,7 +541,6 @@
   }
 
   .theme.settings {
-
     .theme-setting {
       min-height: 35px;
     }
@@ -652,7 +638,6 @@
     }
 
     .nav-pills {
-
       li {
         margin-right: 0;
         display: flex;
@@ -697,7 +682,6 @@
     }
 
     &.maximized {
-
       .admin-container {
         position: absolute;
         bottom: 50px;
@@ -751,7 +735,6 @@
   }
 
   .color-scheme {
-
     .controls {
       display: flex;
       align-items: center;
@@ -773,7 +756,6 @@
   }
 
   .colors {
-
     thead th {
       border: none;
     }
@@ -832,9 +814,7 @@
     margin-left: 0;
 
     li {
-
       &.disabled-child {
-
         .child-link {
           color: var(--primary-medium);
 
@@ -863,7 +843,6 @@
 }
 
 .add-upload-modal {
-
   input[type="file"] {
     display: block;
     margin-bottom: 0.25em;
@@ -909,7 +888,6 @@
 
 .admin-permalinks {
   @include breakpoint(tablet) {
-
     .d-page-subheader,
     .admin-config-area,
     .admin-config-area__primary-content,
@@ -924,7 +902,6 @@
 }
 
 .admin-permalink-item {
-
   &__delete.btn,
   &__delete.btn:hover {
     border-top: 1px solid var(--primary-low);
@@ -937,7 +914,6 @@
 }
 
 // embedding
-
 .embeddable-hosts {
   margin-bottom: 2em;
 
@@ -965,9 +941,7 @@
   }
 
   @media screen and (width <= 880px) {
-
     table.grid {
-
       thead {
         display: none;
       }
@@ -991,9 +965,7 @@
   }
 
   @media screen and (width <= 580px) {
-
     table.grid {
-
       tr td.editing-input {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -1012,7 +984,6 @@
   }
 
   @include breakpoint(mobile-medium) {
-
     table.grid tr {
       grid-template-columns: repeat(2, 1fr);
 
@@ -1024,14 +995,12 @@
 }
 
 .embedding-secondary {
-
   h3 {
     margin: 1em 0;
   }
   margin-bottom: 2em;
 
   .embed-setting {
-
     input[type="text"] {
       width: 50%;
     }
@@ -1050,7 +1019,6 @@
 }
 
 .user-fields {
-
   h2 {
     margin-bottom: 1em;
   }
@@ -1072,7 +1040,6 @@
 }
 
 .reseed-modal {
-
   .options-group-title {
     font-size: var(--font-up-2);
     font-weight: bold;
@@ -1085,7 +1052,6 @@
 }
 
 .robots-txt-edit {
-
   div.overridden {
     background: var(--highlight-bg);
     padding: 7px;
@@ -1100,7 +1066,6 @@
 }
 
 .admin-customize-email-templates {
-
   .email-template,
   .controls {
     margin-top: 1em;
@@ -1112,7 +1077,6 @@
 }
 
 .admin-customize-email-style {
-
   .ace-wrapper {
     position: relative;
     width: 100%;
@@ -1130,7 +1094,6 @@
 }
 
 .form-templates {
-
   &__info {
     margin-top: 1rem;
   }
@@ -1144,7 +1107,6 @@
   }
 
   &__form {
-
     input {
       width: 300px;
     }
@@ -1200,7 +1162,6 @@
     }
 
     .btn {
-
       &:not(:last-of-type) {
         border-right: 1px solid var(--primary-low);
       }
@@ -1217,9 +1178,7 @@
 }
 
 .customize-form-template-view-modal {
-
   .d-modal__footer {
-
     .btn:last-child {
       margin-left: auto;
     }

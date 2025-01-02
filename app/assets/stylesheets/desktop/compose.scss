@@ -1,5 +1,4 @@
 #reply-control {
-
   .reply-area {
     margin: 0 auto;
     padding: 8px;
@@ -21,9 +20,7 @@
   }
 
   &.private-message {
-
     .with-tags {
-
       .title-and-category {
         flex-wrap: nowrap;
         gap: 0.5em;
@@ -68,14 +65,12 @@
 }
 
 .closed {
-
   .grippie {
     display: none;
   }
 }
 
 .open {
-
   .grippie {
     cursor: row-resize;
     padding: 4px 0;
@@ -92,9 +87,7 @@
 }
 
 .discourse-touch {
-
   .open {
-
     .grippie {
       padding: 7px 0;
     }
@@ -116,7 +109,6 @@
 
   > p,
   h3 {
-
     &:first-of-type {
       margin-top: 0;
       margin-right: 3em;
@@ -165,7 +157,6 @@
     }
 
     .discourse-no-touch & {
-
       &:active,
       &:focus {
         background: transparent;
@@ -195,7 +186,6 @@
 }
 
 .composer-controls {
-
   .d-chevron-down {
     vertical-align: text-top;
   }
@@ -285,7 +275,6 @@ a.toggle-preview {
 }
 
 // fullscreen composer styles
-
 .fullscreen-composer {
   overflow: hidden;
 
@@ -294,7 +283,6 @@ a.toggle-preview {
   }
 
   #reply-control {
-
     &.fullscreen {
       // important needed because of inline styles when height is changed manually with grippie
       height: 100vh !important;
@@ -377,16 +365,13 @@ a.toggle-preview {
 }
 
 @media screen and (min-width: $reply-area-max-width) {
-
   .sidebar-wrapper .sidebar-container {
-
     .has-sidebar-page & {
       height: auto;
     }
   }
 
   #reply-control:not(.fullscreen) {
-
     .has-sidebar-page & {
       width: auto;
       max-width: calc(

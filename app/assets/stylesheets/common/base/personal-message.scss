@@ -138,7 +138,6 @@
     }
 
     &.top {
-
       .cooked {
         border: 1px solid var(--primary-low);
         border-radius: var(--pm-border-radius);
@@ -147,7 +146,6 @@
       }
 
       .row {
-
         .topic-body,
         .topic-avatar {
           border: none;
@@ -163,16 +161,13 @@
   }
 
   // special post type colors
-
   .current-user-post {
-
     .regular.contents {
       background: var(--tertiary-very-low);
       border-color: var(--tertiary-very-low);
     }
 
     .embedded-posts {
-
       .topic-body .cooked {
         background: transparent;
       }
@@ -180,9 +175,7 @@
   }
 
   .moderator {
-
     .topic-body.highlighted {
-
       .regular.contents {
         animation: none;
       }
@@ -199,7 +192,6 @@
   }
 
   .whisper {
-
     .topic-body .regular.contents {
       background: transparent;
       border: 2px dashed var(--primary-low);
@@ -211,7 +203,6 @@
   }
 
   .deleted {
-
     .topic-body .regular.contents {
       background: var(--danger-low);
       border-color: transparent;
@@ -222,7 +213,6 @@
     }
 
     &.whisper {
-
       .topic-body .regular.contents {
         border-color: var(--danger-low-mid);
       }

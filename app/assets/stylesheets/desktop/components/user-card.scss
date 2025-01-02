@@ -1,11 +1,8 @@
 // shared styles for user and group cards
-
 .user-card,
 .group-card {
   // avatar - names - controls
-
   .first-row {
-
     .names {
       flex: 1 1 auto;
     }
@@ -19,7 +16,6 @@
     }
 
     .user-profile-link {
-
       &:focus-visible {
         border: 1px solid;
 
@@ -29,7 +25,6 @@
   }
 
   .names__primary {
-
     .d-icon {
       font-size: var(--font-down-1);
     }
@@ -69,12 +64,9 @@
 }
 
 // styles for user cards only
-
 .user-card {
   // badges
-
   .badge-section {
-
     .user-badge {
       display: block;
       max-width: 185px;

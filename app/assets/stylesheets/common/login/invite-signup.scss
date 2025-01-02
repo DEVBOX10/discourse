@@ -30,7 +30,6 @@
   }
 
   .create-account__password {
-
     &-info {
       display: flex;
       justify-content: space-between;
@@ -63,7 +62,6 @@
     flex-direction: column;
 
     .input-group {
-
       &.email-input,
       &.username-input,
       &.name-input.name-required {
@@ -91,7 +89,6 @@
 }
 
 #simple-container .invite-error {
-
   .error-info {
     text-align: center;
   }

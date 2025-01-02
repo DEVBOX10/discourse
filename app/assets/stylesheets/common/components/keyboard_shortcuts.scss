@@ -21,7 +21,6 @@
 .topic-post.selected,
 .latest-topic-list-item.selected,
 .search-results .fps-result.selected {
-
   &:focus-visible {
     outline: none;
   }
@@ -36,7 +35,6 @@
 }
 
 .keyboard-shortcuts-modal.d-modal.-max {
-
   .d-modal__container {
     max-width: 70vw;
   }

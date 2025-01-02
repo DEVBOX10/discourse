@@ -1,5 +1,4 @@
 .chat-message-actions {
-
   .selected-message-container {
     padding: 0.75rem 1rem;
   }
@@ -55,7 +54,6 @@
     }
 
     .react-btn {
-
       .d-icon {
         color: var(--primary-medium);
         font-size: var(--font-up-4);
@@ -82,7 +80,6 @@
 
     .bookmark-btn,
     .react-btn {
-
       > .svg-icon-title,
       > .svg-icon {
         font-size: var(--font-up-4);
@@ -90,7 +87,6 @@
     }
 
     .reply-btn {
-
       .d-icon {
         font-size: var(--font-up-4);
       }
@@ -135,9 +131,7 @@
   }
 
   //temporary until this uses a proper component instead of the modal
-
   .d-modal {
-
     &__body {
       padding: 0;
     }

@@ -1,14 +1,11 @@
 .select-kit {
-
   &.single-select {
-
     &.dropdown-select-box {
       display: inline-flex;
       min-width: auto;
       border: none;
 
       &.is-expanded {
-
         .select-kit-collection,
         .select-kit-body {
           border-radius: 0;
@@ -90,7 +87,6 @@
   }
 
   &.user-notifications-dropdown {
-
     .select-kit-header .d-icon {
       margin-left: 0;
     }

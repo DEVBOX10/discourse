@@ -1,7 +1,5 @@
 .admin-report {
-
   .conditional-loading-section {
-
     &.is-loading {
       margin: 0;
     }
@@ -190,7 +188,6 @@
 }
 
 .rtl .admin-report {
-
   .filters {
     margin-left: 0;
     margin-right: 1em;
@@ -203,7 +200,6 @@
 }
 
 .admin-report.storage-stats {
-
   .main {
     flex: 1 0 auto;
   }

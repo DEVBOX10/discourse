@@ -56,7 +56,6 @@
     }
 
     // Forces images in the grid to fill each column width-wise
-
     img,
     > .lightbox-wrapper,
     > .lightbox-wrapper > .lightbox {
@@ -64,7 +63,6 @@
     }
 
     .lightbox-wrapper {
-
       .meta .informations {
         display: none;
       }
@@ -74,14 +72,12 @@
       }
 
       // full-height lightbox element in container
-
       > .lightbox {
         height: 100%;
       }
     }
 
     // when staging edits
-
     .image-wrapper {
       display: block;
       margin-bottom: $grid-column-gap;
@@ -90,13 +86,11 @@
   }
 
   .d-editor-preview & {
-
     .image-wrapper {
       margin-bottom: $grid-column-gap;
       padding-bottom: 0;
 
       .button-wrapper {
-
         .scale-btn-container,
         &[editing] .wrap-image-grid-button {
           display: none;

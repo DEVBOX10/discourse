@@ -19,7 +19,6 @@
 }
 
 .chat-message-reaction {
-
   > * {
     pointer-events: none;
   }
@@ -85,13 +84,11 @@
     }
 
     // unlinked, invalid mention
-
     span.mention:not(--wide) {
       color: var(--primary-high);
     }
 
     // Automatic aspect-ratio mapping https://developer.mozilla.org/en-US/docs/Web/Media/images/aspect_ratio_mapping
-
     p img:not(.emoji) {
       max-width: 100%;
       height: auto;
@@ -136,7 +133,6 @@
       }
 
       &:hover {
-
         .d-icon {
           color: var(--primary);
         }
@@ -152,7 +148,6 @@
 }
 
 .touch .chat-message-container {
-
   &.-active {
     background: var(--d-hover);
     border-radius: var(--d-border-radius);
@@ -164,14 +159,12 @@
 }
 
 .no-touch .chat-message-container {
-
   &:hover,
   &.-active {
     background: var(--d-hover);
   }
 
   &:hover {
-
     .chat-message-reaction-list .chat-message-react-btn {
       display: inline-block;
     }
@@ -179,7 +172,6 @@
 
   &.-active,
   &:hover {
-
     &.-bookmarked {
       background: var(--highlight-medium);
     }
@@ -220,7 +212,6 @@
   }
 
   &.has-reply {
-
     .chat-message {
       display: grid;
       grid-template-columns: var(--message-left-width) 1fr;
@@ -240,7 +231,6 @@
   }
 
   &.has-thread-indicator {
-
     .chat-message {
       display: grid;
       grid-template-columns: var(--message-left-width) 1fr;

@@ -1,5 +1,4 @@
 // Shared styles
-
 .login-fullpage,
 .signup-fullpage {
   height: 100%;
@@ -14,7 +13,6 @@ body.signup-page,
 body.invite-page,
 body.password-reset-page,
 body.activate-account-page {
-
   .powered-by-discourse,
   .above-main-container-outlet,
   .before-header-panel-outlet,
@@ -50,7 +48,6 @@ body.signup-page {
 .signup-fullpage,
 .invites-show,
 .password-reset-page {
-
   .signup-body,
   .login-body {
     display: flex;
@@ -189,7 +186,6 @@ body.signup-page {
 
     .user-field.dropdown,
     .user-field.multiselect {
-
       .more-info,
       .instructions {
         opacity: 1;
@@ -315,11 +311,8 @@ body.signup-page {
 }
 
 // Login page
-
 .login-fullpage {
-
   #second-factor {
-
     input {
       width: 100%;
       padding: 0.75em 0.5em;
@@ -336,19 +329,14 @@ body.signup-page {
 }
 
 // Signup page
-
 .signup-fullpage {
-
   .password-confirmation {
     display: none;
   }
 
   .user-fields .input-group {
-
     .user-field {
-
       &.text {
-
         &.value-entered label.alt-placeholder.control-label,
         input:focus + label.alt-placeholder.control-label {
           top: -8px;

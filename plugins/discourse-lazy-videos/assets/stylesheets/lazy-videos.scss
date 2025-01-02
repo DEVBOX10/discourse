@@ -26,7 +26,6 @@
 
     &:hover,
     &:focus {
-
       .icon {
         transform: translate(-50%, -50%) scale(1.1);
       }
@@ -126,7 +125,6 @@
 }
 
 // TikTok iframe isn't fluid
-
 .lazy-video-container.tiktok-onebox {
   width: 332px;
   height: 745px;
@@ -146,7 +144,6 @@
 }
 
 // Overrides core onebox height: auto; that can cause a conflict
-
 .lazy-video-wrapper .lazy-video-container.youtube-onebox {
   height: 0;
 }

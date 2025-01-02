@@ -136,7 +136,6 @@
 }
 
 .sidebar-section-form-modal {
-
   .draggable {
     display: flex;
     height: 100%;
@@ -270,7 +269,6 @@
     }
 
     .mark-public-wrapper {
-
       &.-disabled label {
         cursor: not-allowed;
       }
@@ -293,9 +291,7 @@
     margin-right: 0;
 
     .discourse-no-touch & {
-
       &:hover {
-
         .d-icon {
           color: var(--tertiary-hover);
         }
@@ -309,15 +305,12 @@
   }
 
   .delete-link {
-
     .d-icon {
       color: var(--primary-medium);
     }
 
     .discourse-no-touch & {
-
       &:hover {
-
         .d-icon {
           color: var(--danger);
         }

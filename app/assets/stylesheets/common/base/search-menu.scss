@@ -16,7 +16,6 @@ $search-pad-horizontal: 0.5em;
 
 .search-menu,
 .search-menu-container {
-
   .menu-panel .panel-body-contents {
     overflow-y: auto;
   }
@@ -95,7 +94,6 @@ $search-pad-horizontal: 0.5em;
       min-width: 100px;
 
       .item {
-
         .blurb {
           // https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
           overflow-wrap: break-word;
@@ -108,7 +106,6 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-result-topic {
-
       .first-line {
         display: block;
         line-height: var(--line-height-medium);
@@ -123,14 +120,12 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-result-post {
-
       .blurb {
         font-size: var(--font-down-1);
       }
     }
 
     .search-result-category {
-
       .badge-category__wrapper {
         font-size: var(--font-0);
       }
@@ -142,7 +137,6 @@ $search-pad-horizontal: 0.5em;
 
     .search-result-group .group-result,
     .search-result-user {
-
       .search-link {
         display: flex;
         align-items: center;
@@ -183,7 +177,6 @@ $search-pad-horizontal: 0.5em;
       align-items: center;
 
       &:not(.--with-flair) {
-
         svg {
           padding: 0.43em; // matching avatar-flair width
           background: var(--primary-200);
@@ -229,7 +222,6 @@ $search-pad-horizontal: 0.5em;
         }
 
         &.--group-with-slug {
-
           .name {
             font-weight: 700;
           }
@@ -239,7 +231,6 @@ $search-pad-horizontal: 0.5em;
 
     .search-result-category,
     .search-result-tag {
-
       + .search-result-user,
       + .search-result-group {
         @include separator;
@@ -298,7 +289,6 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-menu-initial-options {
-
       + .search-result-tag,
       + .search-result-category,
       + .search-result-user,
@@ -310,7 +300,6 @@ $search-pad-horizontal: 0.5em;
     .search-menu-initial-options,
     .search-result-tag,
     .search-menu-assistant {
-
       .search-item-prefix {
         margin-right: 0.33em;
       }
@@ -390,7 +379,6 @@ $search-pad-horizontal: 0.5em;
   }
 
   .searching {
-
     .spinner {
       width: 12px;
       height: 12px;
@@ -411,7 +399,6 @@ $search-pad-horizontal: 0.5em;
 
       &:focus,
       &:hover {
-
         .d-icon {
           color: var(--primary-high);
         }
@@ -434,7 +421,6 @@ $search-pad-horizontal: 0.5em;
     // This is purposefully redundant
     // the search widget can be used outside of the header
     // and the focus/hover styles from the header in those cases wouldn't follow
-
     &:focus,
     &:hover {
       background-color: var(--highlight-bg);
@@ -457,7 +443,6 @@ $search-pad-horizontal: 0.5em;
 
   .search-result-topic,
   .search-result-post {
-
     .search-link {
       padding: 0.5em;
     }

@@ -13,7 +13,6 @@ $mobile-breakpoint: 700px;
 }
 
 // Common admin styles
-
 .admin-main-nav {
   display: inline-flex;
   position: relative;
@@ -52,7 +51,6 @@ $mobile-breakpoint: 700px;
       margin: 0;
 
       &:last-of-type {
-
         > a {
           margin-right: 25px;
         }
@@ -62,7 +60,6 @@ $mobile-breakpoint: 700px;
 
   @include breakpoint(tablet) {
     // Fade-out for horizontal scroll nav
-
     &::before {
       content: "";
       position: absolute;
@@ -149,7 +146,6 @@ $mobile-breakpoint: 700px;
   }
 
   @media screen and (width <= 970px) and (width >= 768px) {
-
     td,
     th {
       padding: 6px 4px;
@@ -180,7 +176,6 @@ $mobile-breakpoint: 700px;
 .admin-contents table.grid {
   // Table switches to grid for narrow screens
   @media screen and (width <= 767px) {
-
     thead {
       display: none;
     }
@@ -248,7 +243,6 @@ $mobile-breakpoint: 700px;
   }
 
   @media screen and (width >= 550px) {
-
     tr {
       grid-template-columns: repeat(6, 1fr);
     }
@@ -256,7 +250,6 @@ $mobile-breakpoint: 700px;
 }
 
 .site-texts {
-
   .search-area {
     margin-bottom: 2em;
 
@@ -343,7 +336,6 @@ $mobile-breakpoint: 700px;
   }
 
   .edit-site-text {
-
     textarea {
       display: block;
       width: 100%;
@@ -361,7 +353,6 @@ $mobile-breakpoint: 700px;
     }
 
     @include breakpoint(mobile-extra-large) {
-
       .title {
         word-wrap: break-word;
       }
@@ -418,7 +409,6 @@ $mobile-breakpoint: 700px;
 }
 
 .admin-content {
-
   .admin-contents {
     padding: 0 0 8px 0;
 
@@ -433,7 +423,6 @@ $mobile-breakpoint: 700px;
     margin-top: 20px;
 
     tr {
-
       th:nth-of-type(1) {
         width: 20%;
       }
@@ -441,16 +430,13 @@ $mobile-breakpoint: 700px;
 
     tr.total-for-period,
     tr.total {
-
       td {
         font-weight: 700;
       }
     }
 
     &.web_crawlers {
-
       tr {
-
         th:nth-of-type(1) {
           width: 60%;
         }
@@ -486,14 +472,12 @@ $mobile-breakpoint: 700px;
 }
 
 .admin-users .users-list {
-
   .username .d-icon {
     color: var(--primary-medium);
   }
 }
 
 .ip-lookup-content {
-
   .location-box {
     padding: 1em;
     max-width: 100%;
@@ -605,7 +589,6 @@ $mobile-breakpoint: 700px;
   }
 
   .username {
-
     input[type="text"] {
       min-width: 15em;
 
@@ -807,7 +790,6 @@ $mobile-breakpoint: 700px;
   }
 
   .search {
-
     label {
       margin-bottom: 0;
     }
@@ -820,7 +802,6 @@ $mobile-breakpoint: 700px;
   }
 
   .toggle {
-
     span {
       font-weight: bold;
     }
@@ -840,7 +821,6 @@ $mobile-breakpoint: 700px;
 
 .badges,
 .web-hook-container {
-
   input[type="text"],
   textarea {
     min-width: 350px;
@@ -931,7 +911,6 @@ $mobile-breakpoint: 700px;
 }
 
 section.details {
-
   h1 {
     font-size: var(--font-up-3);
     color: var(--primary);
@@ -951,7 +930,6 @@ section.details {
   }
 
   @media (max-width: $mobile-breakpoint) {
-
     .btn {
       margin: 2px;
     }
@@ -959,7 +937,6 @@ section.details {
 }
 
 .row.groups {
-
   input[type="text"] {
     width: 500px;
   }
@@ -970,7 +947,6 @@ section.details {
 }
 
 // Ember.ListView
-
 .ember-list-view {
   overflow-y: auto;
   overflow-x: hidden;
@@ -982,7 +958,6 @@ section.details {
 }
 
 .tl3-requirements {
-
   .d-icon-check {
     color: var(--success);
   }
@@ -993,7 +968,6 @@ section.details {
 }
 
 @media all and (width >= 320px) and (width <= 500px) {
-
   .full-width {
     margin: 0;
   }
@@ -1008,7 +982,6 @@ section.details {
     border: none;
 
     .settings .setting {
-
       .setting-label {
         float: left;
         width: 100%;
@@ -1045,7 +1018,6 @@ section.details {
   }
 
   .badges {
-
     .current-badge {
       margin: 70px 0 0 0;
     }
@@ -1062,11 +1034,8 @@ section.details {
 }
 
 .directory-table {
-
   .not-activated {
-
     .directory-table__cell {
-
       &,
       a,
       a:visited {
@@ -1081,7 +1050,6 @@ section.details {
 }
 
 table#user-badges {
-
   .reason {
     max-width: 200px;
   }
@@ -1099,7 +1067,6 @@ table#user-badges {
 }
 
 .value-list {
-
   .value {
     padding: 0.125em 0;
 
@@ -1135,7 +1102,6 @@ table#user-badges {
     }
 
     &:hover {
-
       .shift-up-value-btn,
       .shift-down-value-btn {
         display: block;
@@ -1191,7 +1157,6 @@ table#user-badges {
 }
 
 .secret-value-list {
-
   .value {
     flex-flow: row wrap;
     margin-left: -0.25em;
@@ -1228,13 +1193,11 @@ table#user-badges {
 }
 
 .mobile-view .secret-value-list {
-
   .add-value-btn {
     margin-bottom: 9px;
   }
 
   .value {
-
     .value-input:last-of-type {
       margin-left: 2.35em;
     }
@@ -1265,7 +1228,6 @@ table#user-badges {
 }
 
 // Mobile specific style for Admin IP Lookup box
-
 .mobile-view .admin-contents .ip-lookup .location-box {
   width: 300px;
   left: -100%;

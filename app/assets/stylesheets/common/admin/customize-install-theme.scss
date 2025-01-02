@@ -2,7 +2,6 @@
   display: flex;
 
   @include breakpoint(mobile-extra-large) {
-
     .install-theme-items {
       flex: 0 0 150px;
     }
@@ -75,7 +74,6 @@
 }
 
 .repo {
-
   input[type="text"] {
     width: 90%;
   }

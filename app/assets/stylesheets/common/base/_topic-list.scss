@@ -1,5 +1,4 @@
 // Topic list navigation & controls
-
 .list-controls {
   background: var(--d-content-background);
 
@@ -16,7 +15,6 @@
   }
 
   .select-kit {
-
     .select-kit-collection {
       max-height: 40vh;
     }
@@ -75,9 +73,7 @@
   }
 
   @include breakpoint(mobile-large) {
-
     .edit-category {
-
       .d-button-label {
         display: none;
       }
@@ -109,7 +105,6 @@
 }
 
 @supports (--custom: property) {
-
   .category-logo.aspect-image {
     --max-height: 150px;
     max-height: var(--max-height);
@@ -134,11 +129,9 @@
 }
 
 // Topic list body
-
 .topic-list-item.visited .topic-list-data,
 .latest-topic-list-item.visited,
 .category-topic-link.visited {
-
   a.title:not(.badge-notification) {
     color: var(--primary-medium);
   }
@@ -154,7 +147,6 @@
 }
 
 .topic-list-item {
-
   .post-excerpt {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -173,7 +165,6 @@
   }
 
   .anon & {
-
     a.title:visited:not(.badge-notification) {
       color: var(--primary-medium);
     }
@@ -192,9 +183,7 @@
 }
 
 .bulk-select-topics-dropdown {
-
   .select-kit.single-select.dropdown-select-box .select-kit-row {
-
     .texts .name {
       font-weight: normal;
     }
@@ -213,7 +202,6 @@
   border-collapse: collapse;
 
   > .topic-list-body > .topic-list-item {
-
     &.has-excerpt .star {
       vertical-align: top;
       margin-top: 2px;
@@ -272,7 +260,6 @@
 
     // we have a custom focus indicator via .selected
     // we can remove the native one
-
     .title:focus {
       outline: none;
     }
@@ -283,7 +270,6 @@
   }
 
   .unread-indicator {
-
     &.read {
       display: none;
     }
@@ -370,14 +356,12 @@
   }
 
   .num.posts {
-
     a {
       padding: 15px 5px;
     }
   }
 
   .num.activity {
-
     a {
       padding: 15px 5px;
 
@@ -441,7 +425,6 @@
 }
 
 .topic-list {
-
   .alert {
     margin-bottom: 0;
     font-size: var(--font-0);
@@ -496,7 +479,6 @@ div.education {
 //
 //     This is an overly-long topic title that would break just
 //     right *
-
 .topic-post-badges {
   white-space: nowrap;
   align-self: center;

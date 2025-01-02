@@ -1,12 +1,9 @@
 .sidebar-section-wrapper {
-
   .sidebar-section-header-wrapper {
     display: flex;
 
     .discourse-no-touch & {
-
       &:hover {
-
         .d-icon-globe {
           color: var(--d-sidebar-highlight-color);
         }
@@ -23,7 +20,6 @@
 
     .btn.dropdown-select-box-header,
     .sidebar-section-header-button {
-
       .discourse-no-touch & {
         transition: all 0.25s;
         opacity: 0;
@@ -54,7 +50,6 @@
       }
 
       .discourse-no-touch & {
-
         &:hover {
           background: var(--d-sidebar-highlight-hover-background);
 
@@ -121,7 +116,6 @@
   }
 
   .select-kit-collection {
-
     .texts {
       font-size: var(--font-0);
       text-transform: none;
@@ -157,7 +151,6 @@
 }
 
 .sidebar-section-header-global-indicator__content {
-
   .d-icon-shield-halved {
     padding-right: 0.25rem;
   }

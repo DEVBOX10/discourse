@@ -1,5 +1,4 @@
 .d-modal.insert-hyperlink-modal {
-
   .insert-link {
     overflow-y: visible;
 
@@ -55,9 +54,7 @@
 }
 
 .sidebar-section-form-modal {
-
   .sidebar-section-form-link {
-
     .select-kit {
       width: 100%;
     }
@@ -65,7 +62,6 @@
 }
 
 .jump-to-post-modal {
-
   .d-modal__body {
     overflow-y: visible;
 
@@ -119,9 +115,7 @@
 }
 
 .d-modal.choose-topic-modal {
-
   .d-modal {
-
     &__container {
       width: 40em; //fixed width to avoid jumps when switching to different views
     }
@@ -142,9 +136,7 @@
   }
 
   // move to existing topic
-
   .existing-topic {
-
     .radio {
       flex-wrap: wrap;
     }
@@ -162,9 +154,7 @@
   }
 
   #choosing-topic {
-
     form {
-
       hr {
         margin-bottom: 0.5em;
       }
@@ -173,11 +163,8 @@
 }
 
 .d-modal.publish-page-modal {
-
   .d-modal {
-
     &__body {
-
       p.publish-description {
         margin-top: 0;
       }
@@ -222,9 +209,7 @@
 }
 
 .d-modal.topic-bulk-actions-modal {
-
   .d-modal {
-
     &__container {
       min-width: 0;
       width: 100%;
@@ -249,16 +234,13 @@
 }
 
 .topic-bulk-actions-modal {
-
   &__selection-info {
     margin-bottom: 0.5em;
   }
 }
 
 .d-modal.topic-bulk-actions-modal {
-
   .d-modal {
-
     &__container {
       display: flex;
     }
@@ -278,7 +260,6 @@
 }
 
 .d-modal.edit-slow-mode-modal {
-
   .slow-mode-label {
     display: inline-flex;
   }
@@ -293,7 +274,6 @@
 }
 
 .d-modal.group-add-members-modal {
-
   .input-group {
     margin-bottom: 0.5em;
 
@@ -308,9 +288,7 @@
 }
 
 .d-modal.share-topic-modal {
-
   .d-modal {
-
     &__title {
       display: flex;
       align-items: center;
@@ -331,7 +309,6 @@
   align-items: flex-start;
 
   .d-modal {
-
     &__container {
       width: var(--modal-max-width);
       margin-top: 1rem;
@@ -347,7 +324,6 @@
   }
 
   .chat-message-creator {
-
     &__add-members-header-container {
       padding-inline: 1rem 0.5rem;
     }
@@ -368,9 +344,7 @@
   }
 
   @media screen and (width <= 768px) {
-
     .d-modal {
-
       &__container {
         width: 100%;
         margin-top: 0;
@@ -381,9 +355,7 @@
 
 .d-modal.fullscreen-table-modal,
 .d-modal.fullscreen-code-modal {
-
   .d-modal {
-
     &__container {
       max-height: 100vh;
     }
@@ -395,9 +367,7 @@
 }
 
 .d-modal.fullscreen-table-modal {
-
   .d-modal {
-
     &__container {
       display: grid;
       grid-template-rows: auto 1fr auto;
@@ -410,7 +380,6 @@
 }
 
 .d-modal.fullscreen-code-modal {
-
   pre {
     margin: 0;
 
@@ -424,7 +393,6 @@
 }
 
 .d-modal.discourse-local-dates-create-modal {
-
   .advanced-mode-btn {
     margin-left: auto;
   }
@@ -440,7 +408,6 @@
       width: 100%;
 
       .select-kit-header {
-
         .d-icon {
           margin-right: 1em;
         }
@@ -458,7 +425,6 @@
 
       &.is-filled,
       &.is-selected {
-
         .date-time {
           color: var(--primary);
           background: var(--secondary);
@@ -561,7 +527,6 @@
   }
 
   .format {
-
     .format-input {
       width: 280px;
     }
@@ -573,7 +538,6 @@
     margin: 0;
 
     .format {
-
       .previewed-format {
         color: var(--primary-medium);
       }
@@ -588,9 +552,7 @@
 }
 
 .d-modal.grant-badge-modal {
-
   .d-modal {
-
     &__body {
       @include breakpoint(medium) {
         overflow: visible;

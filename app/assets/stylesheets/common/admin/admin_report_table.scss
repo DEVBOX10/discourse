@@ -1,7 +1,5 @@
 .admin-report-table {
-
   &.two-columns {
-
     .table .admin-report-table-cell:first-child,
     .table .admin-report-table-header:first-child {
       @include ellipsis;
@@ -28,7 +26,6 @@
   }
 
   .table .admin-report-table-header {
-
     .sort-btn {
       outline: none;
       background: none;
@@ -38,7 +35,6 @@
     }
 
     &.is-current-sort {
-
       .d-icon {
         color: var(--tertiary);
       }
@@ -64,7 +60,6 @@
   }
 
   .admin-report-table-cell {
-
     &.user .username {
       margin-left: 0.25em;
     }
@@ -95,14 +90,12 @@
 }
 
 .admin-report.top-referred-topics {
-
   .admin-report-table-header.topic_title {
     width: 80%;
   }
 }
 
 .admin-report.trending-search {
-
   .admin-report-table-header.ctr,
   .admin-report-table-header.unique_searches,
   .admin-report-table-cell.ctr,
@@ -117,7 +110,6 @@
 }
 
 .admin-report.moderators-activity {
-
   .admin-report-table-header.seconds,
   .admin-report-table-header.number,
   .admin-report-table-cell.seconds,
@@ -131,7 +123,6 @@
 }
 
 .admin-report.post-edits {
-
   .admin-report-table-header.user {
     width: 20%;
   }
@@ -143,7 +134,6 @@
 }
 
 .admin-report.flags-status {
-
   .admin-report-table-header.response_time,
   .admin-report-table-cell.response_time {
     text-align: center;
@@ -151,11 +141,8 @@
 }
 
 .rtl {
-
   .admin-report-table {
-
     &.two-columns {
-
       .table .admin-report-table-cell:first-child,
       .table .admin-report-table-header:first-child {
         text-align: right;
@@ -168,7 +155,6 @@
     }
 
     .total-row {
-
       td {
         text-align: right;
       }
@@ -176,7 +162,6 @@
   }
 
   .admin-report-table-cell {
-
     &.user .username {
       margin-left: 0;
       margin-right: 0.25em;
@@ -184,7 +169,6 @@
   }
 
   .admin-report.trending-search {
-
     .admin-report-table-header.term,
     .admin-report-table-cell.term {
       text-align: right;
@@ -192,7 +176,6 @@
   }
 
   .pagination {
-
     button {
       margin-left: 0;
       margin-right: 0.5em;
@@ -200,7 +183,6 @@
   }
 
   .admin-report.moderators-activity {
-
     .admin-report-table-header.user,
     .admin-report-table-cell.user {
       text-align: right;

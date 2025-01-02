@@ -1,5 +1,4 @@
 .char-counter {
-
   &__ratio {
     display: block;
     text-align: right;
@@ -7,7 +6,6 @@
   }
 
   &.exceeded {
-
     > textarea {
       border-color: var(--danger);
       outline-color: var(--danger);

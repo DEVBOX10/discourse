@@ -1,7 +1,5 @@
 .discourse-automation {
-
   .automations {
-
     .relative-date {
       font-size: $font-down-1;
     }
@@ -16,7 +14,6 @@
   }
 
   .d-admin-table.automations {
-
     .d-admin-row__content {
       @include breakpoint("tablet") {
         display: grid;
@@ -122,10 +119,8 @@
 }
 
 .discourse-automation-form {
-
   .scriptables,
   .triggerables {
-
     .select-kit-body {
       max-height: 250px;
     }
@@ -144,7 +139,6 @@
   }
 
   .form-horizontal {
-
     .control-label {
       margin: 0.25em 0.25em 0.25em 0;
       text-align: left;
@@ -157,7 +151,6 @@
     }
 
     .boolean-field {
-
       .controls {
         display: flex;
       }
@@ -201,7 +194,6 @@
   }
 
   .form-section {
-
     .title {
       padding-bottom: 0.5em;
       margin-bottom: 1em;
@@ -248,7 +240,6 @@
   }
 
   .control-group {
-
     .control-description {
       color: var(--primary-medium);
       width: 100%;
@@ -287,14 +278,12 @@
   }
 
   .text-field {
-
     .ember-text-field {
       width: 300px;
     }
   }
 
   .message-field {
-
     textarea {
       width: 300px;
       height: 200px;
@@ -311,7 +300,6 @@
   }
 
   .pms-field {
-
     .actions {
       display: flex;
       justify-content: flex-end;

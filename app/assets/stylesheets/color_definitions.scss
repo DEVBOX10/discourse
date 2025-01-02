@@ -1,7 +1,6 @@
 // This file maps all SCSS color variables to CSS custom properties.
 // It is compiled to CSS separately from the rest of the app.
 // The source variables come from color_transformations.scss and variables.scss
-
 :root {
   --scheme-type: #{schemeType()};
   --primary: #{$primary};

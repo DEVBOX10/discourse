@@ -15,7 +15,6 @@
   }
 
   .touch & {
-
     &:active {
       background-color: var(--d-hover);
       padding-inline: 1rem 0.75rem;
@@ -24,7 +23,6 @@
   }
 
   .no-touch & {
-
     &:hover,
     &:active {
       background-color: var(--d-hover);

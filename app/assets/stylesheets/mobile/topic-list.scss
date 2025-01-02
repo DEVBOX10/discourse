@@ -1,9 +1,7 @@
 // --------------------------------------------------
 // Topic lists
 // --------------------------------------------------
-
 .topic-list {
-
   .right {
     margin-left: 55px;
   }
@@ -25,7 +23,6 @@
     }
 
     .topic-statuses {
-
       a {
         line-height: 0.8;
         color: var(--primary-medium);
@@ -56,7 +53,6 @@
   }
 
   .category-topic-link td.num .badge-notification {
-
     &.unread-posts {
       color: var(--secondary);
     }
@@ -86,7 +82,6 @@
   }
 
   .topic-item-stats {
-
     span.relative-date {
       vertical-align: text-top;
     }
@@ -133,7 +128,6 @@
 
 // Category list
 // --------------------------------------------------
-
 .categories-list .category-list {
   margin-bottom: 2em;
 
@@ -161,7 +155,6 @@
 }
 
 .category-list-item.category {
-
   tr:first-of-type {
     border: none;
   }
@@ -184,9 +177,7 @@
   }
 
   // numbers get dimmer as they get colder
-
   .coldmap {
-
     &-high {
       opacity: 0.4;
     }
@@ -290,7 +281,6 @@ tr.category-topic-link {
   }
 
   .category-topic-link {
-
     .num {
       white-space: nowrap;
     }
@@ -334,7 +324,6 @@ tr.category-topic-link {
 }
 
 .category-box {
-
   h3 {
     margin: 0 0 0.5em 0;
   }
@@ -350,7 +339,6 @@ tr.category-topic-link {
 
 // Misc. stuff
 // --------------------------------------------------
-
 .dropdown,
 .multiselect {
   position: relative;
@@ -366,7 +354,6 @@ tr.category-topic-link {
 }
 
 .category-heading {
-
   p {
     font-size: var(--font-up-1);
     margin-bottom: 0.75em;
@@ -380,7 +367,6 @@ tr.category-topic-link {
 
 // base defines extra padding for easier click/top of title field
 // this is a bit too much for mobile
-
 td .main-link {
   width: 78%;
   display: inline-block;
@@ -392,7 +378,6 @@ td .main-link {
 }
 
 .topic-list {
-
   &-body {
     border-width: 1px;
   }
@@ -413,7 +398,6 @@ td .main-link {
 
   // so the topic excerpt is full width
   // as the containing div is 80%
-
   .topic-excerpt {
     display: block;
     padding-right: 0;
@@ -439,13 +423,11 @@ td .main-link {
 }
 
 // Bulk select
-
 .topic-list-header {
   display: none;
 }
 
 .topic-list.sticky-header {
-
   .topic-list-header {
     display: table-header-group;
     position: sticky;
@@ -494,7 +476,6 @@ td .main-link {
 }
 
 .topic-list-data .pull-left {
-
   label {
     // bulk select checkbox
     display: flex;

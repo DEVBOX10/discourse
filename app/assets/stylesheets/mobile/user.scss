@@ -1,5 +1,4 @@
 // Mobile styles for "/user" section
-
 .user-content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,7 +37,6 @@
   }
 
   // specific to messages
-
   .user-messages {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -64,7 +62,6 @@
 }
 
 .user-messages-page {
-
   .paginated-topics-list {
     margin-top: 0;
   }
@@ -92,7 +89,6 @@
     color: var(--secondary);
 
     .secondary {
-
       dl {
         padding: 8px 0;
       }
@@ -102,7 +98,6 @@
       margin-bottom: 12px;
 
       .user-profile-avatar {
-
         .avatar-flair {
           right: 2px;
         }
@@ -193,7 +188,6 @@
     }
 
     &.has-background {
-
       .user-profile-image {
         height: 200px;
       }
@@ -207,7 +201,6 @@
       flex: 1 1 25%;
 
       ul {
-
         li,
         > span {
           display: flex;
@@ -227,7 +220,6 @@
   }
 
   .user-field {
-
     label {
       width: auto;
       text-align: left;
@@ -269,13 +261,11 @@
 }
 
 .stats-section {
-
   li {
     margin: 0 15px 10px 0;
     padding: 0;
 
     &.linked-stat {
-
       a {
         padding: 0;
       }
@@ -324,10 +314,8 @@
 }
 
 .user-right {
-
   &,
   > .user-stream {
-
     > .alert:first-child {
       margin-top: 20px;
     }
@@ -335,7 +323,6 @@
 }
 
 .user-invites-page {
-
   .user-invite-search input {
     width: 100%;
   }
@@ -352,7 +339,6 @@
   }
 
   table.user-invite-list {
-
     thead {
       display: none;
     }
@@ -410,7 +396,6 @@
 }
 
 .second-factor {
-
   .second-factor-item {
     width: auto;
     display: flex;

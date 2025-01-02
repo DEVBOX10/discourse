@@ -3,7 +3,6 @@ $max_image_height: 150px;
 .chat-message {
   // append selectors to set images to a
   // max height of $max_image_height
-
   .onebox img:not(.ytp-thumbnail-image, .onebox-avatar-inline),
   img.onebox,
   .chat-uploads img,
@@ -19,13 +18,11 @@ $max_image_height: 150px;
   }
 
   .onebox {
-
     &:not(img) {
       container-type: inline-size;
     }
 
     .thumbnail {
-
       &.onebox-avatar {
         max-height: 100px;
         width: 20%;
@@ -39,7 +36,6 @@ $max_image_height: 150px;
     }
 
     @container (width < 400px) {
-
       .onebox-body {
         display: flex;
         flex-direction: column;

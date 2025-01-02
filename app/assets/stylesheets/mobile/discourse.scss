@@ -4,13 +4,11 @@
 // throughout the Discourse application
 
 // Base Elements
-
 body {
   background-color: var(--secondary);
 }
 
 .ios-device {
-
   textarea {
     background-color: var(--secondary);
     font-size: var(--font-size-ios-input);
@@ -36,9 +34,7 @@ blockquote {
 }
 
 // Common classes
-
 .boxed {
-
   .contents {
     padding: 10px 0 0 0;
   }
@@ -77,7 +73,6 @@ blockquote {
     }
 
     > .d-icon {
-
       &:last-of-type {
         margin-left: auto;
         margin-right: 0;
@@ -118,14 +113,12 @@ blockquote {
 }
 
 .form-vertical {
-
   .control-group {
     margin-bottom: 12px;
   }
 }
 
 // Special elements
-
 #main-outlet-wrapper {
   margin-left: unset;
   margin-right: unset;

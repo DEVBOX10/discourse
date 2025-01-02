@@ -1,5 +1,4 @@
 .static-login {
-
   #main-outlet-wrapper,
   #main-outlet {
     padding: 0;
@@ -33,7 +32,6 @@
   padding-bottom: var(--safe-area-inset-bottom);
 
   .d-modal {
-
     &__container {
       height: 100svh;
       max-height: unset;
@@ -115,9 +113,7 @@
   }
 
   .login-page-cta {
-
     &__buttons {
-
       .login-page-cta__login {
         width: 100%;
         margin-bottom: 0.5rem;
@@ -132,9 +128,7 @@
   }
 
   .signup-page-cta {
-
     &__buttons {
-
       .signup-page-cta__signup {
         width: 100%;
         margin-bottom: 0.5rem;
@@ -150,7 +144,6 @@
 
   .login-page-cta,
   .signup-page-cta {
-
     &__existing-account,
     &__no-account-yet {
       width: unset;
@@ -181,7 +174,6 @@
     padding: 1rem 1rem 0;
 
     .input-group {
-
       &:not(:last-child) {
         margin-bottom: 0.75em;
       }
@@ -219,13 +211,10 @@
 .login-modal,
 .create-account,
 .invites-show {
-
   #login-form,
   .login-form,
   .invite-form {
-
     .input-group {
-
       label.alt-placeholder,
       .user-field.text label.control-label {
         top: 11px;

@@ -1,5 +1,4 @@
 /* Main document */
-
 html.has-lightbox {
   overflow: hidden;
 
@@ -25,7 +24,6 @@ html.has-lightbox {
 /* Lightbox element */
 
 // Grid
-
 .d-lightbox {
   overscroll-behavior: contain;
 
@@ -129,7 +127,6 @@ html.has-lightbox {
   &.has-carousel &,
   &.is-rotated &,
   &.is-zoomed & {
-
     &__body {
       grid-auto-flow: row;
       grid-template-columns: 1fr;
@@ -226,9 +223,7 @@ html.has-lightbox {
 }
 
 /* Base styles */
-
 .d-lightbox {
-
   &.is-visible {
     position: fixed;
     top: 0;
@@ -248,7 +243,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__header {
     z-index: 1;
     padding: 0.25em 1px; // 1px for button outlines
@@ -263,7 +257,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__body {
     @include user-select(none);
     position: relative;
@@ -311,7 +304,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__footer {
     z-index: 1;
     padding: 0.25em 1px;
@@ -362,7 +354,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__carousel {
     @include user-select(none);
     box-sizing: border-box;
@@ -382,7 +373,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__carousel-items {
     @extend %lightbox-scrollable;
     max-height: 100%;
@@ -416,7 +406,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &.is-vertical &__carousel {
     position: relative;
     background-color: var(--d-lightbox-secondary-translucent);
@@ -455,7 +444,6 @@ html.has-lightbox {
     }
 
     .rtl & {
-
       &::before {
         left: auto;
         right: 0;
@@ -479,7 +467,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &.is-horizontal &__carousel {
     position: relative;
 
@@ -532,9 +519,7 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   .btn-flat {
-
     .d-icon {
       margin: 0;
     }
@@ -558,7 +543,6 @@ html.has-lightbox {
     }
 
     @include hover {
-
       .d-icon {
         color: var(--tertiary);
       }
@@ -567,7 +551,6 @@ html.has-lightbox {
 }
 
 .d-lightbox {
-
   &__focus-trap,
   &__screen-reader-announcer {
     position: absolute;
@@ -579,11 +562,8 @@ html.has-lightbox {
 /* State styles */
 
 // Carousel
-
 .d-lightbox {
-
   &.has-carousel {
-
     .d-lightbox__content {
       gap: 2em 0;
     }
@@ -599,11 +579,8 @@ html.has-lightbox {
 }
 
 // expanded title
-
 .d-lightbox {
-
   &.has-expanded-title {
-
     .d-lightbox__content {
       gap: 2em;
     }
@@ -617,11 +594,8 @@ html.has-lightbox {
 }
 
 // Zoom
-
 .d-lightbox {
-
   &.can-zoom {
-
     .d-lightbox__body {
       @extend %lightbox-scrollable;
       overflow: auto;
@@ -636,13 +610,11 @@ html.has-lightbox {
   }
 
   &.is-zoomed {
-
     .d-lightbox__content {
       gap: 0;
     }
 
     .d-lightbox {
-
       &__body {
         @extend %lightbox-scrollable;
         overflow: auto;
@@ -681,11 +653,8 @@ html.has-lightbox {
 }
 
 // Rotate
-
 .d-lightbox {
-
   &.is-rotated {
-
     .d-lightbox__body {
       gap: 0;
     }
@@ -707,11 +676,8 @@ html.has-lightbox {
 }
 
 // Full screen
-
 .d-lightbox {
-
   &.is-fullscreen {
-
     .btn-flat.d-lightbox__full-screen-button .d-icon {
       color: var(--tertiary);
 
@@ -723,9 +689,7 @@ html.has-lightbox {
 }
 
 /* Animations */
-
 .d-lightbox {
-
   &.is-visible &__content {
     @extend %lightbox-animation-base;
 
@@ -785,7 +749,6 @@ html.has-lightbox {
 }
 
 @keyframes lightbox-fade-out {
-
   0% {
     opacity: 1;
   }
@@ -796,7 +759,6 @@ html.has-lightbox {
 }
 
 @keyframes lightbox-fade-in {
-
   0% {
     opacity: 0;
   }
@@ -807,7 +769,6 @@ html.has-lightbox {
 }
 
 @keyframes lightbox-fade-in-scale {
-
   0% {
     opacity: 0;
     transform: scale(0.85);
@@ -820,7 +781,6 @@ html.has-lightbox {
 }
 
 @keyframes lightbox-fade-out-scale {
-
   0% {
     opacity: 1;
     transform: scale(1);

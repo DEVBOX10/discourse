@@ -53,9 +53,7 @@ $pd-font-family: arial, sans-serif !default;
 
 // clear child float (pika-lendar), using the famous micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
-
 .pika-single {
-
     &::before,
     &::after {
         content: " ";
@@ -245,7 +243,6 @@ $pd-font-family: arial, sans-serif !default;
 }
 
 .pika-day {
-
     &:focus {
         background-color: var(--tertiary-very-low);
     }

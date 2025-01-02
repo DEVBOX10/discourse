@@ -106,7 +106,6 @@
 }
 
 .group-nav {
-
   .count {
     margin-left: 5px;
   }
@@ -145,7 +144,6 @@ table.group-manage-logs {
     @container (max-width: 47em) {
       // positioning the member settings button within the same cell
       // and avoiding overlap with padding-right on user-info
-
       .group-member,
       .member-settings {
         grid-row-start: 1;
@@ -181,7 +179,6 @@ table.group-manage-logs {
   }
 
   .group-request-reason__content {
-
     .directory-table__value {
       white-space: normal;
       max-width: 30em;
@@ -189,7 +186,6 @@ table.group-manage-logs {
   }
 
   @container (max-width: 47em) {
-
     .directory-table__cell {
       grid-column-start: 1;
       grid-column-end: -1;
@@ -243,13 +239,11 @@ table.group-manage-logs {
 }
 
 .group-add-members {
-
   .ac-wrap {
     overflow: hidden;
   }
 
   .group-add-members-make-owner {
-
     label {
       display: inline;
       vertical-align: middle;
@@ -280,7 +274,6 @@ table.group-category-permissions {
 }
 
 .group-smtp-prefill-options {
-
   ul {
     display: inline;
     margin: 0;

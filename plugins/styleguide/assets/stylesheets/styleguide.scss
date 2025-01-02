@@ -45,7 +45,6 @@
   }
 
   .styleguide-section {
-
     .section-title {
       font-size: var(--font-up-5);
       font-weight: normal;
@@ -65,7 +64,6 @@
     }
 
     .styleguide-example {
-
       .example-title {
         color: var(--primary-medium);
         font-size: var(--font-down-1);
@@ -112,7 +110,6 @@
     }
 
     &.colors-examples {
-
       .styleguide-example {
         display: flex;
 
@@ -195,7 +192,6 @@
 }
 
 .buttons-examples {
-
   button {
     margin-right: 0.5em;
     margin-bottom: 0.5em;
@@ -213,7 +209,6 @@
 }
 
 .dropdowns-examples {
-
   .select-kit.is-hidden {
     display: inline-block;
   }
@@ -285,7 +280,6 @@
 }
 
 .styleguide-example {
-
   .d-header-wrap {
     position: relative;
     z-index: 0;

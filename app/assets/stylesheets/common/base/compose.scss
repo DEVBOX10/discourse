@@ -1,5 +1,4 @@
 html.composer-open {
-
   #main-outlet {
     padding-bottom: var(--composer-height);
     transition: padding-bottom 250ms ease;
@@ -24,7 +23,6 @@ html.composer-open {
   }
 
   .with-form-template {
-
     .toggle-preview,
     #mobile-file-upload,
     .submit-panel .mobile-preview {
@@ -243,14 +241,12 @@ html.composer-open {
   }
 
   .with-tags {
-
     .title-input {
       flex: 1 1 100%;
     }
 
     .archetype-private_message & {
       // PMs don't have categories, so we need a wider tag input
-
       .mini-tag-chooser {
         width: 100%;
         max-width: 100%;
@@ -272,7 +268,6 @@ html.composer-open {
       width: auto;
 
       &.has-selection {
-
         .name {
           font-size: var(--font-up-1);
         }
@@ -302,7 +297,6 @@ html.composer-open {
           }
 
           // This prevents the first category from being too-truncated at the expense of a long subcategory
-
           > span:last-of-type:not(:first-of-type) {
             flex-shrink: 10;
           }
@@ -312,7 +306,6 @@ html.composer-open {
   }
 
   .with-tags.with-category {
-
     .title-and-category {
       flex-wrap: wrap;
     }
@@ -476,7 +469,6 @@ html.composer-open {
     margin: 0;
 
     li {
-
       &:first-of-type a {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
@@ -546,7 +538,6 @@ html.composer-open {
   }
 
   &.ac-user {
-
     li a {
       padding: 0.5em 1em;
     }
@@ -558,7 +549,6 @@ html.composer-open {
   }
 
   &.ac-emoji {
-
     li:last-of-type a {
       color: var(--primary-high);
     }
@@ -570,7 +560,6 @@ html.composer-open {
 }
 
 div.ac-wrap.disabled {
-
   input {
     display: none;
   }
@@ -639,7 +628,6 @@ div.ac-wrap {
   margin: 1em 0;
 
   .mobile-view & {
-
     table {
       width: 100%;
     }
@@ -647,7 +635,6 @@ div.ac-wrap {
 }
 
 @keyframes transformer {
-
   90% {
     opacity: 1;
   }
@@ -658,7 +645,6 @@ div.ac-wrap {
 }
 
 body.ios-safari-composer-hacks {
-
   #main-outlet,
   header,
   .grippie,
@@ -676,7 +662,6 @@ body.ios-safari-composer-hacks {
 }
 
 body:not(.ios-safari-composer-hacks) {
-
   #reply-control.open {
     --min-height: 255px;
     min-height: var(--min-height);

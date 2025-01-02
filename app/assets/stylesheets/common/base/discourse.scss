@@ -2,7 +2,6 @@
 // global styles that apply to the Discourse application specifically
 // BEWARE: changing these styles implies they take effect anywhere they are seen
 // throughout the Discourse application
-
 :root {
   --d-input-bg-color: var(--secondary);
   --d-input-text-color: var(--primary);
@@ -23,7 +22,6 @@
 
 // Animation Keyframes
 @keyframes rotate-forever {
-
   0% {
     transform: rotate(0deg);
   }
@@ -34,7 +32,6 @@
 }
 
 @keyframes background-fade-highlight {
-
   0% {
     background-color: var(--tertiary-low);
   }
@@ -46,7 +43,6 @@
 
 // placeholder
 @keyframes placeHolderShimmer {
-
   0% {
     background-position: -1000px 0;
   }
@@ -57,7 +53,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .placeholder-animation {
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -74,7 +69,6 @@
 }
 
 // Base Elements
-
 html {
   height: 100%;
 }
@@ -89,7 +83,6 @@ body {
 }
 
 // setting a static limit on big and small prevents nesting abuse
-
 big {
   font-size: var(--font-up-5);
 }
@@ -140,7 +133,6 @@ img.avatar {
 // don't wrap relative dates; we want Jul 26, '15, not: Jul
 //                                                      26,
 //                                                      '15
-
 span.relative-date {
   white-space: nowrap;
 }
@@ -174,7 +166,6 @@ label {
 }
 
 input {
-
   &[type="radio"],
   &[type="checkbox"] {
     margin-top: 0.17em;
@@ -205,7 +196,6 @@ input {
 }
 
 input {
-
   &[type="text"],
   &[type="password"],
   &[type="datetime"],
@@ -241,7 +231,6 @@ input {
 }
 
 input[type="search"] {
-
   &::-webkit-search-cancel-button,
   &::-webkit-search-decoration {
     appearance: none;
@@ -249,13 +238,11 @@ input[type="search"] {
 }
 
 // Fixes Safari height inconsistency
-
 ::-webkit-datetime-edit {
   display: inline;
 }
 
 // Fixes Webkit inconsistencies (Safari/Chrome)
-
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-month-field,
@@ -287,7 +274,6 @@ select {
 }
 
 table {
-
   th {
     font-weight: normal;
     color: var(--primary-medium);
@@ -318,12 +304,10 @@ textarea {
 }
 
 // Common Classes
-
 .sortable {
   white-space: nowrap;
 
   .discourse-no-touch & {
-
     &:hover,
     &:focus {
       background-color: var(--primary-low);
@@ -382,7 +366,6 @@ textarea {
 }
 
 .boxed {
-
   &.white {
     background-color: var(--secondary);
   }
@@ -515,7 +498,6 @@ textarea {
 }
 
 .do-not-disturb-modal {
-
   .do-not-disturb-choice {
     display: grid;
     grid-template-columns: 2em 1fr auto;
@@ -567,7 +549,6 @@ textarea {
 }
 
 .content-list {
-
   h3 {
     color: var(--primary-medium);
     font-size: var(--font-up-1);
@@ -607,7 +588,6 @@ textarea {
 }
 
 .form-vertical {
-
   input,
   textarea,
   select {
@@ -635,7 +615,6 @@ textarea {
 }
 
 // Special elements
-
 #main-outlet-wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -657,9 +636,7 @@ textarea {
 }
 
 #main {
-
   img.avatar {
-
     &.header {
       width: 45px;
       height: 45px;
@@ -682,7 +659,6 @@ textarea {
   }
 
   .user-list {
-
     .user {
       padding-bottom: 5px;
     }
@@ -699,7 +675,6 @@ textarea {
 }
 
 #footer {
-
   .container {
     height: 50px;
 
@@ -843,7 +818,6 @@ textarea {
 }
 
 .controls {
-
   .grouped-control {
     display: flex;
     flex-direction: column;

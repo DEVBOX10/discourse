@@ -1,7 +1,6 @@
 // These CSS custom properties are added here instead of in variables.scss
 // because variables.scss is injected into every theme CSS file
 // which causes problems when overriding custom properties in themes
-
 :root {
   --topic-body-width: #{$topic-body-width};
   --topic-body-width-padding: #{$topic-body-width-padding};
@@ -20,7 +19,6 @@
 // --------------------------------------------------
 // Base styles for HTML elements
 // --------------------------------------------------
-
 html {
   color: var(--primary);
   font-family: var(--font-family);
@@ -49,7 +47,6 @@ html {
 
 // Links
 // --------------------------------------------------
-
 a {
   color: var(--tertiary);
   text-decoration: none;
@@ -70,7 +67,6 @@ a {
 
 // Typography
 // --------------------------------------------------
-
 hr {
   display: block;
   height: 1px;
@@ -82,7 +78,6 @@ hr {
 
 // Lists
 // --------------------------------------------------
-
 ul,
 ol,
 dd {
@@ -98,7 +93,6 @@ dd {
 
 .cooked,
 .d-editor-preview {
-
   ul,
   ol {
     padding-left: 1.25em;
@@ -108,7 +102,6 @@ dd {
 li,
 .cooked li,
 .d-editor-preview li {
-
   > ul,
   > ol {
     margin: 0;
@@ -117,7 +110,6 @@ li,
 
 // Embedded content
 // --------------------------------------------------
-
 img {
   vertical-align: middle;
 }
@@ -128,7 +120,6 @@ img {
 
 // Forms
 // --------------------------------------------------
-
 fieldset {
   margin: 0;
   border: 0;
@@ -146,7 +137,6 @@ pre code {
 
 // Tables
 // --------------------------------------------------
-
 table {
   border-collapse: collapse;
 }
@@ -160,7 +150,6 @@ tr {
   border-bottom: 1px solid var(--primary-low);
 
   @media (prefers-reduced-motion: no-preference) {
-
     &.highlighted {
       animation: background-fade-highlight 2.5s ease-out;
     }
@@ -168,14 +157,12 @@ tr {
 }
 
 // https://en.wikipedia.org/wiki/Ruby_character
-
 ruby > rt {
   font-size: 72%; // ~10px with 14px base
 }
 
 // Buttons (was in normalized)
 // --------------------------------------------------
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -185,7 +172,6 @@ input[type="submit"] {
 
 // Inline form
 // --------------------------------------------------
-
 .inline-form {
   display: inline-flex;
   align-items: center;
@@ -220,7 +206,6 @@ input[type="submit"] {
 
 // Inputs
 // --------------------------------------------------
-
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: var(--tertiary);

@@ -1,5 +1,4 @@
 // Page not found styles
-
 .not-found-container {
   background: var(--d-content-background);
 }
@@ -49,7 +48,6 @@
   margin-bottom: 15px;
 
   @media screen and (width <= 600px) {
-
     &:nth-of-type(n + 6) {
       display: none;
     }
@@ -61,7 +59,6 @@
 }
 
 .page-not-found-search {
-
   label {
     color: var(--primary);
     font-size: var(--font-up-3);

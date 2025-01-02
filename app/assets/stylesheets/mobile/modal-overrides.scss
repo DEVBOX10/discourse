@@ -1,5 +1,4 @@
 .d-modal.discourse-local-dates-create-modal {
-
   .date-time-configuration {
     flex-direction: column;
     gap: 0.5em;
@@ -22,7 +21,6 @@
 }
 
 .d-modal.bookmark-reminder-modal {
-
   .d-modal__container {
     min-height: calc(var(--composer-vh, var(--1dvh)) * 85);
   }

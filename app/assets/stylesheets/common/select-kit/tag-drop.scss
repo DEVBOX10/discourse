@@ -1,7 +1,5 @@
 .select-kit {
-
   &.combo-box {
-
     &.tag-drop {
       min-width: auto;
 
@@ -11,7 +9,6 @@
       }
 
       .select-kit-row {
-
         &[data-value="all-tags"],
         &[data-value="no-tags"] {
           color: var(--tertiary);
@@ -24,7 +21,6 @@
       }
 
       &.has-selection {
-
         .tag-drop-header {
           color: var(--d-nav-border-color--active);
           border-color: var(--d-nav-border-color--active);

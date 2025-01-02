@@ -1,5 +1,4 @@
 @keyframes d-tooltip-opening {
-
   0% {
     opacity: 0;
   }
@@ -10,7 +9,6 @@
 }
 
 .fk-d-tooltip {
-
   &__trigger {
     display: inline-flex;
     cursor: pointer;
@@ -70,7 +68,6 @@
     }
 
     &[data-placement^="top"] {
-
       .arrow {
         bottom: -10px;
         rotate: 180deg;
@@ -78,21 +75,18 @@
     }
 
     &[data-placement^="top-start"] {
-
       .arrow {
         margin-left: 10px;
       }
     }
 
     &[data-placement^="bottom"] {
-
       .arrow {
         top: -10px;
       }
     }
 
     &[data-placement^="right"] {
-
       .arrow {
         rotate: -90deg;
         left: -10px;
@@ -100,7 +94,6 @@
     }
 
     &[data-placement^="left"] {
-
       .arrow {
         rotate: 90deg;
         right: -10px;

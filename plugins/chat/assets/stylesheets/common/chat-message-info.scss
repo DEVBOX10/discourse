@@ -39,7 +39,6 @@
 
   &:hover,
   &:focus {
-
     .chat-time {
       color: var(--primary);
     }
@@ -51,7 +50,6 @@
 }
 
 .chat-message-info__bookmark {
-
   .d-icon-discourse-bookmark-clock,
   .d-icon-bookmark {
     color: var(--primary-low-mid);
@@ -91,7 +89,6 @@
   }
 
   .chat-channel-icon {
-
     .d-icon-d-chat {
       height: 0.9em;
       width: 0.9em;

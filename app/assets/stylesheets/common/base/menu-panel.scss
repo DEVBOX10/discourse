@@ -227,14 +227,12 @@
     }
 
     .set-user-status {
-
       .emoji {
         padding-top: 0;
       }
     }
 
     .profile-tab-btn {
-
       .relative-date {
         font-size: var(--font-down-3);
         color: var(--primary-medium);
@@ -249,7 +247,6 @@
     }
 
     .do-not-disturb {
-
       .d-icon-toggle-on {
         color: var(--tertiary);
       }
@@ -263,14 +260,12 @@
 }
 
 .hamburger-panel {
-
   .panel-body {
     overflow-y: auto;
   }
 }
 
 .menu-links.columned {
-
   li {
     width: 50%;
     float: left;
@@ -279,7 +274,6 @@
 
 .menu-panel {
   // remove once glimmer search menu in place
-
   .widget-link,
   .categories-link {
     padding: 0.25em 0.5em;
@@ -369,7 +363,6 @@
   }
 
   // note these topic counts only appear for anons in the category hamburger drop down
-
   b.topics-count {
     color: var(--primary-med-or-secondary-med);
     font-weight: normal;
@@ -385,7 +378,6 @@
   }
 
   .sidebar-sections {
-
     &__back-to-forum {
       color: var(--d-sidebar-link-color);
       display: flex;
@@ -402,7 +394,6 @@
 }
 
 // Panel / user-notification-list styles. **not** menu panel sizing styles
-
 .user-menu .quick-access-panel,
 .user-notifications-list {
   width: 100%;
@@ -446,7 +437,6 @@
   }
 
   .btn-primary {
-
     .d-icon {
       color: var(--secondary);
     }
@@ -485,7 +475,6 @@
 
     // This is until other languages remove the HTML from within
     // notifications. It can then be removed
-
     div .fa {
       display: none;
     }
@@ -504,7 +493,6 @@
     span.multi-user
     // e.g., "username, username2, and n others"
     {
-
       span.multi-username:nth-of-type(2) {
         // margin between username2 and "and n others"
         margin-right: 0.25em;
@@ -512,7 +500,6 @@
     }
 
     // truncate when usernames are very long
-
     span.multi-username {
       @include ellipsis;
       flex: 0 1 auto;
@@ -557,7 +544,6 @@
 
     a,
     button {
-
       > div {
         overflow: hidden; // clears the text from wrapping below icons
         overflow-wrap: anywhere;
@@ -589,7 +575,6 @@
   }
 
   .is-warning {
-
     .d-icon-envelope {
       color: var(--danger);
     }
@@ -634,15 +619,12 @@
 }
 
 // Styles to have user avatar positioned and sized correctly
-
 .user-menu.show-avatars,
 .user-notifications-list.show-avatars {
-
   li.notification,
   li.bookmark,
   li.reviewable,
   li.message {
-
     a {
       color: var(--primary);
       align-items: center;

@@ -1,18 +1,15 @@
 /* hide the reply border above the time gap notices */
-
 .time-gap + .topic-post article {
   border-top: none;
 }
 
 .time-gap {
-
   .topic-avatar {
     display: none;
   }
 }
 
 .topic-post-visited {
-
   + .topic-post article {
     border-top: none;
   }
@@ -43,17 +40,13 @@ nav.post-controls {
   .actions {
     // using an auto margin on first-child instead of justify-content on the parent
     // because justify-content breaks overflow scrolling
-
     :first-child {
       margin-left: auto;
     }
 
     // Some buttons can be doubled up, like likes or flags
-
     .double-button {
-
       button {
-
         &.button-count {
           padding: var(--control-space);
 
@@ -79,7 +72,6 @@ nav.post-controls {
       }
 
       &.has-like {
-
         .d-icon {
           color: var(--love);
         }
@@ -167,7 +159,6 @@ nav.post-controls button.reply .d-icon {
 
     .row {
       // Main reply line
-
       &::before {
         content: "";
         position: absolute;
@@ -323,13 +314,11 @@ span.post-count {
 }
 
 // hide the full set of selection buttons on mobile
-
 .select-posts button {
   display: none;
 }
 
 // unhide the simple "select just this post" button
-
 button.select-post {
   display: inline-block;
 }

@@ -61,7 +61,6 @@
 }
 
 .reviewable-settings {
-
   h4 {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -173,7 +172,6 @@
   width: 100%;
 
   tbody {
-
     td {
       padding: 0.5em;
     }
@@ -192,7 +190,6 @@
 }
 
 .reviewable-filters {
-
   .topic-filter .btn {
     display: flex;
     width: auto;
@@ -335,7 +332,6 @@
 }
 
 .reviewable-deleted {
-
   .reviewable-contents .post-contents .post-body {
     background-color: var(--danger-low-mid);
     padding: 0.5em;
@@ -343,7 +339,6 @@
 }
 
 .blur-images {
-
   img:not(.avatar, .emoji) {
     filter: blur(10px);
     transition: 0.2s ease-in-out;
@@ -373,7 +368,6 @@
   }
 
   .reviewed-by {
-
     .date {
       margin-left: 0.5em;
     }
@@ -430,7 +424,6 @@
 
     > tr > th,
     > tr > td {
-
       &:not(:empty) {
         padding: 0.5em;
       }
@@ -623,7 +616,6 @@
 }
 
 .editable-fields {
-
   .editable-created-by {
     display: flex;
 
@@ -635,7 +627,6 @@
   width: 100%;
 
   .editable-field {
-
     .mini-tag-chooser {
       margin: 0;
     }

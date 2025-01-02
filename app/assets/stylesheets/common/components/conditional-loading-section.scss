@@ -1,5 +1,4 @@
 .conditional-loading-section {
-
   &.is-loading {
     padding: 2em;
     margin: 1em;
@@ -24,7 +23,6 @@
   }
 
   @keyframes fadein {
-
     from {
       opacity: 0;
     }

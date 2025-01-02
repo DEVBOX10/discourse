@@ -1,5 +1,4 @@
 @keyframes d-toast-opening {
-
   from {
     transform: translateY(var(--transform-y, 10px));
   }
@@ -53,7 +52,6 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-
   .fk-d-toasts {
     --transform-y: 2vh;
   }

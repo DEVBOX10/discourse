@@ -1,5 +1,4 @@
 .full-page-chat {
-
   #main-chat-outlet.chat-view {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -15,18 +14,14 @@
 }
 
 .c-footer {
-
   &__item {
-
     .c-unread-indicator,
     .c-unread-indicator.-urgent {
       margin-left: 1rem;
     }
 
     &.--active {
-
       .full-page-chat & {
-
         .d-icon,
         .d-button-label {
           color: var(--d-nav-color--active);
