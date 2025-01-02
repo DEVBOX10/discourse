@@ -1,9 +1,11 @@
 html.composer-open {
+
   #main-outlet {
     padding-bottom: var(--composer-height);
     transition: padding-bottom 250ms ease;
   }
 }
+
 #reply-control {
   position: fixed;
   display: flex;
@@ -22,18 +24,20 @@ html.composer-open {
   }
 
   .with-form-template {
+
     .toggle-preview,
     #mobile-file-upload,
     .submit-panel .mobile-preview {
       display: none;
     }
+
     .d-editor-preview-wrapper {
       display: none;
       flex: 0;
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (width <= 1200px) {
     min-width: 0;
   }
   z-index: z("composer", "content");
@@ -62,6 +66,7 @@ html.composer-open {
       border-color: var(--secondary);
       border-right-color: transparent;
     }
+
     .d-icon {
       color: var(--secondary);
     }
@@ -102,9 +107,11 @@ html.composer-open {
   &.draft {
     cursor: pointer;
     display: flex;
+
     .draft-text {
       display: block;
     }
+
     .grippie,
     .saving-text {
       display: none;
@@ -133,6 +140,7 @@ html.composer-open {
         color: var(--primary-medium);
       }
     }
+
     .composer-action-title {
       display: flex;
       align-items: center;
@@ -150,6 +158,7 @@ html.composer-open {
         .user-link,
         .post-link {
           margin-right: 8px;
+
           @include ellipsis;
         }
       }
@@ -157,8 +166,10 @@ html.composer-open {
       .username {
         margin-right: 5px;
         max-width: 100px;
+
         @include ellipsis;
-        @media screen and (max-width: 500px) {
+
+        @media screen and (width <= 500px) {
           display: none;
         }
       }
@@ -194,9 +205,11 @@ html.composer-open {
 
   .display-edit-reason {
     display: inline-flex;
+
     a {
       display: inline-flex;
     }
+
     .d-icon {
       padding: 0.3em 0.5em;
       color: var(--tertiary);
@@ -230,12 +243,14 @@ html.composer-open {
   }
 
   .with-tags {
+
     .title-input {
       flex: 1 1 100%;
     }
 
     .archetype-private_message & {
       // PMs don't have categories, so we need a wider tag input
+
       .mini-tag-chooser {
         width: 100%;
         max-width: 100%;
@@ -257,6 +272,7 @@ html.composer-open {
       width: auto;
 
       &.has-selection {
+
         .name {
           font-size: var(--font-up-1);
         }
@@ -275,14 +291,18 @@ html.composer-open {
       .selected-name {
         max-width: 100%;
         overflow: hidden;
+
         .name {
           display: flex;
           max-width: 100%;
           gap: 0 0.5em;
+
           .badge-category {
             overflow: hidden;
           }
+
           // This prevents the first category from being too-truncated at the expense of a long subcategory
+
           > span:last-of-type:not(:first-of-type) {
             flex-shrink: 10;
           }
@@ -292,6 +312,7 @@ html.composer-open {
   }
 
   .with-tags.with-category {
+
     .title-and-category {
       flex-wrap: wrap;
     }
@@ -334,11 +355,13 @@ html.composer-open {
 
   .tags-input {
     position: relative;
-    margin: 0 0 8px 0px;
+    margin: 0 0 8px 0;
     flex-grow: 1;
+
     .mini-tag-chooser {
       z-index: z("composer", "dropdown");
       width: 100%;
+
       .select-kit-header {
         color: var(--primary-high);
       }
@@ -400,10 +423,12 @@ html.composer-open {
     display: flex;
     align-items: center;
     margin-right: auto;
+
     a {
       margin-left: 0.33em;
       color: var(--primary-high);
     }
+
     .spinner {
       margin-right: 0.33em;
     }
@@ -411,11 +436,13 @@ html.composer-open {
 
   #draft-status {
     margin-left: auto;
+
     .d-icon-user-pen {
       color: var(--danger);
       font-size: 20px;
       vertical-align: -5.5px;
     }
+
     + .btn-mini-toggle {
       margin-left: 0;
     }
@@ -449,14 +476,17 @@ html.composer-open {
     margin: 0;
 
     li {
+
       &:first-of-type a {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
       }
+
       &:last-of-type a {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
       }
+
       a {
         @include ellipsis;
         align-items: center;
@@ -516,9 +546,11 @@ html.composer-open {
   }
 
   &.ac-user {
+
     li a {
       padding: 0.5em 1em;
     }
+
     .emoji {
       height: 0.75em;
       width: 0.75em;
@@ -526,9 +558,11 @@ html.composer-open {
   }
 
   &.ac-emoji {
+
     li:last-of-type a {
       color: var(--primary-high);
     }
+
     .emoji {
       margin-right: 0.25em;
     }
@@ -536,9 +570,11 @@ html.composer-open {
 }
 
 div.ac-wrap.disabled {
+
   input {
     display: none;
   }
+
   .item a {
     display: none;
   }
@@ -553,6 +589,7 @@ div.ac-wrap div.item a.remove,
   border-radius: 12px;
   box-sizing: border-box;
   border: 1px solid var(--primary-low);
+
   &:hover {
     background-color: var(--danger-low);
     border: 1px solid var(--danger-medium);
@@ -568,10 +605,12 @@ div.ac-wrap {
   align-items: center;
   min-height: 30px;
   box-sizing: border-box;
+
   div.item {
     float: left;
     padding: 4px 10px;
     line-height: var(--line-height-large);
+
     span {
       display: inline-block;
       line-height: var(--line-height-medium);
@@ -588,6 +627,7 @@ div.ac-wrap {
 
   input[type="text"] {
     float: left;
+
     &.fullwidth-input {
       width: 100%;
     }
@@ -597,7 +637,9 @@ div.ac-wrap {
 .md-table {
   overflow-y: auto;
   margin: 1em 0;
+
   .mobile-view & {
+
     table {
       width: 100%;
     }
@@ -605,15 +647,18 @@ div.ac-wrap {
 }
 
 @keyframes transformer {
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
 body.ios-safari-composer-hacks {
+
   #main-outlet,
   header,
   .grippie,
@@ -622,7 +667,8 @@ body.ios-safari-composer-hacks {
   }
 
   #reply-control {
-    top: 0px;
+    top: 0;
+
     &.open {
       height: calc(var(--composer-vh, 1vh) * 100);
     }
@@ -630,10 +676,12 @@ body.ios-safari-composer-hacks {
 }
 
 body:not(.ios-safari-composer-hacks) {
+
   #reply-control.open {
     --min-height: 255px;
     min-height: var(--min-height);
     max-height: calc(100vh - var(--header-offset, 4em));
+
     &.composer-action-reply {
       // we can let the reply composer get a little shorter
       min-height: calc(var(--min-height) - 4em);

@@ -1,4 +1,5 @@
 .bookmark-menu-content {
+
   .dropdown-menu {
     padding: 0;
     min-width: 200px;
@@ -49,6 +50,7 @@
       color: var(--primary) !important;
       background: var(--tertiary-very-low);
     }
+
     .--remove & {
       color: var(--danger);
     }

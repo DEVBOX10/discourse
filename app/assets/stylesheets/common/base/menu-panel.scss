@@ -7,12 +7,14 @@
     width: 100%;
   }
 }
+
 .header-cloak {
   display: none;
 }
 
 .menu-panel.drop-down {
   position: absolute;
+
   // positions are relative to the .d-header .panel div
   top: 100%; // directly underneath .panel
   right: -10px; // 10px to the right of .panel - adjust as needed
@@ -70,10 +72,12 @@
     .show-all {
       display: flex;
       flex: 1 1 auto;
+
       button {
         width: 100%;
       }
     }
+
     .notifications-dismiss {
       margin-left: 0.5em;
     }
@@ -81,6 +85,7 @@
     .btn {
       background-color: var(--primary-very-low);
       color: var(--primary-high);
+
       &:hover {
         background: var(--primary-low);
         color: var(--primary);
@@ -105,7 +110,7 @@
   right: 0;
   width: 320px;
   padding: 0;
-  border-top-right-radius: 0px;
+  border-top-right-radius: 0;
 
   .panel-body-bottom {
     flex: 0;
@@ -129,7 +134,8 @@
       position: relative;
       border-radius: 0;
       padding: 0.857em;
-      @media screen and (max-height: 400px) {
+
+      @media screen and (height <= 400px) {
         // helps with 400% zoom level
         font-size: var(--font-down-1);
         padding: 0.5em 0.875em;
@@ -145,7 +151,8 @@
         right: 6px;
         top: 6px;
         font-size: var(--font-down-3);
-        @media screen and (max-height: 400px) {
+
+        @media screen and (height <= 400px) {
           // helps with 400% zoom level
           right: 0;
           top: 0;
@@ -155,6 +162,7 @@
       &.active {
         background-color: var(--d-selected);
       }
+
       &:hover {
         background-color: var(--d-hover);
       }
@@ -189,9 +197,11 @@
       align-items: center;
       overflow-y: auto; // really short viewports
     }
+
     li {
       flex: 1 1 auto;
       max-height: 3em; // prevent buttons from getting too tall
+
       > * {
         // button, a, and everything else
         height: 100%;
@@ -199,32 +209,36 @@
         margin: 0;
         padding: 0 0.5em;
       }
+
       img.emoji {
         height: 1em;
         width: 1em;
         padding-top: 0.2em;
         margin-right: 0.5em;
       }
+
       .d-icon {
         padding-top: 0;
       }
+
       &.enabled .d-icon {
         color: var(--tertiary);
       }
     }
 
     .set-user-status {
+
       .emoji {
         padding-top: 0;
       }
     }
 
     .profile-tab-btn {
+
       .relative-date {
         font-size: var(--font-down-3);
         color: var(--primary-medium);
       }
-
       justify-content: unset;
       line-height: var(--line-height-large);
       width: 100%;
@@ -235,6 +249,7 @@
     }
 
     .do-not-disturb {
+
       .d-icon-toggle-on {
         color: var(--tertiary);
       }
@@ -248,12 +263,14 @@
 }
 
 .hamburger-panel {
+
   .panel-body {
     overflow-y: auto;
   }
 }
 
 .menu-links.columned {
+
   li {
     width: 50%;
     float: left;
@@ -262,11 +279,13 @@
 
 .menu-panel {
   // remove once glimmer search menu in place
+
   .widget-link,
   .categories-link {
     padding: 0.25em 0.5em;
     display: block;
     color: var(--primary);
+
     &:hover,
     &:focus {
       background-color: var(--d-hover);
@@ -294,6 +313,7 @@
     padding: 0.25em 0.5em;
     display: block;
     color: var(--primary);
+
     &:hover,
     &:focus {
       background-color: var(--d-hover);
@@ -324,8 +344,10 @@
     padding: 0.25em 0.5em;
     width: 50%;
     box-sizing: border-box;
+
     a {
       display: inline-flex;
+
       &:hover,
       &:focus {
         background: transparent;
@@ -335,6 +357,7 @@
         }
       }
     }
+
     .badge-notification {
       color: var(--primary-med-or-secondary-med);
       background-color: transparent;
@@ -346,6 +369,7 @@
   }
 
   // note these topic counts only appear for anons in the category hamburger drop down
+
   b.topics-count {
     color: var(--primary-med-or-secondary-med);
     font-weight: normal;
@@ -361,10 +385,12 @@
   }
 
   .sidebar-sections {
+
     &__back-to-forum {
       color: var(--d-sidebar-link-color);
       display: flex;
       align-items: center;
+
       svg {
         margin-right: var(--d-sidebar-section-link-prefix-margin-right);
         height: 0.75em;
@@ -376,6 +402,7 @@
 }
 
 // Panel / user-notification-list styles. **not** menu panel sizing styles
+
 .user-menu .quick-access-panel,
 .user-notifications-list {
   width: 100%;
@@ -413,11 +440,13 @@
   &:hover .d-icon {
     color: var(--primary-medium);
   }
+
   .icon {
     color: var(--primary-high);
   }
 
   .btn-primary {
+
     .d-icon {
       color: var(--secondary);
     }
@@ -439,6 +468,7 @@
     &.pending {
       background-color: var(--tertiary-low);
     }
+
     &:hover {
       background-color: var(--d-hover);
       outline: none;
@@ -446,6 +476,7 @@
 
     &:focus-within {
       background: var(--d-hover);
+
       a {
         // we don't need the link focus because we're styling the parent
         outline: 0;
@@ -454,6 +485,7 @@
 
     // This is until other languages remove the HTML from within
     // notifications. It can then be removed
+
     div .fa {
       display: none;
     }
@@ -472,6 +504,7 @@
     span.multi-user
     // e.g., "username, username2, and n others"
     {
+
       span.multi-username:nth-of-type(2) {
         // margin between username2 and "and n others"
         margin-right: 0.25em;
@@ -479,11 +512,13 @@
     }
 
     // truncate when usernames are very long
+
     span.multi-username {
       @include ellipsis;
       flex: 0 1 auto;
       min-width: 1.2em;
       max-width: 10em;
+
       &:nth-of-type(2) {
         // margin for comma between username and username2
         margin-left: 0.25em;
@@ -497,10 +532,12 @@
 
     &:focus-within {
       background: var(--d-hover);
+
       a {
         // we don't need the link focus because we're styling the parent
         outline: 0;
       }
+
       .btn-flat:focus {
         // undo default btn-flat style
         background: transparent;
@@ -511,7 +548,7 @@
     .profile-tab-btn {
       display: flex;
       margin: 0.25em;
-      padding: 0em 0.25em;
+      padding: 0 0.25em;
     }
 
     button {
@@ -520,9 +557,11 @@
 
     a,
     button {
+
       > div {
         overflow: hidden; // clears the text from wrapping below icons
         overflow-wrap: anywhere;
+
         @supports not (overflow-wrap: anywhere) {
           word-break: break-word;
         }
@@ -537,6 +576,7 @@
       overflow: hidden;
     }
   }
+
   li:not(.show-all) {
     padding: 0;
     align-self: flex-start;
@@ -547,26 +587,33 @@
       margin-right: 0.5em;
     }
   }
+
   .is-warning {
+
     .d-icon-envelope {
       color: var(--danger);
     }
   }
+
   .read {
     background-color: var(--secondary);
   }
+
   .none {
     padding-top: 5px;
   }
+
   .spinner-container {
     min-height: 2em;
   }
+
   .spinner {
     width: 20px;
     height: 20px;
     border-width: 2px;
     margin: 0 auto;
   }
+
   .show-all a {
     width: 100%;
     display: flex;
@@ -575,22 +622,27 @@
     min-height: 30px;
     color: var(--primary-med-or-secondary-high);
     background: var(--blend-primary-secondary-5);
+
     &:hover {
       color: var(--primary);
       background: var(--primary-low);
     }
   }
+
   /* as a big ol' click target, don't let text inside be selected */
   @include unselectable;
 }
 
 // Styles to have user avatar positioned and sized correctly
+
 .user-menu.show-avatars,
 .user-notifications-list.show-avatars {
+
   li.notification,
   li.bookmark,
   li.reviewable,
   li.message {
+
     a {
       color: var(--primary);
       align-items: center;
@@ -599,6 +651,7 @@
       .item-label {
         font-weight: bold;
       }
+
       .item-description {
         color: var(--primary);
       }
@@ -617,6 +670,7 @@
           width: 100%;
           height: 100%;
         }
+
         &__icon-wrapper {
           position: absolute;
           right: -0.65em;
@@ -638,10 +692,12 @@
           }
         }
       }
+
       & + div {
         padding: 0.25em 0;
       }
     }
+
     &.unread .icon-avatar__icon-wrapper {
       background: var(--tertiary);
 
@@ -658,11 +714,13 @@
   .panel-body {
     display: block;
   }
+
   .panel-body-contents {
     max-height: unset;
     min-height: 100%;
   }
 }
+
 .header-cloak {
   height: 100%;
   width: 100%;
@@ -677,14 +735,15 @@
 .menu-panel.slide-in {
   top: 0;
   box-sizing: border-box;
+
   // ensure there's always space to click outside on tiny devices
   max-width: 90vw;
 
   --100dvh: 100%;
+
   @supports (height: 100dvh) {
     --100dvh: 100dvh;
   }
-  box-shadow: 0px 0 30px -2px rgba(0, 0, 0, 0.5);
-
+  box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.5);
   height: var(--100dvh);
 }

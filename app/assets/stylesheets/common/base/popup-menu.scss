@@ -48,6 +48,7 @@
     }
 
     &.popup-menu-btn-danger {
+
       .d-icon {
         color: var(--danger);
       }
@@ -58,6 +59,7 @@
 
       &:focus,
       &:hover {
+
         .d-icon,
         .d-button-label {
           color: var(--danger);

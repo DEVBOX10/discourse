@@ -16,6 +16,7 @@ $search-pad-horizontal: 0.5em;
 
 .search-menu,
 .search-menu-container {
+
   .menu-panel .panel-body-contents {
     overflow-y: auto;
   }
@@ -37,6 +38,7 @@ $search-pad-horizontal: 0.5em;
       width: auto;
       flex-grow: 1;
       padding-right: 50px;
+
       &:focus {
         outline: none;
       }
@@ -47,10 +49,12 @@ $search-pad-horizontal: 0.5em;
       margin-right: 0;
       white-space: nowrap;
       background-color: var(--primary-200);
+
       &:hover {
         background-color: var(--primary-medium);
       }
     }
+
     &:focus-within {
       @include default-focus;
     }
@@ -58,6 +62,7 @@ $search-pad-horizontal: 0.5em;
 
   .heading {
     padding: 5px 0 5px 5px;
+
     .filter {
       padding: 0 5px;
     }
@@ -90,13 +95,12 @@ $search-pad-horizontal: 0.5em;
       min-width: 100px;
 
       .item {
+
         .blurb {
           // https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
           overflow-wrap: break-word;
           word-wrap: break-word;
-          word-break: break-all;
           word-break: break-word;
-          -webkit-hyphens: auto;
           hyphens: auto;
           margin-top: 0.25em;
         }
@@ -104,6 +108,7 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-result-topic {
+
       .first-line {
         display: block;
         line-height: var(--line-height-medium);
@@ -118,15 +123,18 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-result-post {
+
       .blurb {
         font-size: var(--font-down-1);
       }
     }
 
     .search-result-category {
+
       .badge-category__wrapper {
         font-size: var(--font-0);
       }
+
       .widget-link {
         margin-bottom: 0;
       }
@@ -134,6 +142,7 @@ $search-pad-horizontal: 0.5em;
 
     .search-result-group .group-result,
     .search-result-user {
+
       .search-link {
         display: flex;
         align-items: center;
@@ -160,6 +169,7 @@ $search-pad-horizontal: 0.5em;
           font-size: var(--font-down-2);
         }
       }
+
       .user-result {
         display: flex;
         align-items: center;
@@ -173,6 +183,7 @@ $search-pad-horizontal: 0.5em;
       align-items: center;
 
       &:not(.--with-flair) {
+
         svg {
           padding: 0.43em; // matching avatar-flair width
           background: var(--primary-200);
@@ -195,12 +206,13 @@ $search-pad-horizontal: 0.5em;
 
         .d-icon {
           font-size: var(--font-down-2);
-          color: currentColor;
+          color: currentcolor;
         }
       }
 
       .avatar-flair {
         border-radius: 50%;
+
         &.avatar-flair-image {
           background-repeat: no-repeat;
           background-size: 100% 100%;
@@ -210,12 +222,14 @@ $search-pad-horizontal: 0.5em;
       .group-names {
         @include user-item-flex;
         min-width: 0;
+
         .name,
         .slug {
           @include ellipsis;
         }
 
         &.--group-with-slug {
+
           .name {
             font-weight: 700;
           }
@@ -225,6 +239,7 @@ $search-pad-horizontal: 0.5em;
 
     .search-result-category,
     .search-result-tag {
+
       + .search-result-user,
       + .search-result-group {
         @include separator;
@@ -241,6 +256,7 @@ $search-pad-horizontal: 0.5em;
         height: 20px;
         margin-right: 0.5em;
       }
+
       .username {
         margin-right: 0.33em;
       }
@@ -270,9 +286,11 @@ $search-pad-horizontal: 0.5em;
       overflow-wrap: anywhere;
       white-space: wrap;
       min-width: 0;
+
       .keyword {
         margin-right: 0.33em;
       }
+
       .badge-wrapper {
         font-size: var(--font-0);
         margin-left: 2px;
@@ -280,6 +298,7 @@ $search-pad-horizontal: 0.5em;
     }
 
     .search-menu-initial-options {
+
       + .search-result-tag,
       + .search-result-category,
       + .search-result-user,
@@ -291,24 +310,31 @@ $search-pad-horizontal: 0.5em;
     .search-menu-initial-options,
     .search-result-tag,
     .search-menu-assistant {
+
       .search-item-prefix {
         margin-right: 0.33em;
       }
+
       .badge-category__wrapper {
         font-size: var(--font-0);
       }
+
       .search-link {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+
         @include ellipsis;
+
         .d-icon {
           margin-right: 0.33em;
           vertical-align: middle;
         }
+
         .d-icon-tag {
           font-size: 0.7em;
         }
+
         .d-icon-magnifying-glass {
           font-size: var(--font-down-1);
         }
@@ -321,12 +347,14 @@ $search-pad-horizontal: 0.5em;
     padding: $search-pad-vertical 1px;
     font-size: var(--font-down-2);
     color: var(--primary-medium);
+
     .tip-label {
       background-color: rgba(var(--tertiary-rgb), 0.1);
       margin-right: 4px;
       padding: 2px 4px;
       display: inline-block;
       border: none;
+
       &.tip-clickable {
         cursor: pointer;
       }
@@ -339,14 +367,17 @@ $search-pad-horizontal: 0.5em;
     .search-menu-assistant-item .search-link {
       flex-wrap: nowrap;
     }
+
     .heading {
       display: flex;
       justify-content: space-between;
+
       h4 {
         color: var(--primary-medium);
         font-weight: normal;
         margin-bottom: 0;
       }
+
       .clear-recent-searches {
         cursor: pointer;
         color: var(--primary-low-mid);
@@ -359,6 +390,7 @@ $search-pad-horizontal: 0.5em;
   }
 
   .searching {
+
     .spinner {
       width: 12px;
       height: 12px;
@@ -369,14 +401,17 @@ $search-pad-horizontal: 0.5em;
 
     .show-advanced-search,
     a.clear-search {
-      padding: 0px 3px;
+      padding: 0 3px;
       display: inline-block;
       background-color: transparent;
+
       .d-icon {
         color: var(--primary-medium);
       }
+
       &:focus,
       &:hover {
+
         .d-icon {
           color: var(--primary-high);
         }
@@ -399,6 +434,7 @@ $search-pad-horizontal: 0.5em;
     // This is purposefully redundant
     // the search widget can be used outside of the header
     // and the focus/hover styles from the header in those cases wouldn't follow
+
     &:focus,
     &:hover {
       background-color: var(--highlight-bg);
@@ -411,14 +447,17 @@ $search-pad-horizontal: 0.5em;
     .topic-title {
       color: var(--tertiary);
       overflow-wrap: anywhere;
+
       @supports not (overflow-wrap: anywhere) {
         word-break: break-word;
       }
       margin-right: 0.25em;
     }
   }
+
   .search-result-topic,
   .search-result-post {
+
     .search-link {
       padding: 0.5em;
     }

@@ -1,4 +1,5 @@
 .has-full-page-chat {
+
   .global-notice,
   .bootstrap-mode-notice {
     display: none;
@@ -6,6 +7,7 @@
 }
 
 .admin-plugins {
+
   [data-plugin-name="chat"] {
     display: none;
   }
@@ -21,6 +23,7 @@
 
   li.user-profile-controls-outlet.chat-button {
     order: -1;
+
     &:empty {
       display: none;
     }

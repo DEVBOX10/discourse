@@ -15,6 +15,7 @@
   }
 
   .je-ready {
+
     .je-object__container {
       padding: 0;
       border: none;
@@ -44,6 +45,7 @@
     .json-editor-btn-add {
       @extend .btn, .ok;
       gap: var(--space-1);
+
       span {
         display: inline;
       }
@@ -52,6 +54,7 @@
     button {
       @extend .btn;
       @extend .no-text;
+
       span {
         display: none;
       }
@@ -79,6 +82,7 @@
       ); // down chevron
       background-repeat: no-repeat;
       background-position: 98%;
+
       &:focus {
         @include default-focus;
       }
@@ -91,12 +95,14 @@
     }
 
     .row:not(:first-child) {
+
       .form-control {
         margin: var(--space-4) 0;
       }
     }
 
     .form-control {
+
       p {
         // description
         color: var(--primary-medium);
@@ -109,12 +115,14 @@
       display: flex;
       align-items: center;
       margin: 0;
+
       button.json-editor-btn-collapse.json-editor-btntype-toggle {
         // needs the specificity
         background: transparent;
         margin: 0 0 0 calc(var(--space-2) * -1);
         padding: var(--space-1) var(--space-2);
         font-size: var(--font-down-2);
+
         .d-icon {
           color: var(--primary-medium);
         }
@@ -136,11 +144,14 @@
 
     [data-schemaid="root"] {
       position: relative;
+
       > .je-header {
+
         label,
         .json-editor-btn-collapse {
           display: none;
         }
+
         button {
           position: absolute;
           right: 0;
@@ -215,9 +226,11 @@
 
       td,
       th {
-        &:not(:first-child):not(:last-child) {
+
+        &:not(:first-child, :last-child) {
           padding: var(--space-2);
         }
+
         &:first-child,
         &:last-child {
           padding: var(--space-2) 0;
@@ -233,13 +246,16 @@
         }
 
         &:last-child {
+
           span {
             display: flex;
             flex-direction: column;
             gap: var(--space-1);
+
             button {
               margin: 0;
             }
+
             .delete {
               order: 2;
             }
@@ -249,6 +265,7 @@
     }
 
     div[data-schematype="boolean"] {
+
       label {
         display: flex;
         align-items: center;

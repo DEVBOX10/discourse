@@ -1,6 +1,8 @@
 .form-kit__field-code {
+
   .ace-wrapper {
     width: 100%;
+
     > .loading-container {
       width: 100%;
     }
@@ -15,6 +17,7 @@
   }
 
   .ace-wrapper[data-disabled="false"] {
+
     .ace_focus {
       @include default-input;
       height: unset;

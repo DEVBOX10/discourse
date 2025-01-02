@@ -4,15 +4,16 @@
 }
 
 .directory {
+
   .directory-value-list-item:not(:empty)
-    ~ .directory-value-list-item:not(:empty):before {
+    ~ .directory-value-list-item:not(:empty)::before {
     content: "| ";
   }
-
   margin-bottom: 100px;
   background: var(--d-content-background);
 
   &.users-directory {
+
     .directory-group-selector {
       vertical-align: top;
     }
@@ -29,6 +30,7 @@
   .directory-controls {
     display: flex;
     justify-content: space-between;
+
     .total-rows {
       color: var(--primary-medium);
       font-weight: normal;
@@ -43,7 +45,9 @@
 }
 
 .edit-user-directory-columns-modal {
+
   .edit-directory-columns-container {
+
     .edit-directory-column {
       display: flex;
       justify-content: space-between;
@@ -55,6 +59,7 @@
         align-items: center;
         margin-bottom: 0;
       }
+
       .d-icon-heart {
         color: var(--love);
         margin: 0 0.25em 0 0;
@@ -75,17 +80,22 @@
       }
     }
   }
+
   .d-modal__footer {
     justify-content: space-between;
   }
 }
 
 @container (min-width: 47em) {
+
   .users-directory {
+
     .directory-table {
+
       &__value {
         white-space: nowrap;
         font-size: var(--font-up-2);
+
         &,
         &--user-field {
           color: var(--primary-medium);
@@ -98,7 +108,8 @@
 .directory-table-container {
   container-type: inline-size;
   container-name: directory-table;
-  transform: translateX(0px);
+  transform: translateX(0);
+
   // transform here creates a containing blocks which
   // is used by fixed-positioned dropdowns
   // if omitted, `overflow-x: auto;` below will clip them
@@ -112,7 +123,9 @@
   overflow-x: auto;
 
   .me {
+
     .directory-table__cell {
+
       &,
       &--user-field {
         background-color: var(--highlight-low-or-medium);
@@ -150,11 +163,13 @@
     white-space: nowrap;
     color: var(--primary-medium);
     padding: 0.5em;
+
     .d-icon {
       margin-right: 0.25em;
     }
 
     &:first-child {
+
       .header-contents {
         text-align: left;
       }
@@ -162,6 +177,7 @@
   }
 
   &__cell {
+
     &,
     &--user-field {
       padding: 0.75em 0.5em;
@@ -170,6 +186,7 @@
 
   &__value {
     white-space: nowrap;
+
     &--user-field {
       max-width: 30em;
     }
@@ -194,17 +211,21 @@
     display: flex;
     min-width: 0;
     width: 100%;
+
     .user-detail {
       padding: 0;
       width: 100%;
+
       @include breakpoint(tablet) {
         // overrides existing media query
         font-size: var(--font-0);
       }
+
       @include breakpoint("mobile-medium") {
         font-size: var(--font-down-1);
       }
     }
+
     .title {
       margin: 0;
     }
@@ -221,6 +242,7 @@
 // fallback to big horizontal scrolling table
 
 @container (max-width: 47em) {
+
   .directory-table {
     display: flex;
     flex-direction: column;
@@ -243,15 +265,18 @@
         // caution: display flex here can interfere with overflow hiding
         flex: 0 1 auto; // can shrink if needed
         margin-right: 0.25em;
+
         @include ellipsis;
       }
 
       // flexible divider between the label and value
-      &:after {
+
+      &::after {
         flex: 1 1 0; // can grow or shrink, but should be 0 width if needed
         color: var(--primary-300);
         min-width: 0;
         overflow: hidden;
+
         // this needs to be long to account for all possible widths
         content: "................................................................................................................................................................";
       }
@@ -266,6 +291,7 @@
       font-size: var(--font-0);
       color: var(--primary);
       align-self: start;
+
       &--user-field {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -274,6 +300,7 @@
     }
 
     &__row {
+
       &:first-child {
         border-top: 1px solid var(--primary-low);
       }
@@ -289,14 +316,17 @@
     }
 
     &__cell {
+
       &,
       &--user-field {
         padding: 0.25em;
         border: none;
+
         &:first-child {
           width: 100%;
           padding: 0.5em 0.25em 1em;
           justify-content: start;
+
           // force full width of the cell
           grid-column-start: 1;
           grid-column-end: -1;
@@ -306,10 +336,12 @@
       &--user-field {
         display: flex;
         order: 2;
+
         // force full width of the cell
         // because we don't know how much content there is
         grid-column-start: 1;
         grid-column-end: -1;
+
         .directory-table__label {
           margin-right: 0.25em;
         }

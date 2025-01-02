@@ -1,21 +1,25 @@
 @keyframes draw {
+
   to {
     stroke-dashoffset: 0;
   }
 }
 
 .post-controls {
+
   .post-action-feedback-button {
     position: relative;
     height: 100%;
 
     &.--activated,
     &.--activated:hover {
+
       .d-icon-d-post-share {
         color: var(--success);
       }
     }
   }
+
   .post-action-feedback-svg {
     position: absolute;
     bottom: 0;

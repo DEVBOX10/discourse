@@ -1,7 +1,10 @@
 .chat-composer.is-disabled {
+
   .no-touch & {
+
     .chat-composer-dropdown__trigger-btn:hover {
       cursor: default;
+
       .d-icon {
         color: var(--primary-high);
       }
@@ -23,10 +26,10 @@
   &:focus,
   &:hover,
   &:active {
+
     .d-icon {
       color: var(--primary) !important;
     }
-
     background: none !important;
     background-image: none !important;
   }
@@ -36,6 +39,7 @@
   }
 
   &.-expanded {
+
     .d-icon {
       transform: rotate(135deg);
       transform-origin: center center;

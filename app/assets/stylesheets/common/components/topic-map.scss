@@ -2,7 +2,6 @@
   // topic map under OP
   border-top: 1px solid var(--primary-low);
   border-bottom: none;
-
   padding-left: calc(
     var(--topic-body-width-padding) + var(--topic-avatar-width)
   );
@@ -19,6 +18,7 @@
 }
 
 body:not(.archetype-private_message) {
+
   .topic-map {
     display: flex;
     flex-direction: row;
@@ -51,7 +51,7 @@ body:not(.archetype-private_message) {
 
   &.--op,
   &.--bottom {
-    @media screen and (max-width: 500px) {
+    @media screen and (width <= 500px) {
       padding-left: 0;
     }
   }
@@ -103,6 +103,7 @@ body:not(.archetype-private_message) {
       gap: 0.75em;
 
       &.--single-stat {
+
         button {
           flex-direction: row;
           gap: 0.25em;
@@ -136,6 +137,7 @@ body:not(.archetype-private_message) {
           font-size: var(--font-down-1);
           color: var(--primary-medium);
           width: 100%;
+
           @include ellipsis;
         }
       }
@@ -166,6 +168,7 @@ body:not(.archetype-private_message) {
     }
 
     &.hide-names .user {
+
       .username,
       .group-name {
         display: none;
@@ -223,6 +226,7 @@ body:not(.archetype-private_message) {
   }
 
   .add-remove-participant-btn {
+
     .d-icon {
       margin-left: 0.25em;
     }
@@ -253,14 +257,16 @@ body:not(.archetype-private_message) {
       color: var(--primary-medium);
     }
 
-    @media screen and (max-width: 475px) {
+    @media screen and (width <= 475px) {
       display: none;
     }
   }
 }
 
 .mobile-view {
+
   .d-modal[class*="topic-map__"] {
+
     h3 {
       font-size: var(--font-up-2);
       padding-inline: 1rem;
@@ -277,10 +283,13 @@ body:not(.archetype-private_message) {
 }
 
 // DMenu popups
+
 .fk-d-menu,
 .fk-d-menu-modal {
   //shared
+
   &__inner-content {
+
     .topic-map__likes-content &,
     .topic-map__links-content &,
     .topic-map__users-content &,
@@ -294,6 +303,7 @@ body:not(.archetype-private_message) {
   &.topic-map__links-content,
   &.topic-map__users-content,
   &.topic-map__views-content {
+
     h3 {
       padding-inline: 1rem;
       padding-bottom: 0.5em;
@@ -308,6 +318,7 @@ body:not(.archetype-private_message) {
 
   &.topic-map__likes-content,
   &.topic-map__links-content {
+
     ul {
       margin: 0;
       padding: 0;
@@ -316,7 +327,9 @@ body:not(.archetype-private_message) {
   }
 
   //per type
+
   &.topic-map__likes-content {
+
     li > a {
       display: grid;
       grid-template-areas: "user likes" "post post";
@@ -325,6 +338,7 @@ body:not(.archetype-private_message) {
       padding: 0.75em 1rem;
 
       .discourse-no-touch & {
+
         &:hover {
           background: var(--d-hover);
         }
@@ -332,12 +346,14 @@ body:not(.archetype-private_message) {
     }
 
     li:not(:last-of-type) {
+
       a {
         border-bottom: 1px solid var(--primary-low);
       }
     }
 
     .like-section {
+
       &__user {
         grid-area: user;
         color: var(--primary-high);
@@ -374,6 +390,7 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__links-content {
+
     li {
       display: grid;
       grid-template-columns: auto 1fr;
@@ -388,6 +405,7 @@ body:not(.archetype-private_message) {
       }
 
       .discourse-no-touch & {
+
         &:hover {
           background: var(--d-hover);
         }
@@ -414,6 +432,7 @@ body:not(.archetype-private_message) {
 
     .link-summary {
       width: 100%;
+
       .d-icon {
         color: var(--primary-high);
       }
@@ -421,12 +440,14 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__users-content {
+
     .topic-map__users-list {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5em;
       padding: 0.75em 1rem;
     }
+
     .poster {
       display: block;
       position: relative;
@@ -436,6 +457,7 @@ body:not(.archetype-private_message) {
         height: 2.25em;
       }
     }
+
     .post-count,
     .avatar-flair {
       position: absolute;
@@ -444,6 +466,7 @@ body:not(.archetype-private_message) {
       align-items: center;
       justify-content: center;
     }
+
     .post-count {
       top: -0.15em;
       right: -0.25em;
@@ -451,6 +474,7 @@ body:not(.archetype-private_message) {
       font-size: var(--font-down-2);
       line-height: var(--line-height-small);
     }
+
     .avatar-flair {
       right: -0.25em;
       bottom: -0.15em;
@@ -462,6 +486,7 @@ body:not(.archetype-private_message) {
   }
 
   &.topic-map__views-content {
+
     .topic-views {
       display: flex;
       flex-direction: column;
@@ -472,6 +497,7 @@ body:not(.archetype-private_message) {
         justify-content: space-evenly;
         padding: 0 1rem;
       }
+
       &__count {
         font-size: var(--font-up-4);
         color: var(--primary-high);

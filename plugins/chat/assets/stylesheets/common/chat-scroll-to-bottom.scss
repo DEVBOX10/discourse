@@ -41,12 +41,14 @@
     &:active,
     &:focus {
       background: none !important;
+
       .d-icon {
         color: var(--secondary) !important;
       }
     }
 
     .no-touch & {
+
       &:hover {
         opacity: 1;
 

@@ -1,4 +1,5 @@
 .conditional-loading-section {
+
   &.is-loading {
     padding: 2em;
     margin: 1em;
@@ -16,15 +17,18 @@
 
   &:not(.is-loading) {
     animation: fadein 0.5s;
+
     @media (prefers-reduced-motion) {
       animation-duration: 0s;
     }
   }
 
   @keyframes fadein {
+
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }

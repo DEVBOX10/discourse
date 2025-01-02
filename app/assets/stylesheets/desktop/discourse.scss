@@ -8,6 +8,7 @@
 }
 
 // Base Elements
+
 body.widget-dragging {
   cursor: ns-resize;
 }
@@ -17,14 +18,17 @@ body.dragging {
 }
 
 // Common classes
+
 .boxed {
   height: 100%;
 }
 
 .form-vertical {
+
   .control-group {
     margin-bottom: 1.25em;
   }
+
   .controls:not(.controls-dropdown) + .controls {
     margin-top: 0.5em;
   }
@@ -36,12 +40,14 @@ pre {
 }
 
 // this removes the unwanted top margin on a paragraph under a heading
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+
   + p {
     margin-top: 0;
   }
@@ -92,6 +98,7 @@ select {
 }
 
 .input {
+
   &-xxlarge,
   &-xxlarge + .control-instructions {
     width: 530px;
@@ -112,6 +119,7 @@ select {
 }
 
 .form-horizontal {
+
   input[type="text"],
   input[type="password"],
   textarea {
@@ -143,6 +151,7 @@ select {
 
 // Media Queries
 @include breakpoint(mobile-extra-large) {
+
   body {
     min-width: 0;
   }
@@ -154,6 +163,7 @@ select {
 }
 
 body.has-sidebar-page {
+
   .wrap {
     // increase page max-width to accommodate sidebar width
     max-width: calc(var(--d-sidebar-width) + var(--d-max-width));
@@ -162,6 +172,7 @@ body.has-sidebar-page {
   #main-outlet-wrapper {
     grid-template-columns: var(--d-sidebar-width) minmax(0, 1fr);
     gap: 0 2em;
+
     @include breakpoint(large) {
       gap: 0 1em;
     }
@@ -170,7 +181,9 @@ body.has-sidebar-page {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   body.sidebar-animate {
+
     #main-outlet-wrapper {
       transition-property: grid-template-columns, max-width;
       transition-timing-function: var(--d-sidebar-animation-ease);

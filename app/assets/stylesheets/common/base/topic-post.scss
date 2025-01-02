@@ -3,6 +3,7 @@
 }
 
 .button-count.has-pending {
+
   span {
     background-color: var(--danger);
     color: var(--secondary);
@@ -21,7 +22,7 @@
   position: relative;
   overflow: hidden;
 
-  &:before {
+  &::before {
     @media (prefers-reduced-motion: no-preference) {
       animation: placeHolderShimmer 4s linear infinite forwards;
     }
@@ -65,6 +66,7 @@
     font-size: var(--font-0);
     margin-right: 0.33em;
     display: inline-block;
+
     @include ellipsis;
     vertical-align: middle;
 
@@ -81,7 +83,7 @@
 
   .svg-icon-title {
     margin-left: 3px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .new_user a,
@@ -92,6 +94,7 @@
 }
 
 // global styles for the cooked HTML content in posts (and preview)
+
 .cooked,
 .d-editor-preview {
   word-wrap: break-word;
@@ -119,7 +122,7 @@
         opacity: 1;
       }
 
-      &:before {
+      &::before {
         content: svg-uri(
           '<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 512 512" fill="#{$primary-medium}"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg>'
         );
@@ -134,12 +137,14 @@
     // the anchor icon is a CSS pseudo element set above
     // so we can't change the color of the icon itself
     // but we can change the color of the anchor text
+
     &:has(a.anchor:focus-visible) {
       color: var(--tertiary);
     }
 
     // show when hovering where icon should be
     // show when hovering header
+
     .discourse-no-touch & a.anchor:hover,
     .discourse-no-touch &:hover a.anchor {
       opacity: 1;
@@ -193,6 +198,7 @@
   }
 
   // Prevents users from breaking posts with tag nesting
+
   big {
     font-size: 1.5rem;
   }
@@ -220,6 +226,7 @@
 
 .cooked,
 .d-editor-preview {
+
   video {
     max-width: 100%;
   }
@@ -228,7 +235,7 @@
     top: 0;
   }
 
-  img:not(.thumbnail):not(.ytp-thumbnail-image):not(.emoji) {
+  img:not(.thumbnail, .ytp-thumbnail-image, .emoji) {
     max-width: 100%;
     height: auto;
     display: inline-block; // Ensure dimensions are maintained even after load error
@@ -245,12 +252,15 @@
 }
 
 // add staff color
+
 .moderator {
+
   .regular > .cooked {
     background-color: var(--highlight-bg);
   }
 
   .clearfix > .topic-meta-data > .names {
+
     span.user-title {
       color: var(--primary-high-or-secondary-low);
 
@@ -311,7 +321,6 @@ nav.post-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   color: var(--primary-low-mid);
 
   @include user-select(none);
@@ -322,6 +331,7 @@ nav.post-controls {
     margin-left: auto;
 
     // Some buttons can be doubled up, like likes or flags
+
     .double-button {
       display: inline-flex;
       flex: 0 1 auto;
@@ -330,6 +340,7 @@ nav.post-controls {
 
       button {
         // It looks really confusing when one half a double button has an inner shadow on click.
+
         &:active {
           box-shadow: none;
         }
@@ -338,6 +349,7 @@ nav.post-controls {
         &.read-indicator,
         &.regular-likes {
           // Like count on posts
+
           .d-icon {
             color: var(--primary-low-mid);
             padding-left: 0.45em;
@@ -346,6 +358,7 @@ nav.post-controls {
 
         &.has-like {
           // Like button after I've liked
+
           .d-icon {
             color: var(--love);
           }
@@ -359,6 +372,7 @@ nav.post-controls {
         &.button-count {
           // Like count button
           height: 100%; // sometimes the font might be shorter than the icon
+
           &:not(.my-likes) {
             padding-right: 0;
           }
@@ -378,7 +392,6 @@ nav.post-controls {
       .d-icon {
         opacity: 1;
       }
-
       display: inline-flex;
     }
 
@@ -414,6 +427,7 @@ nav.post-controls {
       }
 
       // TODO (glimmer-post-menu): Go over the the d-hover style and remove the unnecessary ones when glimmer-post-menu replaces the widget version
+
       &.delete.d-hover,
       &.delete:hover,
       &.delete:active,
@@ -442,7 +456,6 @@ nav.post-controls {
   }
 
   .show-replies {
-    font-size: var(--font-up-1);
     font-size: inherit;
     padding: 10px;
     color: var(--primary-medium);
@@ -466,6 +479,7 @@ nav.post-controls {
 }
 
 .deleted {
+
   .regular > .cooked {
     background-color: var(--danger-low-mid);
   }
@@ -475,11 +489,11 @@ nav.post-controls {
 
     .post-info a,
     a {
-      color: currentColor;
+      color: currentcolor;
     }
 
     .d-icon {
-      color: currentColor;
+      color: currentcolor;
     }
   }
 
@@ -496,12 +510,13 @@ nav.post-controls {
     }
 
     .widget-button {
+
       &:hover {
-        color: currentColor;
+        color: currentcolor;
         background: var(--danger-low);
 
         .d-icon {
-          color: currentColor;
+          color: currentcolor;
         }
       }
 
@@ -526,18 +541,22 @@ nav.post-controls {
 }
 
 @keyframes heartBump {
+
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
 // .d-icon.heart-animation is the widget animation while .toggle-like.heart-animation is the glimmer-post-menu's
+
 .has-like .d-icon.heart-animation,
 .toggle-like.heart-animation .d-icon {
   @media (prefers-reduced-motion: no-preference) {
@@ -546,6 +565,7 @@ nav.post-controls {
 }
 
 @keyframes slideout {
+
   from {
     max-height: 60px;
   }
@@ -556,16 +576,18 @@ nav.post-controls {
 }
 
 // we use aside to hold expandable quotes (versus, say, static blockquotes)
+
 aside.quote {
   margin-top: 1em;
   margin-bottom: 1em;
 
   .title {
     @include post-aside;
-
     color: var(--primary-high-or-secondary-low);
     padding: 0.8em 0.8em 0 0.8em;
+
     // blockquote is underneath this and has top margin
+
     .avatar {
       margin-right: 0.5em;
     }
@@ -578,11 +600,13 @@ aside.quote {
   }
 
   // blockquote is docked within aside for content
+
   blockquote {
     margin-top: 0;
 
     .expanded-quote {
       overflow: hidden;
+
       @media (prefers-reduced-motion: no-preference) {
         animation: slideout 1s ease-in-out;
       }
@@ -604,6 +628,7 @@ aside.quote {
 }
 
 .quote-controls {
+
   .quote-toggle {
     padding: 0;
   }
@@ -629,6 +654,7 @@ aside.quote {
 }
 
 .small-user-list {
+
   .small-user-list-content {
     display: flex;
     flex-wrap: wrap;
@@ -648,6 +674,7 @@ aside.quote {
 }
 
 .post-hidden {
+
   .topic-avatar,
   .cooked,
   .topic-meta-data,
@@ -680,7 +707,8 @@ aside.quote {
   .buttons {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 420px) {
+
+    @media screen and (width <= 420px) {
       flex-direction: column;
       align-items: flex-start;
 
@@ -721,7 +749,9 @@ aside.quote {
   }
 
   .btn-flat {
+
     &:hover {
+
       .d-icon {
         color: var(--tertiary);
       }
@@ -748,6 +778,7 @@ aside.quote {
     }
 
     &:hover {
+
       .quote-share-label {
         background: transparent;
         opacity: 0;
@@ -765,7 +796,8 @@ aside.quote {
       // this pseudo element creates a transition buffer zone
       // without it, the width change on hover can cause transition jitter
       // the width is roughly wide enough to cover long translations of "share"
-      &:after {
+
+      &::after {
         content: "";
         position: absolute;
         display: block;
@@ -798,6 +830,7 @@ aside.quote {
 .user-profile-avatar,
 .user-image,
 .latest-topic-list-item {
+
   .avatar-flair {
     display: flex;
     align-items: center;
@@ -853,6 +886,7 @@ aside.quote {
   // this is necessary for ANYTHING that extends past the right edge of
   // the post body, such as an image in a deeply nested list, image in
   // a deeply nested blockquote, and so on.. you get the idea.
+
   .cooked {
     overflow: hidden;
 
@@ -869,6 +903,7 @@ aside.quote {
 
 .small-action-desc,
 .topic-body {
+
   &:focus-visible {
     outline: none;
   }
@@ -885,6 +920,7 @@ aside.quote {
   &.via-email,
   &.whisper,
   &.post-locked {
+
     .d-icon {
       font-size: var(--font-0);
     }
@@ -904,6 +940,7 @@ aside.quote {
   }
 
   &.edits {
+
     .widget-button {
       display: flex;
       align-items: center;
@@ -920,7 +957,9 @@ aside.quote {
       }
 
       .discourse-no-touch & {
+
         &:hover {
+
           .d-button-label {
             color: var(--primary-high);
           }
@@ -967,8 +1006,6 @@ pre {
     top: 0;
     min-height: 0;
     font-size: var(--font-down-2);
-    min-height: 0;
-    font-size: var(--font-down-2);
     opacity: 0.7;
     cursor: pointer;
 
@@ -1007,6 +1044,7 @@ kbd {
   // cf. http://what.thedailywtf.com/t/nested-elements/7927
   // 3 levels are needed to prevent highlighted words being hidden
   // cf. https://meta.discourse.org/t/word-disappears-when-searched-and-in-details-summary-kbd-b/25741
+
   * * * {
     display: none;
   }
@@ -1014,6 +1052,7 @@ kbd {
 
 // we assume blockquotes have their own margins, so all blockquotes
 // will remove margins from first (top) and last (bottom) child elements
+
 blockquote > *:first-child {
   margin-top: 0 !important;
 }
@@ -1045,7 +1084,9 @@ blockquote > *:last-child {
 .reviewable .post-body,
 .cooked table,
 .d-editor-preview table {
+
   thead {
+
     th {
       text-align: left;
       padding-bottom: 2px;
@@ -1068,6 +1109,7 @@ blockquote > *:last-child {
   }
 
   &.deleted {
+
     .topic-avatar,
     .small-action-desc {
       background-color: var(--danger-low-mid);
@@ -1148,6 +1190,7 @@ blockquote > *:last-child {
     }
 
     .discourse-no-touch & {
+
       &:hover,
       &:focus {
         background: var(--primary-200);
@@ -1160,6 +1203,7 @@ blockquote > *:last-child {
   }
 
   &.topic-post-visited {
+
     .topic-post-visited-line {
       text-align: center;
       border-bottom: 1px solid var(--danger-medium);
@@ -1183,11 +1227,13 @@ blockquote > *:last-child {
 }
 
 .whisper {
+
   .post-info.whisper {
     margin-left: 0.5em;
   }
 
   .topic-body {
+
     .cooked {
       font-style: italic;
       color: var(--primary-medium);
@@ -1217,13 +1263,16 @@ span.mention {
 }
 
 .suggested-topics {
+
   .topics {
     padding-bottom: 15px;
   }
 }
 
 .large-image-placeholder {
+
   > a {
+
     &.link {
       margin-right: 10px;
     }
@@ -1265,10 +1314,10 @@ span.mention {
 
 .broken-image,
 .blocked-hotlinked-placeholder {
+
   &:not(a) {
     color: var(--primary-low-mid-or-secondary-high);
   }
-
   display: inline-flex;
   flex-direction: column;
   border: 1px solid var(--primary-low);
@@ -1302,9 +1351,13 @@ span.mention {
 // Select posts
 
 .topic-post {
+
   &.selected {
+
     article.boxed {
+
       .select-posts {
+
         button.select-post {
           background-color: var(--tertiary);
           color: var(--secondary);
@@ -1313,7 +1366,8 @@ span.mention {
       }
 
       .topic-body {
-        .contents:after {
+
+        .contents::after {
           display: none;
         }
       }
@@ -1340,12 +1394,15 @@ span.mention {
   }
 }
 
-@media all and (max-width: 767px) {
+@media all and (width <= 767px) {
+
   .reply-to-tab {
+
     span {
       display: none;
     }
   }
+
   .user-title {
     float: left;
     clear: left;
@@ -1357,6 +1414,7 @@ span.mention {
   max-width: calc(var(--topic-body-width) + 4.5em);
   padding: 3em 5em 2em
     calc(var(--topic-avatar-width) + var(--topic-body-width-padding));
+
   @include breakpoint(mobile-extra-large) {
     padding: 1.5em 1.5em 0.25em;
   }
@@ -1390,12 +1448,14 @@ span.mention {
       &.btn-remind {
         background: var(--primary-very-low);
         margin-right: auto;
+
         @include hover {
           background: var(--primary-medium);
         }
       }
 
       @include breakpoint(mobile-extra-large) {
+
         &.btn-primary {
           margin-right: 100%;
         }
@@ -1457,7 +1517,6 @@ iframe {
 }
 
 .posts-filtered-notice {
-  position: -webkit-sticky;
   position: sticky;
   background-color: var(--tertiary-low);
   bottom: 0;
@@ -1513,7 +1572,6 @@ iframe {
     align-items: flex-end;
 
     > .d-icon {
-      cursor: pointer;
       padding: 0.5em;
       margin: 0.5em;
       background-color: rgba(var(--always-black-rgb), 0.25);
@@ -1544,6 +1602,7 @@ iframe {
 }
 
 .paused-animated-image {
+
   img.animated {
     // need to keep the image hidden but clickable
     // so the user can resume animation
@@ -1568,12 +1627,14 @@ iframe {
 }
 
 .fullscreen-code-modal {
+
   pre code {
     max-width: none;
   }
 }
 
 .fullscreen-table-modal {
+
   .d-modal__container {
     width: auto;
   }
@@ -1606,6 +1667,7 @@ html.discourse-no-touch .fullscreen-table-wrapper:hover {
 
 .read-state {
   position: absolute;
+
   // We use absolute positioning here because we want it to display in the padding
   align-self: center;
   color: var(--tertiary-medium);

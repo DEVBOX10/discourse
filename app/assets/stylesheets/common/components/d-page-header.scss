@@ -2,6 +2,7 @@ $mobile-breakpoint: 700px;
 
 .d-page-header,
 .d-page-subheader {
+
   &__title-row {
     display: flex;
     justify-content: space-between;
@@ -45,11 +46,11 @@ $mobile-breakpoint: 700px;
     .horizontal-overflow-nav {
       background: transparent;
 
-      &:before {
+      &::before {
         display: none;
       }
 
-      &:after {
+      &::after {
         display: none;
       }
     }
@@ -62,12 +63,14 @@ $mobile-breakpoint: 700px;
 }
 
 .d-page-header {
+
   &__title-row {
     @media (max-width: $mobile-breakpoint) {
       flex-direction: row;
       align-items: center;
 
       .d-page-header__actions {
+
         button {
           margin-bottom: 0;
         }
@@ -77,6 +80,7 @@ $mobile-breakpoint: 700px;
 }
 
 .d-page-subheader {
+
   &__title-row {
     @media (max-width: $mobile-breakpoint) {
       flex-direction: row;
@@ -86,6 +90,7 @@ $mobile-breakpoint: 700px;
 }
 
 .d-page-action-list-item {
+
   .btn-primary {
     color: var(--primary);
   }

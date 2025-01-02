@@ -1,5 +1,7 @@
 .select-kit {
+
   &.combo-box {
+
     .select-kit-body {
       border-radius: 0;
     }
@@ -14,6 +16,7 @@
     }
 
     .select-kit-filter {
+
       .filter-input,
       .filter-input:focus,
       .filter-input:active {
@@ -41,9 +44,9 @@
       min-width: 100px;
 
       .collection-header {
+
         a {
           white-space: nowrap;
-          color: var(--primary);
           line-height: var(--line-height-medium);
           font-weight: bold;
           display: block;
@@ -58,10 +61,12 @@
     }
 
     &.is-disabled {
+
       .select-kit-header {
         background: var(--primary-low);
         border-color: var(--primary-low-mid);
         color: var(--primary-medium);
+
         .d-icon {
           color: var(--primary-medium);
         }
@@ -69,6 +74,7 @@
     }
 
     &.is-highlighted {
+
       .select-kit-header {
         @include default-focus;
       }
@@ -84,6 +90,7 @@
     }
 
     &.group-dropdown {
+
       .select-kit-row {
         font-weight: bold;
       }

@@ -10,6 +10,7 @@
 
   .combo-box {
     width: 100%;
+
     &:not(:last-of-type) {
       margin-bottom: 0.875em;
     }
@@ -21,10 +22,12 @@
 
     li {
       border-bottom: none;
+
       &:hover,
       &.active {
         background: var(--primary-very-low);
       }
+
       &.archive {
         padding-left: 1.4em;
       }
@@ -38,7 +41,7 @@
         font-weight: bold;
         background-color: transparent;
 
-        &:after {
+        &::after {
           display: none;
         }
       }
@@ -57,6 +60,7 @@
     --left-padding: 0.8em;
 
     .nav-stacked {
+
       a {
         padding-left: calc(
           var(--left-padding) - 1px
@@ -80,6 +84,7 @@
 }
 
 .pref-avatar {
+
   .avatar {
     max-width: 90px;
     max-height: 90px;
@@ -87,7 +92,7 @@
 }
 
 .invite-controls .btn {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 table.user-invite-list {
@@ -95,6 +100,7 @@ table.user-invite-list {
   margin-top: 15px;
 
   tr {
+
     td {
       padding: 0.667em;
 
@@ -118,7 +124,9 @@ table.user-invite-list {
   margin-bottom: 50px;
 
   .about {
+
     &.group {
+
       .details {
         padding: 15px 0;
         margin: 0;
@@ -127,6 +135,7 @@ table.user-invite-list {
     }
 
     .details {
+
       img.avatar {
         margin: 0 20px 10px 0;
       }
@@ -142,9 +151,11 @@ table.user-invite-list {
     }
 
     &.has-background {
+
       .user-profile-image {
         height: 300px;
       }
+
       .details {
         box-sizing: border-box;
         width: 100%;
@@ -164,9 +175,11 @@ table.user-invite-list {
     }
 
     &.collapsed-info {
+
       .user-profile-image {
         display: none;
       }
+
       .controls {
         display: flex;
         max-width: unset;
@@ -189,11 +202,13 @@ table.user-invite-list {
   }
 
   .user-field {
+
     input[type="text"] {
       width: 530px;
     }
 
     .controls {
+
       .instructions {
         display: block;
       }
@@ -206,6 +221,7 @@ table.user-invite-list {
 }
 
 .user-messages-page {
+
   .topic-list th {
     padding-top: 0;
   }

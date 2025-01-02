@@ -9,6 +9,7 @@ details {
     margin-bottom: 0.5rem;
 
     &:not([open]) {
+
       &:hover,
       &:focus,
       &:focus-within {
@@ -25,6 +26,7 @@ details {
 }
 
 details.details__boxed {
+
   summary {
     font-weight: bold;
   }
@@ -41,6 +43,7 @@ summary {
 }
 
 summary {
+
   > p {
     margin-block: 0;
     padding-block: 1rem;
@@ -52,7 +55,7 @@ summary:first-of-type {
   display: block;
 }
 
-summary:before {
+summary::before {
   content: "\25BA";
   margin-right: 0.25em;
 }
@@ -62,8 +65,8 @@ details[open] .lightbox-wrapper {
   display: block;
 }
 
-details[open] > summary:before,
-details.open > summary:before {
+details[open] > summary::before,
+details.open > summary::before {
   content: "\25BC";
 }
 
@@ -73,18 +76,21 @@ details.open > summary:first-of-type ~ * {
 }
 
 /* hide native indicator */
+
 summary::-webkit-details-marker {
   display: none;
 }
 
 .topic-body .cooked,
 .d-editor-preview {
+
   .elided {
     background-color: unset;
     padding: 0;
 
     &:not([open]) {
       //specificity needed to overrule non-elided
+
       &:hover,
       &:focus,
       &:focus-within {
@@ -99,12 +105,13 @@ summary::-webkit-details-marker {
     &[open] {
       background: var(--primary-very-low);
       padding: 0.5rem 0.75rem;
+
       summary {
         padding: 0;
       }
     }
 
-    summary:before {
+    summary::before {
       content: "" !important;
       display: none;
     }

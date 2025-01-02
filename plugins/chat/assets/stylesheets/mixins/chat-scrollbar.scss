@@ -2,11 +2,11 @@
   --scrollbarBg: transparent;
   --scrollbarThumbBg: var(--primary-low);
   --scrollbarWidth: 10px;
-
   scrollbar-color: transparent var(--scrollbarBg);
   transition: scrollbar-color 0.25s ease-in-out;
 
   // chrome, safari
+
   &::-webkit-scrollbar-thumb {
     background-color: var(--scrollbarThumbBg);
     border-radius: calc(var(--scrollbarWidth) / 2);
@@ -22,6 +22,7 @@
   }
 
   // firefox
+
   & {
     scrollbar-color: var(--scrollbarThumbBg) var(--scrollbarBg);
     scrollbar-width: thin;
@@ -43,6 +44,7 @@
 }
 
 .chat-message-text {
+
   pre {
     scrollbar-color: var(--primary-300) transparent;
   }

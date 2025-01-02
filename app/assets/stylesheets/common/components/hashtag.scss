@@ -8,6 +8,7 @@ a.hashtag {
   }
 
   &:hover {
+
     span {
       text-decoration: underline;
     }
@@ -66,7 +67,7 @@ a.hashtag {
     max-height: inherit;
     overflow-y: auto;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -81,7 +82,9 @@ a.hashtag {
   }
 
   &__option {
+
     &:last-of-type {
+
       .hashtag-autocomplete__link {
         position: relative;
         z-index: 1;

@@ -3,6 +3,7 @@
   --toggle-switch-height: 24px;
 
   &:focus {
+
     .d-toggle-switch__checkbox-slider {
       outline: 2px solid var(--tertiary);
       outline-offset: 2px;
@@ -10,6 +11,7 @@
   }
 
   &:hover {
+
     .d-toggle-switch__checkbox-slider {
       background-color: var(--primary-high);
     }
@@ -19,7 +21,6 @@
       background-color: var(--tertiary-hover);
     }
   }
-
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -38,13 +39,16 @@
     background: transparent;
 
     &:focus {
+
       + .d-toggle-switch__checkbox-slider {
         outline: 2px solid var(--tertiary);
         outline-offset: 2px;
       }
 
       // Outline should show only when tabbing, not clicking
+
       &:not(:focus-visible) {
+
         + .d-toggle-switch__checkbox-slider {
           outline: none;
         }

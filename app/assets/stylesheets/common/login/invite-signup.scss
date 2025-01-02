@@ -30,15 +30,18 @@
   }
 
   .create-account__password {
+
     &-info {
       display: flex;
       justify-content: space-between;
     }
+
     &-tip-validation {
       display: flex;
       flex-direction: column;
     }
   }
+
   .invitation-cta {
     display: flex;
     align-items: center;
@@ -60,6 +63,7 @@
     flex-direction: column;
 
     .input-group {
+
       &.email-input,
       &.username-input,
       &.name-input.name-required {
@@ -79,13 +83,15 @@
   padding: 2rem 3rem;
   background: var(--secondary);
   margin: 0 auto;
-  @media screen and (max-width: 700px) {
+
+  @media screen and (width <= 700px) {
     margin: 1em auto 1em auto;
     padding: 1rem;
   }
 }
 
 #simple-container .invite-error {
+
   .error-info {
     text-align: center;
   }

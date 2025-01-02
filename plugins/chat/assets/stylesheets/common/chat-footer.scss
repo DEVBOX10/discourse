@@ -30,15 +30,19 @@
     color: var(--primary-medium);
 
     &.--active {
+
       .d-icon,
       .d-button-label {
         color: var(--d-nav-color--active);
       }
     }
+
     &:hover,
     &:focus {
+
       .discourse-no-touch &,
       .discourse-touch & {
+
         .d-icon,
         .d-button-label {
           color: var(--d-nav-color--active);
@@ -67,12 +71,14 @@
       right: unset;
       left: 50%;
       margin-left: 0.75rem;
+
       &.-urgent {
         height: 1em;
         width: min-content;
         min-width: 0.6em;
         padding: 0.21em 0.42em;
       }
+
       &:not(.-urgent) {
         width: 11px;
         height: 11px;

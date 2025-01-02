@@ -1,4 +1,5 @@
 .chat-message-thread-indicator {
+
   .c-routes.--threads & {
     background: var(--secondary);
   }
@@ -7,6 +8,7 @@
     "excerpt excerpt excerpt replies";
 
   .chat-thread-participants {
+
     .avatar {
       width: 22px;
       height: 22px;
@@ -21,6 +23,7 @@
     margin-top: 0.5rem;
     margin-right: 0.25rem;
   }
+
   &__replies-count {
     grid-area: replies;
   }

@@ -1,6 +1,6 @@
 .spoiled {
   cursor: auto;
-  -webkit-transform: translateZ(0); // Safari jitter fix
+  transform: translateZ(0); // Safari jitter fix
 
   .lightbox .meta {
     display: none;
@@ -42,6 +42,7 @@
   }
 
   .discourse-no-touch & {
+
     &:hover,
     &:focus {
       filter: blur(0.18em);

@@ -1,4 +1,5 @@
 // Styles for admin/badges
+
 .admin-badges {
   // flex page layout
 
@@ -6,10 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
     .badges-header {
       display: flex;
       align-items: center;
       flex: 1 0 100%;
+
       .create-new-badge {
         margin-left: auto;
         display: flex;
@@ -17,26 +20,32 @@
         gap: 0.5em;
       }
     }
+
     .content-list {
       flex: 0 0 27%;
     }
   }
 
   .content-list {
+
     .admin-badge-list {
       height: 70vh;
       overflow-y: scroll;
       border-right: 1px solid var(--primary-low);
       border-left: 1px solid var(--primary-low);
       border-bottom: 1px solid var(--primary-low);
+
       .admin-badge-list-item {
+
         &:first-child {
           border-top: none;
         }
+
         &:last-child {
           border-top: none;
         }
       }
+
       .list-badge {
         float: right;
         font-size: var(--font-down-1);
@@ -47,6 +56,7 @@
         border-radius: 3px;
       }
     }
+
     .user-badge {
       border: none;
       background-color: unset;
@@ -79,6 +89,7 @@
     margin: 20px;
 
     .form-kit__field-question {
+
       .form-kit__control-radio-label {
         text-transform: capitalize;
       }
@@ -138,6 +149,7 @@
     &.success {
       color: var(--success);
     }
+
     &.failure {
       color: var(--danger);
     }
@@ -145,13 +157,17 @@
 }
 
 // badge-grouping modal
+
 .badge-groupings-modal {
+
   .badge-groupings {
     margin-bottom: 10px;
   }
+
   .badge-groupings-list {
     list-style: none;
     margin: 0;
+
     .badge-grouping-item {
       border-bottom: 1px solid var(--primary-low);
       display: flex;
@@ -159,7 +175,9 @@
       align-items: center;
       padding: 5px 0;
     }
+
     .badge-grouping {
+
       .badge-grouping-name-input {
         margin: 0;
       }
@@ -168,7 +186,9 @@
 }
 
 // badge preview modal
+
 .badge-query-preview {
+
   .badge-query-plan {
     overflow-x: auto;
   }
@@ -179,13 +199,16 @@
     background-color: var(--primary-low);
     white-space: pre-wrap;
   }
+
   .count-warning {
     background-color: var(--danger-low);
     margin-bottom: 5px;
     padding: 10px;
+
     p {
       margin: 0;
     }
+
     .heading {
       color: var(--danger);
       font-weight: bold;

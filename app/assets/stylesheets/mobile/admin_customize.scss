@@ -1,4 +1,5 @@
 body .admin-customize {
+
   .show-current-style {
     padding: 0;
     width: 100%;
@@ -22,10 +23,12 @@ body .admin-customize {
   }
 
   .color-scheme {
+
     h1,
     h1 input {
       width: 100%;
     }
+
     .copy-to-clipboard {
       display: none;
     }
@@ -42,6 +45,7 @@ body .admin-customize {
     td {
       vertical-align: top;
     }
+
     td.actions {
       width: 40px;
     }

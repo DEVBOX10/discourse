@@ -9,8 +9,11 @@
 */
 
 // Select Kit
+
 .select-kit {
+
   .select-kit-row {
+
     &:hover,
     &:focus {
       @media (forced-colors: active) {

@@ -3,7 +3,9 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 html:not(.anon) #topic-footer-buttons {
+
   .topic-footer-main-buttons {
     width: 100%;
     justify-content: space-between;
@@ -25,6 +27,7 @@ html:not(.anon) #topic-footer-buttons {
 
     .pinned-button,
     .topic-notifications-button {
+
       .selected-name .name {
         display: none;
       }

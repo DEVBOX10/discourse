@@ -12,6 +12,7 @@
   }
 
   li {
+
     .separator {
       margin-right: var(--space-1);
 
@@ -23,6 +24,7 @@
   }
 
   li:last-child {
+
     .separator {
       display: none;
     }

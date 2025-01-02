@@ -1,11 +1,14 @@
 .emoji-value-list {
+
   .value {
+
     .shift-up-value-btn,
     .shift-down-value-btn {
       display: none;
     }
 
     &:hover {
+
       .shift-up-value-btn,
       .shift-down-value-btn {
         display: block;

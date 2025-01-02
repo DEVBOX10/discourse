@@ -1,12 +1,15 @@
 .d-modal.insert-hyperlink-modal {
+
   .insert-link {
     overflow-y: visible;
+
     input {
       min-width: 300px;
     }
 
     .inputs {
       position: relative;
+
       .spinner {
         position: absolute;
         right: 8px;
@@ -14,6 +17,7 @@
         width: 10px;
         height: 10px;
       }
+
       .internal-link-results {
         position: absolute;
         top: 70%;
@@ -24,19 +28,23 @@
         max-height: 150px;
         width: 90%;
         overflow-y: auto;
+
         > .search-link {
           padding: 6px;
           border-bottom: 1px solid var(--primary-low);
           cursor: pointer;
           display: block;
+
           &:hover,
           &:focus {
             background-color: var(--highlight-bg);
           }
+
           .search-category {
             display: flex;
             align-items: center;
           }
+
           .discourse-tags {
             font-size: var(--font-down-1);
           }
@@ -47,7 +55,9 @@
 }
 
 .sidebar-section-form-modal {
+
   .sidebar-section-form-link {
+
     .select-kit {
       width: 100%;
     }
@@ -55,8 +65,10 @@
 }
 
 .jump-to-post-modal {
+
   .d-modal__body {
     overflow-y: visible;
+
     #post-jump {
       margin: 0;
       width: 100px;
@@ -78,6 +90,7 @@
     .jump-to-date-control {
       display: flex;
       align-items: center;
+
       .input-hint-text {
         margin-left: 0;
         margin-right: 0.5em;
@@ -106,11 +119,14 @@
 }
 
 .d-modal.choose-topic-modal {
+
   .d-modal {
+
     &__container {
       width: 40em; //fixed width to avoid jumps when switching to different views
     }
   }
+
   #split-topic-name,
   #choose-topic-title,
   #choose-message-title {
@@ -126,13 +142,17 @@
   }
 
   // move to existing topic
+
   .existing-topic {
+
     .radio {
       flex-wrap: wrap;
     }
+
     .topic-title {
       max-width: 90%;
     }
+
     .topic-categories {
       display: flex;
       font-weight: normal;
@@ -142,7 +162,9 @@
   }
 
   #choosing-topic {
+
     form {
+
       hr {
         margin-bottom: 0.5em;
       }
@@ -151,14 +173,18 @@
 }
 
 .d-modal.publish-page-modal {
+
   .d-modal {
+
     &__body {
+
       p.publish-description {
         margin-top: 0;
       }
 
       .publish-url {
         margin-bottom: 1em;
+
         .example-url,
         .invalid-slug {
           font-weight: bold;
@@ -196,21 +222,26 @@
 }
 
 .d-modal.topic-bulk-actions-modal {
+
   .d-modal {
+
     &__container {
       min-width: 0;
       width: 100%;
     }
   }
+
   p {
     margin-top: 0;
   }
+
   .bulk-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
     gap: 0.5em;
     max-width: 100%;
     min-width: 0;
+
     .d-button-label {
       @include ellipsis;
     }
@@ -218,29 +249,36 @@
 }
 
 .topic-bulk-actions-modal {
+
   &__selection-info {
     margin-bottom: 0.5em;
   }
 }
 
 .d-modal.topic-bulk-actions-modal {
+
   .d-modal {
+
     &__container {
       display: flex;
     }
   }
+
   p {
     margin-top: 0;
   }
+
   #bulk-topics-cancel {
     margin-left: auto;
   }
+
   .bulk-close-note-section {
     margin-top: 1em;
   }
 }
 
 .d-modal.edit-slow-mode-modal {
+
   .slow-mode-label {
     display: inline-flex;
   }
@@ -255,6 +293,7 @@
 }
 
 .d-modal.group-add-members-modal {
+
   .input-group {
     margin-bottom: 0.5em;
 
@@ -269,7 +308,9 @@
 }
 
 .d-modal.share-topic-modal {
+
   .d-modal {
+
     &__title {
       display: flex;
       align-items: center;
@@ -288,11 +329,14 @@
 
 .d-modal.chat-modal-new-message {
   align-items: flex-start;
+
   .d-modal {
+
     &__container {
       width: var(--modal-max-width);
       margin-top: 1rem;
     }
+
     &__body {
       padding: 0;
 
@@ -303,24 +347,30 @@
   }
 
   .chat-message-creator {
+
     &__add-members-header-container {
       padding-inline: 1rem 0.5rem;
     }
+
     &__add-members-header {
       align-items: center;
     }
+
     &__members {
       min-height: unset;
       padding: 0.25rem 0.5rem;
     }
+
     &__add-members__close-btn {
       margin-top: 0;
       height: 33px;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
+
     .d-modal {
+
       &__container {
         width: 100%;
         margin-top: 0;
@@ -331,22 +381,28 @@
 
 .d-modal.fullscreen-table-modal,
 .d-modal.fullscreen-code-modal {
+
   .d-modal {
+
     &__container {
       max-height: 100vh;
     }
   }
+
   .modal-close {
     margin-left: auto;
   }
 }
 
 .d-modal.fullscreen-table-modal {
+
   .d-modal {
+
     &__container {
       display: grid;
       grid-template-rows: auto 1fr auto;
     }
+
     &__footer {
       justify-content: space-between;
     }
@@ -354,8 +410,10 @@
 }
 
 .d-modal.fullscreen-code-modal {
+
   pre {
     margin: 0;
+
     code {
       max-width: none;
       max-height: none;
@@ -366,6 +424,7 @@
 }
 
 .d-modal.discourse-local-dates-create-modal {
+
   .advanced-mode-btn {
     margin-left: auto;
   }
@@ -381,6 +440,7 @@
       width: 100%;
 
       .select-kit-header {
+
         .d-icon {
           margin-right: 1em;
         }
@@ -398,6 +458,7 @@
 
       &.is-filled,
       &.is-selected {
+
         .date-time {
           color: var(--primary);
           background: var(--secondary);
@@ -441,9 +502,11 @@
         border: 0;
         outline: none;
         flex: 1;
+
         @include ellipsis;
         width: 100%;
         justify-content: flex-start;
+
         &:focus {
           background-color: var(--tertiary-50);
         }
@@ -498,6 +561,7 @@
   }
 
   .format {
+
     .format-input {
       width: 280px;
     }
@@ -507,7 +571,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
     .format {
+
       .previewed-format {
         color: var(--primary-medium);
       }
@@ -522,7 +588,9 @@
 }
 
 .d-modal.grant-badge-modal {
+
   .d-modal {
+
     &__body {
       @include breakpoint(medium) {
         overflow: visible;

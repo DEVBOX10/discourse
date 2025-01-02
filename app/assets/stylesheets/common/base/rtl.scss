@@ -1,6 +1,7 @@
 // Right to left styles.
 
 .rtl {
+
   .d-icon-align-right,
   .d-icon-angles-right,
   .d-icon-angle-right,
@@ -25,6 +26,7 @@
 }
 
 // For the support_mixed_text_direction setting
+
 html:not(.rtl) .cooked ul[dir="rtl"],
 html:not(.rtl) .d-editor-preview ul[dir="rtl"],
 .rtl .cooked ul[dir="ltr"],

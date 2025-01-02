@@ -6,12 +6,13 @@
   display: inline-flex;
   position: relative;
   vertical-align: -0.125em;
-  fill: currentColor;
+  fill: currentcolor;
   flex-shrink: 0; // Prevent the icon from shrinking if it's in a flexbox
   overflow: visible;
 }
 
 // Fixes Edge bug with SVG elements not triggering click event
+
 svg > use {
   pointer-events: none;
 }
@@ -32,8 +33,8 @@ svg > use {
 
   .fa-stack-1x,
   .fa-stack-2x {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     position: absolute;
   }
 

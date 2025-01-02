@@ -17,14 +17,16 @@
 
   &.open {
     height: 250px;
+
     &.edit-title {
       height: 100%;
     }
   }
 
   .keyboard-visible &.open {
-    top: 0px;
+    top: 0;
     height: calc(var(--composer-vh, 1vh) * 100);
+
     .reply-area {
       padding-bottom: 6px;
     }
@@ -42,6 +44,7 @@
     // has no effect on most users but we need it for some cases. If this is
     // not added, "add edit reason" will overlap with the composer controls
     @include breakpoint(mobile-small) {
+
       .reply-details {
         flex-wrap: wrap;
       }
@@ -58,6 +61,7 @@
   }
 
   .toggle-minimize {
+
     .d-icon-chevron-down {
       vertical-align: text-top;
     }
@@ -71,8 +75,10 @@
     .toggle-minimize {
       top: 6px;
     }
+
     .draft-text {
       width: calc(100% - 40px);
+
       @include ellipsis;
     }
   }
@@ -95,6 +101,7 @@
 
     .create {
       max-width: 50vw;
+
       span {
         @include ellipsis;
       }
@@ -108,6 +115,7 @@
       #file-uploading {
         margin-left: 6px;
       }
+
       .cancel {
         font-size: 1.4em;
         color: var(--primary-low-mid);
@@ -115,12 +123,15 @@
         padding: 3px 6px;
       }
     }
+
     .mobile-file-upload:not(.hidden),
     .mobile-preview {
       // Alignment fix, remove if converted to buttons
       display: inline-flex;
     }
+
     .mobile-file-upload {
+
       &.hidden + .mobile-preview {
         // Hide preview button while file is uploading to make room for upload progress
         display: none;
@@ -133,16 +144,19 @@
   }
 
   &.show-preview {
+
     .submit-panel {
       padding-top: 10px;
       z-index: z("fullscreen") + 1;
       background-color: var(--secondary);
+
       .cancel,
       .mobile-file-upload,
       .mobile-preview {
         display: none;
       }
     }
+
     .d-editor-preview-wrapper {
       position: fixed;
       z-index: z("fullscreen");
@@ -156,6 +170,7 @@
       margin: 0;
       padding: 10px;
       overflow: auto;
+
       .d-editor-preview {
         margin-bottom: 40px;
       }
@@ -163,18 +178,21 @@
   }
 
   &.hide-preview {
+
     .d-editor-preview-wrapper {
       display: none;
     }
   }
 
   .wmd-controls:not(.toolbar-visible) {
+
     .d-editor-button-bar {
       display: none;
     }
   }
 
   .d-editor-button-bar .btn {
+
     &.preview {
       margin: 0;
     }
@@ -183,12 +201,14 @@
   .title-and-category,
   .user-selector {
     margin: 0;
+
     .users-input {
       margin-bottom: 6px;
     }
   }
 
   .with-tags {
+
     .mini-tag-chooser,
     .category-chooser {
       z-index: z("base");
@@ -202,6 +222,7 @@
   }
 
   .without-tags {
+
     .category-input {
       margin-left: 6px;
     }

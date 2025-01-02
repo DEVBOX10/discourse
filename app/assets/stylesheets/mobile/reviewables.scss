@@ -1,4 +1,5 @@
 .reviewable {
+
   .reviewable-container {
     flex-direction: column;
 
@@ -25,7 +26,9 @@
     width: 100%;
     overflow-x: scroll;
     border-top: 1px solid var(--primary-low);
+
     thead {
+
       tr {
         display: flex;
         flex-direction: column;
@@ -41,6 +44,7 @@
         display: flex;
         flex-direction: column;
       }
+
       tr {
         border: 0;
       }
@@ -63,6 +67,7 @@
   }
 
   .reviewable-filter {
+
     .filter-label {
       margin: 0;
     }
@@ -70,6 +75,7 @@
 }
 
 .reviewable-contents {
+
   .reviewable-post-header,
   .post-body {
     max-width: 100%;

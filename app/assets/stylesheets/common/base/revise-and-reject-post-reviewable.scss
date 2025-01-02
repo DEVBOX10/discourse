@@ -1,4 +1,5 @@
 .modal.revise-and-reject-reviewable {
+
   .revise-and-reject-reviewable__optional {
     margin-left: 0.5em;
     color: var(--primary-low-mid);
@@ -10,7 +11,6 @@
 
   .revise-and-reject-reviewable__queued-post {
     @extend .reviewable-item;
-
     padding: 1em;
     margin: 0 0 1em 0;
 

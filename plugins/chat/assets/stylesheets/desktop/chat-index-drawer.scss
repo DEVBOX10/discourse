@@ -1,10 +1,12 @@
 .chat-drawer-container .channels-list-container {
+
   .chat-channel-divider {
     padding: 1.5rem 0.5rem 0.5rem 1rem;
     font-size: var(--font-0);
   }
 
   &.has-scrollbar {
+
     .chat-channel-row {
       margin-right: 0;
     }
@@ -20,6 +22,7 @@
     }
 
     .chat-channel-metadata {
+
       .chat-channel-unread-indicator {
         margin-top: 0.25rem;
       }
@@ -27,10 +30,12 @@
 
     &.--threads {
       margin-top: 0.25rem;
+
       .c-unread-indicator {
         width: 8px;
         height: 8px;
       }
+
       .chat-channel-title {
         gap: 0.5rem;
         color: var(--primary);

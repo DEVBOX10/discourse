@@ -1,5 +1,7 @@
 .bookmark-reminder-modal {
+
   .d-modal {
+
     &__body {
       box-sizing: border-box;
 
@@ -12,7 +14,9 @@
         margin-bottom: 0.5em;
       }
     }
+
     &__footer {
+
       .delete-bookmark {
         margin-left: auto;
         margin-right: 0;
@@ -44,10 +48,10 @@
   }
 
   .bookmark-options-panel {
+
     .select-kit {
       width: 100%;
     }
-
     margin-bottom: 18px;
 
     label {

@@ -3,6 +3,7 @@
 .login-page,
 .signup-page,
 .invite-page {
+
   #main-outlet,
   #main-outlet-wrapper {
     padding: 0;
@@ -53,11 +54,11 @@
     padding: 1rem;
 
     .input-group {
+
       input {
         height: 2.5em;
         margin-bottom: 0.25em;
       }
-
       margin-bottom: 1em;
 
       input:focus + label,
@@ -78,11 +79,14 @@
   #login-form,
   .login-form,
   .invite-form {
+
     .input-group {
+
       label.alt-placeholder,
       .user-field.text label.control-label {
         top: 11px;
       }
+
       div.user-field:not(.dropdown)
         .controls
         input:focus
@@ -92,6 +96,7 @@
         label.alt-placeholder.control-label {
         top: -10px;
       }
+
       .user-field.dropdown label.control-label,
       .user-field.multiselect label.control-label {
         top: -10px;
@@ -154,9 +159,11 @@
 }
 
 .invites-show {
+
   .login-welcome-header {
     padding-inline: 0;
   }
+
   .signup-progress-bar {
     margin-inline: 0;
   }
@@ -165,18 +172,23 @@
 // Login page
 
 .login-fullpage .login-body {
+
   .login-page-cta {
+
     &__buttons {
+
       .login-page-cta__login {
         width: 100%;
         margin-bottom: 0.5rem;
       }
     }
+
     &__signup {
       background: none !important;
       font-size: var(--font-up-1);
       padding: 0;
     }
+
     &__no-account-yet {
       font-size: var(--font-up-1);
     }
@@ -186,18 +198,23 @@
 // Signup page
 
 .signup-fullpage .signup-body {
+
   .signup-page-cta {
+
     &__buttons {
+
       .signup-page-cta__signup {
         width: 100%;
         margin-bottom: 0.5rem;
       }
     }
+
     &__login {
       background: none !important;
       font-size: var(--font-up-1);
       padding: 0;
     }
+
     &__existing-account {
       font-size: var(--font-up-1);
     }

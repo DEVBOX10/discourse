@@ -1,9 +1,11 @@
 .select-kit {
+
   &.multi-select {
     width: 300px;
     background: var(--secondary);
 
     .select-kit-filter {
+
       & + .selected-content,
       & + .select-kit-collection {
         border-top: 1px solid var(--primary-low);
@@ -15,10 +17,12 @@
     }
 
     &.is-disabled {
+
       .multi-select-header {
         background: var(--primary-low);
         border-color: var(--primary-low-mid);
         color: var(--primary-medium);
+
         .d-icon {
           color: var(--primary-medium);
         }
@@ -29,7 +33,6 @@
       display: flex;
       width: 100%;
       flex-wrap: wrap;
-      padding: 0;
       justify-content: flex-start;
       box-sizing: border-box;
       border-bottom: 1px solid var(--primary-low);
@@ -57,6 +60,7 @@
       .formatted-selection {
         margin: 0;
         cursor: pointer;
+
         @include ellipsis;
         display: inline-block;
       }
@@ -67,6 +71,7 @@
         margin: -0.35em;
         margin-left: -0.25em;
         position: relative;
+
         .selected-choice {
           margin: 0.125em 0.25em 0.125em 0;
           padding: 0.2em 0.3em;
@@ -84,9 +89,11 @@
           margin-left: 0.25em;
           position: static;
           min-height: 28px;
+
           &.is-expanded {
             padding: 0;
           }
+
           .filter-input {
             min-height: auto;
           }

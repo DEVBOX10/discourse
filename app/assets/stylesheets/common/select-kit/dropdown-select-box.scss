@@ -1,11 +1,14 @@
 .select-kit {
+
   &.single-select {
+
     &.dropdown-select-box {
       display: inline-flex;
       min-width: auto;
       border: none;
 
       &.is-expanded {
+
         .select-kit-collection,
         .select-kit-body {
           border-radius: 0;
@@ -48,6 +51,7 @@
             font-size: var(--font-0);
             color: var(--primary);
             padding: 0;
+
             @include ellipsis;
             max-width: 100%;
           }
@@ -84,10 +88,13 @@
       }
     }
   }
+
   &.user-notifications-dropdown {
+
     .select-kit-header .d-icon {
       margin-left: 0;
     }
+
     .select-kit-header-wrapper {
       justify-content: center;
     }

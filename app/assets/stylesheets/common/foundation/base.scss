@@ -13,7 +13,7 @@
   --d-input-border-radius: 2px;
   --d-content-background: initial;
   --d-font-family--monospace: ui-monospace, "Cascadia Mono", "Segoe UI Mono",
-    "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+    "Liberation Mono", menlo, monaco, consolas, monospace;
   --d-button-transition: none;
 }
 
@@ -54,12 +54,15 @@ a {
   color: var(--tertiary);
   text-decoration: none;
   cursor: pointer;
+
   &:visited {
     color: var(--tertiary);
   }
+
   &:hover {
     color: var(--tertiary);
   }
+
   &:active {
     color: var(--tertiary);
   }
@@ -95,6 +98,7 @@ dd {
 
 .cooked,
 .d-editor-preview {
+
   ul,
   ol {
     padding-left: 1.25em;
@@ -104,6 +108,7 @@ dd {
 li,
 .cooked li,
 .d-editor-preview li {
+
   > ul,
   > ol {
     margin: 0;
@@ -132,8 +137,8 @@ fieldset {
 
 pre code {
   overflow: auto;
-  -moz-tab-size: 4;
   tab-size: 4;
+
   &.lang-markdown {
     white-space: pre-wrap;
   }
@@ -153,7 +158,9 @@ tbody {
 .topic-list-item,
 tr {
   border-bottom: 1px solid var(--primary-low);
+
   @media (prefers-reduced-motion: no-preference) {
+
     &.highlighted {
       animation: background-fade-highlight 2.5s ease-out;
     }
@@ -161,6 +168,7 @@ tr {
 }
 
 // https://en.wikipedia.org/wiki/Ruby_character
+
 ruby > rt {
   font-size: 72%; // ~10px with 14px base
 }
@@ -182,6 +190,7 @@ input[type="submit"] {
   display: inline-flex;
   align-items: center;
   flex-wrap: wrap;
+
   &.full-width {
     display: flex;
   }
@@ -202,6 +211,7 @@ input[type="submit"] {
   > .d-date-input {
     margin-bottom: 0.5em; // for when items wrap (mobile, narrow windows)
     margin-right: 0.5em;
+
     &:last-child {
       margin-right: 0;
     }
@@ -210,6 +220,7 @@ input[type="submit"] {
 
 // Inputs
 // --------------------------------------------------
+
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: var(--tertiary);

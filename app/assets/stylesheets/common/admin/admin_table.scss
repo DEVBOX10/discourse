@@ -68,10 +68,10 @@
   }
 
   // Default
+
   .status-label {
     --d-border-radius: var(--space-4);
     --status-icon-diameter: 8px;
-
     display: flex;
     flex-wrap: nowrap;
     width: fit-content;
@@ -97,6 +97,7 @@
   }
 
   // Success badge
+
   .status-label.--success {
     background-color: var(--success-low);
 
@@ -110,6 +111,7 @@
   }
 
   // Critical badge
+
   .status-label.--critical {
     background-color: var(--danger-low);
 
@@ -123,6 +125,7 @@
   }
 
   // Inactive badge
+
   .status-label.--inactive {
     background-color: var(--primary-low);
 
@@ -137,6 +140,7 @@
 }
 
 .d-admin-row__overview {
+
   &-name {
     font-weight: 700;
     max-width: 80%;
@@ -173,6 +177,7 @@
 }
 
 .d-admin-row__controls {
+
   &-options {
     display: flex;
     flex-direction: row;

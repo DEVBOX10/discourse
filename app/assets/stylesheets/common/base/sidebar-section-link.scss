@@ -16,11 +16,13 @@
   }
 
   .sidebar-section-link-prefix {
+
     .prefix-image {
       border: 1px solid transparent;
     }
+
     &.active .prefix-image {
-      box-shadow: 0px 0px 0px 1px var(--success);
+      box-shadow: 0 0 0 1px var(--success);
     }
   }
 
@@ -35,6 +37,7 @@
     &:hover {
       background: var(--d-sidebar-highlight-background);
       outline: none;
+
       .prefix-text {
         background: var(--d-sidebar-highlight-prefix-background);
       }
@@ -46,10 +49,12 @@
       font-weight: bold;
 
       .sidebar-section-link-prefix {
+
         &.icon {
           color: var(--d-sidebar-highlight-color);
         }
       }
+
       .sidebar-section-link-hover:hover .sidebar-section-hover-button {
         background-color: var(--d-selected);
       }
@@ -57,10 +62,13 @@
 
     &--muted {
       opacity: 0.5;
+
       .sidebar-section-link-prefix.icon .d-icon {
         color: var(--primary-medium);
       }
+
       &.active {
+
         .sidebar-section-link-prefix.icon .d-icon {
           color: var(--primary-high);
         }
@@ -81,7 +89,9 @@
     .sidebar-section-link-suffix {
       margin-left: 1em;
       font-size: var(--font-down-4);
+
       &.icon {
+
         &.urgent svg {
           color: var(--success);
         }
@@ -126,6 +136,7 @@
   .sidebar-section-link[data-link-name="group-messages-new"],
   .sidebar-section-link[data-link-name="group-messages-unread"],
   .sidebar-section-link[data-link-name="group-messages-archive"] {
+
     .sidebar-section-link-content-text {
       margin-left: calc(
         var(--d-sidebar-section-link-prefix-margin-right) +
@@ -135,6 +146,7 @@
   }
 
   .sidebar-section-link-review {
+
     .sidebar-section-link-content-badge {
       color: var(--danger);
     }
@@ -150,6 +162,7 @@
     margin-right: var(--d-sidebar-section-link-prefix-margin-right);
 
     &.image {
+
       img {
         border-radius: 100%;
         aspect-ratio: auto 20 / 20;
@@ -184,6 +197,7 @@
         margin-right: -0.2em;
       }
     }
+
     .prefix-span {
       width: 0.8em;
       height: 0.8em;
@@ -215,6 +229,7 @@
 
       &:focus,
       .discourse-no-touch & {
+
         &:hover {
           color: var(--d-sidebar-highlight-color);
         }
@@ -226,6 +241,7 @@
     }
 
     &:hover {
+
       .sidebar-section-hover-button {
         background: var(--d-sidebar-highlight-background);
       }
@@ -233,6 +249,7 @@
   }
 
   &:hover {
+
     .sidebar-section-hover-button {
       display: block;
     }

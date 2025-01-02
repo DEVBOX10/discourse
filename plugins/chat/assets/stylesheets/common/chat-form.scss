@@ -4,6 +4,7 @@
 }
 
 .chat-form__row {
+
   &.-separator {
     border-bottom: 1px solid var(--primary-low);
   }
@@ -46,6 +47,7 @@
   }
 
   &-action {
+
     .chat-form__btn:first-child {
       padding-left: 0;
     }

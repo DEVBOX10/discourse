@@ -15,6 +15,7 @@ body.composer-open .chat-drawer-outlet-container {
 }
 
 html:not(.rtl) {
+
   .chat-drawer-resizer {
     cursor: nwse-resize;
     left: -5px;
@@ -22,6 +23,7 @@ html:not(.rtl) {
 }
 
 html.rtl {
+
   .chat-drawer-resizer {
     cursor: nesw-resize;
     right: -5px;
@@ -66,7 +68,7 @@ html.rtl {
     border-bottom: 0;
     border-top-left-radius: var(--d-border-radius-large);
     border-top-right-radius: var(--d-border-radius-large);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.125);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -75,6 +77,7 @@ html.rtl {
   }
 
   &.is-expanded {
+
     .chat-drawer-container {
       height: 100%;
     }
@@ -94,7 +97,7 @@ html.rtl {
 }
 
 .chat-drawer-content {
-  @include chat-scrollbar();
+  @include chat-scrollbar;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

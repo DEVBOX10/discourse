@@ -98,6 +98,7 @@
   .group-details-button {
     display: flex;
     flex-wrap: wrap;
+
     button:not(:last-child) {
       margin-right: 0.5em;
     }
@@ -105,6 +106,7 @@
 }
 
 .group-nav {
+
   .count {
     margin-left: 5px;
   }
@@ -139,18 +141,22 @@ table.group-manage-logs {
 
   &--can-manage {
     grid-template-columns: 3fr repeat(4, minmax(min-content, 1fr)) 3em;
+
     @container (max-width: 47em) {
       // positioning the member settings button within the same cell
       // and avoiding overlap with padding-right on user-info
+
       .group-member,
       .member-settings {
         grid-row-start: 1;
         grid-column-start: 1;
         grid-column-end: -1;
       }
+
       .member-settings {
         margin-left: auto;
       }
+
       .user-info {
         padding-right: 3.5em;
       }
@@ -175,6 +181,7 @@ table.group-manage-logs {
   }
 
   .group-request-reason__content {
+
     .directory-table__value {
       white-space: normal;
       max-width: 30em;
@@ -182,6 +189,7 @@ table.group-manage-logs {
   }
 
   @container (max-width: 47em) {
+
     .directory-table__cell {
       grid-column-start: 1;
       grid-column-end: -1;
@@ -235,11 +243,13 @@ table.group-manage-logs {
 }
 
 .group-add-members {
+
   .ac-wrap {
     overflow: hidden;
   }
 
   .group-add-members-make-owner {
+
     label {
       display: inline;
       vertical-align: middle;
@@ -270,6 +280,7 @@ table.group-category-permissions {
 }
 
 .group-smtp-prefill-options {
+
   ul {
     display: inline;
     margin: 0;
@@ -277,11 +288,11 @@ table.group-category-permissions {
     li {
       display: inline-block;
 
-      &:before {
+      &::before {
         content: "|";
       }
 
-      &:first-child:before {
+      &:first-child::before {
         content: "";
       }
     }
@@ -313,6 +324,6 @@ table.group-category-permissions {
 }
 
 .groups-form .control-group.buttons {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding: 1em 0;
 }

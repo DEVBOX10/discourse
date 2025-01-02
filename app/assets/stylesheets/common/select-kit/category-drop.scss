@@ -1,5 +1,7 @@
 .select-kit {
+
   &.combo-box {
+
     &.category-drop {
       min-width: auto;
 
@@ -10,6 +12,7 @@
       }
 
       .category-drop-header {
+
         &[data-value=""] {
           color: var(--primary-high);
         }
@@ -24,6 +27,7 @@
       }
 
       &.has-selection {
+
         .category-drop-header {
           border-color: var(--d-nav-border-color--active);
         }

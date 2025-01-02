@@ -1,5 +1,6 @@
 .chat-channel-icon {
   flex-shrink: 0;
+
   &.--users-count {
     display: flex;
     justify-content: center;
@@ -20,7 +21,9 @@
   }
 
   .chat-user-avatar {
+
     .avatar {
+
       .chat-channel-row & {
         width: var(--channel-list-avatar-size);
         height: var(--channel-list-avatar-size);

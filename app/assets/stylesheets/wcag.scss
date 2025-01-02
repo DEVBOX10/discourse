@@ -12,28 +12,36 @@
 }
 
 html.discourse-no-touch {
+
   .btn-default {
+
     .d-icon {
       color: var(--primary-medium);
     }
+
     &:hover,
     &.btn-hover,
     &:focus {
+
       .d-icon {
         color: var(--secondary);
       }
     }
   }
+
   .btn-primary .d-icon {
     color: var(--secondary);
   }
+
   .btn-icon.ok,
   .btn-icon.cancel,
   .btn-danger:not(.btn-flat, .btn-transparent) {
+
     .d-icon {
       color: var(--secondary);
     }
   }
+
   .btn-flat.delete.d-hover,
   .btn-flat.delete:hover {
     background: var(--danger);
@@ -46,29 +54,36 @@ html.discourse-no-touch {
 
 html {
   // html parent adds some additional specificity to override core styles
+
   .nav-pills > li > a:not(.active):hover {
     background: var(--tertiary-low);
     color: var(--primary);
   }
 
   // Composer
+
   #reply-control .reply-to .reply-details .d-icon {
     opacity: 1;
     color: var(--primary-low-mid);
   }
 
   .d-editor-button-bar {
+
     .btn-icon.btn-default .d-icon {
       color: var(--primary-low-mid);
+
       .discourse-no-touch & {
+
         &:hover {
           color: var(--secondary);
         }
       }
     }
+
     .btn-icon:not(.btn-flat, .btn-danger, .btn-primary):focus {
+
       .d-icon {
-        color: currentColor;
+        color: currentcolor;
       }
     }
   }
@@ -81,6 +96,7 @@ html {
   .menu-panel li.heading a.widget-link:focus {
     color: var(--primary);
     background-color: var(--highlight-medium);
+
     .d-icon {
       color: var(--primary);
     }
@@ -88,6 +104,7 @@ html {
 
   .menu-panel .panel-body-bottom .btn:hover,
   .menu-panel .panel-body-bottom .btn:focus {
+
     .d-icon {
       color: var(--primary);
     }
@@ -128,6 +145,7 @@ html {
   .badge-notification.unread-posts {
     background: var(--tertiary);
   }
+
   .select-kit.dropdown-select-box.period-chooser
     .period-chooser-header
     h2.selected-name
@@ -158,15 +176,18 @@ html {
 
   .topic-body .reply-to-tab {
     color: var(--primary-medium);
+
     .d-icon {
       color: var(--primary-low-mid);
     }
   }
 
   .timeline-container .topic-timeline {
+
     .timeline-scrollarea {
       border-color: var(--primary-low-mid);
     }
+
     .timeline-handle {
       background: var(--primary-low-mid);
     }
@@ -178,11 +199,13 @@ html {
   }
 
   blockquote {
+
     a,
     a:visited {
       color: var(--tertiary);
     }
   }
+
   .meta .d-icon + .filename,
   .meta .informations {
     color: var(--secondary);
@@ -205,6 +228,7 @@ html {
 
   .topic-admin-menu,
   .timeline-controls {
+
     .btn .d-icon {
       // admin wrenches
       color: var(--primary-medium);
@@ -212,18 +236,23 @@ html {
   }
 
   nav.post-controls {
+
     .actions {
+
       button.create,
       button.create .d-icon {
         color: var(--primary-high-or-secondary-low);
       }
+
       button {
+
         &.d-hover,
         &:hover,
         &:focus,
         &:active {
           background: var(--primary-medium);
           color: var(--secondary);
+
           .d-icon {
             color: var(--secondary);
           }
@@ -234,17 +263,23 @@ html {
         &.delete:focus {
           background: var(--danger);
           color: var(--secondary);
+
           .d-icon {
             color: var(--secondary);
           }
         }
+
         &.bookmark {
+
           &.bookmarked {
+
             .d-icon {
               color: var(--tertiary);
             }
+
             &.d-hover,
             &:hover {
+
               .d-icon {
                 color: var(--tertiary-medium);
               }
@@ -252,10 +287,13 @@ html {
           }
         }
       }
+
       .double-button .button-count {
         color: var(--primary-medium);
       }
+
       .double-button:hover {
+
         button,
         .d-icon,
         button.has-like .d-icon {
@@ -266,10 +304,12 @@ html {
 
     .show-replies {
       color: var(--primary-medium);
+
       &:hover,
       &:focus {
         color: var(--secondary);
         background: var(--primary-medium);
+
         .d-icon {
           color: var(--secondary);
         }
@@ -307,6 +347,7 @@ html {
   }
 
   // User Preferences
+
   .user-menu.revamped .quick-access-panel li.unread,
   .user-menu.revamped .quick-access-panel li.pending {
     background-color: var(--tertiary-very-low);
@@ -348,6 +389,7 @@ html {
   // Admin Settings
 
   .admin-controls {
+
     .nav-pills > li > a:not(.active):hover {
       background: var(--primary-medium);
       color: var(--secondary);
@@ -359,7 +401,7 @@ html {
     background-color: yellow; // resets to browser default
   }
 
-  .settings .setting.overridden h3:before {
+  .settings .setting.overridden h3::before {
     background-color: var(--tertiary);
   }
 
@@ -414,6 +456,7 @@ html {
   .chat-messages-container
   .chat-message:hover
   .chat-message-react-btn:hover {
+
   .d-icon {
     color: var(--primary) !important;
   }

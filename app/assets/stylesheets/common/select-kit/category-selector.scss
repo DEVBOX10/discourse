@@ -1,6 +1,8 @@
 .select-kit,
 .select-kit-box {
+
   &.category-selector {
+
     .category-row {
       max-width: 100%;
 
@@ -19,11 +21,14 @@
     }
 
     .selected-choice-category {
+
       .badge-category .d-icon {
         margin: 0;
       }
+
       &:hover,
       &:focus {
+
         .badge-category {
           color: var(--secondary);
         }

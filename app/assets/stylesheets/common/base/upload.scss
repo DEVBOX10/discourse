@@ -9,6 +9,7 @@
   box-sizing: border-box;
 
   &.uppy-is-drag-over {
+
     .d-icon-far-image {
       color: var(--success);
     }
@@ -43,12 +44,14 @@
 }
 
 .image-uploader.no-repeat {
+
   .uploaded-image-preview {
     background-repeat: no-repeat;
   }
 }
 
 .image-uploader.contain-image {
+
   .uploaded-image-preview {
     background-size: contain;
   }
